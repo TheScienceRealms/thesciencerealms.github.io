@@ -14,6 +14,8 @@ Free interactive AS revision for **Biology**, **Chemistry** and **Psychology**, 
 An educational project by Adrianna Kelly · 2026.
 Independent project, not affiliated with or endorsed by CCEA or WJEC. All questions are original.
 
+Visit statistics are collected anonymously with [GoatCounter](https://www.goatcounter.com) (no cookies, no personal data). Each game, lab, topic and notes screen is counted as its own path, e.g. `/quiztoplasm/#sim-simpson`.
+
 ## How the site is built
 
 Each realm is one self-contained HTML page (no server needed). The `src/` folder holds the working files used to build and edit them:

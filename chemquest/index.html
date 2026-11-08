@@ -2,6 +2,14 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
+<!-- GoatCounter: anonymous visit stats, no cookies -->
+<script data-goatcounter="https://thesciencerealms.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+/* count each game, lab, topic or notes screen opened (these sites change screens with #links) */
+(function(){var last="";function send(){var h=location.hash;if(!h||h.length<2||h===last)return;last=h;
+ var p=location.pathname+h;if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:p,title:document.title+" · "+h.slice(1)})}else{setTimeout(function(){last="";send()},1500)}}
+ window.addEventListener("hashchange",send);window.addEventListener("load",function(){setTimeout(send,800)})})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Free interactive AS Chemistry revision in the style of CCEA: labs, mechanisms, calculations and notes.">
 <meta property="og:title" content="ChemQuest">
@@ -423,7 +431,7 @@ svg.fig{width:100%;height:auto;display:block}
   </section>
 
   <section id="view" hidden></section>
-  <p class="credit">An educational project by Adrianna Kelly · 2026 · Independent project, not affiliated with CCEA or WJEC</p>
+  <p class="credit">An educational project by Adrianna Kelly · 2026 · Independent project, not affiliated with CCEA or WJEC · Anonymous visit stats, no cookies</p>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><marker id="arw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--blue)"/></marker></defs></svg>
 </div>
 
