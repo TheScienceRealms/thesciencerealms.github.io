@@ -1,0 +1,272 @@
+Assessment Unit AS 1			 Basic Concepts in Physical
+ 		 and Inorganic Chemistry
+Summary Points
+• Candidates should expect practical chemistry to be tested in all units. In this paper,
+ tests involving halide ions, hydrogen chloride gas, iodine in solution and titration
+ technique required precise wording and observations.
+• The Quality of Written Communication question required a coherent description of
+ the mass spectrum of chlorine gas. Candidates needed to give the number of peaks,
+ the m/z values and the species responsible for the peaks.
+• Half-equations, oxidation states and systematic names of inorganic ions remain
+ discriminating areas. Candidates should practise balancing half-equations in acidic
+ solution and naming ions using correct oxidation-state notation.
+• Calculations were accessible where candidates set out their working clearly, used the
+ stoichiometry in the equation and gave the final answer to the requested precision.
+• Many candidates demonstrated good knowledge of shapes of ions, intermolecular
+ forces, ionic bonding and giant structures, but marks were lost where charges, lone
+ pairs or the phrase “between molecules” were omitted.
+Q1–10 The multiple-choice questions assessed a broad range of AS1 content including
+ electron counting, amount of substance, oxidation states, redox, molecular
+ polarity, bond angles, melting points, Group VII trends and acid-base titrations.
+ The questions requiring direct recall were generally more accessible, such as
+ Questions 5, 7, 8, 9 and 10. The more demanding items required candidates
+ to combine chemical understanding with calculation, such as 2 and 4 or
+ comparison, such as in questions in Questions 1 and 6. In general, the multiple-
+ choice questions were well answered.
+Q11 This question focused on simple ions, molecular ions, oxidation states and half-
+ equations. In Part (a)(i), many candidates were able to identify the correct ions from
+ atomic number and electron number, although errors occurred where candidates
+ omitted ionic charges or did not use the charge. In Part (a)(ii) the electronic
+ configurations were generally well attempted, but candidates should take care to
+ write configurations in the correct order and to distinguish between the configuration
+ of an ion and that of the corresponding atom. In Part (a)(iii), where a name is asked
+ for, the symbol will be penalised. In Part (a)(iv), the majority of candidates were
+ able to answer this successfully, but a common error was to use the letters C and D
+ in place of Y and Br. In Part (b)(i), the definition of a molecular ion required the idea
+ of a group of atoms or two or more atoms with an overall charge; answers which
+ described only a charged atom did not gain credit. In Part (b)(ii), candidates needed
+ to identify nitrogen as the element oxidised and support this with correct oxidation
+ states along with the correct definition of oxidation in terms of oxidation states; some
+ candidates incorrectly referenced oxidation in terms of loss of electrons. The half-
+ equation for the reduction of manganate(VII) ions was a good discriminator, in
+ Part (b)(iii), with common errors including missing H⁺ ions, missing water or an
+ unbalanced charge. In Part (b)(iv), systematic names required correct use of oxidation
+ states, i.e. manganate(VII) and manganese(II), this was poorly answered, with many
+ candidates referring to permanganate.
+Q12 This question examined Group VII chemistry, redox reactions, mass spectrometry,
+ sterilisation of drinking water and first ionisation energy. In Part (a), equations for
+ the reactions of chlorine with sodium hydroxide solution were often attempted, but
+ marks were lost through incorrect products or balancing. Most candidates were
+ able to successfully distinguish between the products of the reaction of hot and
+ concentrated sodium hydroxide solution in comparison to cold and dilute sodium
+ hydroxide solution as NaClO but should take care to give the correct order of the
+ elements in this compound in Question 12(a)(ii). Many candidates lost the mark in
+ Question 12(a)(iii) as they simply gave the definition of disproportionation but did
+ not reference the element chlorine. In Part (b), the colours of solid sodium halides
+ and the corresponding silver halide precipitates required careful completion of
+ the table, many candidates were not credited with the mark for the colour of the
+ solid sodium halides but were more successful with the colour of the solid silver
+ halides. In Part (c)(i), observations for the reaction of concentrated sulfuric acid
+ with solid potassium iodide were usually better known than the formulae and state
+ symbols of the products responsible. Some candidates lost marks for not including
+ the state symbols despite having the correct product formula. In Part (c)(iii), the
+ equation for the reaction of hydrogen iodide with concentrated sulfuric acid was
+ more demanding and required correct products and balancing, however, it was well
+ attempted and some candidates were able to obtain both marks here. In Part (d),
+ stronger responses to the Quality of Written Communication question described
+ five peaks in the mass spectrum of chlorine gas at m/z 35, 37, 70, 72 and 74 and
+ linked these to the appropriate ions. Weaker responses listed only molecular ion
+ peaks or did not identify the species responsible; some candidates could identify
+ the species responsible but then did not say what the m/z values were. Many
+ candidates did not give the charge on the species and whilst we allowed this mark
+ on this occasion, the charges will be required going forward. More care should be
+ taken to read the question fully for a Quality of Written Communication question.
+ In Part (e), candidates generally knew that ozone is O3 and could give an advantage
+ or disadvantage of using ozone rather than chlorine, for Part (i) and (ii). The first
+ ionisation energy equation for Part (e)(iii) was also well answered, although common
+ errors included incorrect state symbols or incorrect charge of the oxygen. In Part (e)
+ (iv) the comparison of oxygen and sulfur required reference to the smaller atomic
+ radius of oxygen and the greater attraction between the nucleus and the outer
+ electron, if the candidate only referenced sulfur in their answer, they did not gain any
+ credit as the question asked for an explanation for oxygen.
+Q13 This question assessed bonding and structure, intermolecular forces, hydrogen
+ bonding, Group VII boiling points and iodine chemistry. In Part (a)(i), molecule A was
+ ethanoic acid, which was well answered and in Part (a)(ii) bond C was a hydrogen
+ bond; some candidates gave a covalent bond or simply stated “intermolecular
+ force”, which was not specific enough. In Part (b)(i), the dot and cross diagram for
+ H3O⁺ required three bonding pairs of electrons, one lone pair of electrons and an
+ overall positive charge, this was well answered. In Part (b)(ii), the bond formed
+ between water and a hydrogen ion was a co-ordinate bond, dative on its own was
+ not accepted, however, dative covalent was. In Part (b)(iii), the shape and bond angle
+ were generally well answered where candidates recognised the trigonal pyramidal
+ arrangement, however, some candidates incorrectly gave 104° or 109.5° or missed
+ the degree sign, which were common errors. In Part (c)(i), explanations of boiling
+ point trends needed to refer to stronger van der Waals’ forces between molecules
+ down the group and to the increased number of electrons; increasing mass was not
+ an acceptable answer. In Part (c)(ii), the higher boiling point of hydrogen fluoride
+ compared with that of hydrogen chloride required reference to hydrogen bonding
+ between molecules. Candidates should be reminded that “between molecules”
+ is essential in these explanations and the intermolecular forces of both molecules
+ should be given also. In Part (c)(iii), the test for hydrogen chloride gas was well
+ answered but many referred to blue litmus paper changing to red. Reference must be
+ made to the glass rod or stopper, the ammonia solution must be concentrated, and
+ misty fumes was not credited. A second incorrect test, given with a correct answer,
+ results in a candidate losing all marks. The equation involving hydrogen bromide
+ and concentrated phosphoric acid required the correct formulae and balancing and
+ was well answered in Part (c)(iv). In Part (d), candidates needed to identify iodine as
+ having a molecular covalent structure, which some candidates incorrectly answered
+ as simple molecular, which is not accepted. In Part (d)(ii), the explanation of solubility
+ was poor, with many candidates discussing inability to form hydrogen bonds instead
+ of simply stating that it was non-polar and water is polar. In Part (d)(iii), most
+ candidates gave starch solution with a blue-black colour as the test for iodine. The
+ high melting point of potassium iodide required reference to strong electrostatic
+ attractions or strong ionic bonds between oppositely charged ions in a giant ionic
+ lattice, then a reference to the energy required to break these. Common errors
+ included mentioning molecules or van der Waals’ forces which meant a loss of both
+ marks.
+Q14 This question focused on weak bases, carbonate ions in water and titration
+ calculations involving hydrated sodium carbonate. In Part (a)(i), the definition of
+ a weak base required the idea that it only partially dissociates in water, and some
+ candidates incorrectly made reference to pH. The ionic equation for carbonate
+ ions reacting with water was very poorly answered; candidates needed to show the
+ formation of hydrogencarbonate ions and hydroxide ions in Part (a)(ii). The titration
+ table in Part (b)(i) required candidates to use the information that the burette was not
+ refilled and was well answered. In Part (b)(ii), methyl orange was a suitable indicator
+ for this strong acid/carbonate titration, with an appropriate yellow to red colour
+ change at the end point was also well attempted. The calculations in
+ Part (b)(iii) and (iv) were generally accessible, where candidates used the 2:1 ratio
+ between hydrochloric acid and sodium carbonate, scaled from 25.0 cm3 to 250 cm3
+ and calculated the relative formula mass before finding x. Common errors included
+ using the titre in cm3 without converting to dm3, overlooking the 2:1 stoichiometry or
+ giving an answer to an inappropriate precision. Error carried forward was awarded
+ where appropriate for Part (b)(iv).
+Q15 This question assessed metallic bonding, ionic bonding, peroxide ions, equations and
+ the bonding and structure of graphite. In Part (a), the description of the bonding in
+ sodium was well answered and again reference needed to be made to the attraction
+ between the cations and delocalised electrons. In Part (b), dot and cross diagrams for
+ sodium oxide were generally well attempted, but some candidates omitted charges,
+ showed covalent bonding or included inner shell electrons. In Part (c), candidates
+ needed to write a balanced equation for the conversion of sodium oxide to sodium
+ peroxide; this was well attempted and multiples were often given. The octet rule
+ in Part (d)(i) required the idea of atoms having eight electrons in their outer shell,
+ however, many candidates forgot to reference the outer shell. The peroxide ion
+ diagram in Part (d)(ii) was more challenging because candidates had to show an O–O
+ covalent bond, the correct number of outer electrons and the overall 2- charge. In
+ Part (d)(iii), candidates answered well, where the reaction of sodium peroxide with
+ water required sodium hydroxide and oxygen as products and correct balancing.
+ In Part (e)(i), many candidates could not give a diagram to show the bonding and
+ structure in graphite. Three hexagons which tessellate in at least two layers was the
+ minimum required standard, prior to labelling. Atom on its own was not accepted
+ and a reference to carbon atom or atoms was needed. In Part (e)(ii), the explanation
+ of electrical conductivity required reference to delocalised electrons which are free to
+ move and carry charge, as usual references to current or electricity were not credited
+ and free does not equate to delocalised.
+Assessment Unit AS 2			 Further Physical and
+ 		 Inorganic Chemistry and
+ 		 an Introduction to Organic
+ 		 Chemistry
+Summary Points
+• The overall performance across the cohort showed a reasonable understanding of the
+ specification content, with strengths observed in calculating empirical and molecular
+ formulae and understanding the effect of changing conditions on the position of
+ equilibrium.
+• There was also a noticeable improvement in knowledge of definitions as given in the
+ Clarification of Terms document.
+• However, it is apparent that chemical connectivity, mechanisms and relevant areas of
+ practical Chemistry posed the most significant challenge in this unit this year.
+• Candidates are reminded that clarity and accuracy in chemical formulae, mechanisms
+ and naming are essential to achieve higher marks, and incorrect or ambiguous
+ representations will continue to be penalised.
+• Candidates are increasingly cognisant of giving answers to the appropriate number of
+ significant figures or decimal places as indicated in the question. Calculations were
+ generally answered well with most candidates accessing some marks. Candidates
+ who set out their work clearly were able to gain partial credit in calculation questions.
+Q 1–10 The multiple-choice questions were generally very well answered.
+ Questions 1, 5 and 6 were the best answered and Question 3 was the most
+ challenging question.
+Q11 This question assessed E/Z isomerism in alkenes and was generally poorly answered.
+ In Part (a), most candidates scored one mark for referring to restricted rotation
+ around C=C but most did not fully explain the reason to achieve the second mark for
+ the given alkene. Candidates were required to state that there were different atoms
+ or groups connected to each carbon atom in the C=C and in most cases, the term
+ atoms or groups was missing. There were some issues with connectivity in Part (b)
+ and only the highest achieving candidates gave a fully comparative answer explaining
+ the relative priorities of the atoms and groups attached to each carbon in the C=C.
+ Many candidates correctly explained that the Z isomer had both of the higher priority
+ groups on the same side of the C=C. Most candidates did not fully read the question
+ in Part (c) and gave the name and structure of an unbranched isomer, commonly
+ 2-chlorobut-1-ene.
+Q12 Candidates were asked to calculate empirical and molecular formulae in Part (a)
+ and Part (b) and most candidates achieved full marks. Part (c) proved to be more
+ challenging, particularly the structure of the dinitrile. Many candidates correctly
+ identified the alkene in Part (d).
+Q13 This question assessed aspects of changing conditions on the position of equilibrium
+ as well as alkane chemistry and was generally well answered. In Part (a)(i), most
+ candidates were able to fully explain the decrease in yield of propene with an increase
+ in pressure; similarly, the majority of candidates were able to deduce that the forward
+ reaction was endothermic in Part (a)(ii) and explain why. Many candidates were
+ able to explain how a catalyst increases the rate of reaction in Part (a)(iii), however,
+ it was noted that many answered the question by stating that a catalyst lowers
+ the activation energy, which was not credited for the first mark. The equilibrium
+ constant expression was poorly answered in Part (a)(iv), with many candidates not
+ writing an equation in the form Kc = or not using square brackets around each term.
+ Part (b) assessed radical substitution, and most candidates correctly completed
+ the mechanism in Part (b)(i). The name of the mechanism, the termination step
+ and product formed by termination were generally well known. A range of correct
+ answers were accepted for the possible dichlorinated product in Part (b)(v).
+Q14 The definition of structural isomers was well known in Part (a), as was the structure
+ and name of the alcohol in Part (b). The definition of a nucleophile was well known in
+ Part (c)(i), with most candidates scoring at least one mark. Some candidates did not
+ reference an ion or molecule, or the lone pair of electrons, and so did not score the
+ first mark. The type of reaction between the 1-chlorobutane and sodium hydroxide
+ was very well known, and almost all candidates correctly identified the polarity of
+ the C–Cl bond. As with previous series, the mechanism in Part (c)(iv) discriminated
+ between candidates. Common errors included curly arrows not starting on a bond
+ or from a lone pair of electrons, the carbocation intermediate structure not being
+ included, and the final Cl- missing.
+Q15 Part (a) was poorly answered which was surprising. Many candidates calculated the
+ heat evolved but did not continue to calculate the number of moles of hexane and
+ enthalpy change. Some candidates did not include a negative sign with their final
+ answer. Whilst many candidates correctly identified heat loss as a factor in
+ Part (b), most were unable to correctly identify incomplete combustion of hexane as
+ the other main reason why the value calculated was different to the data book value.
+ Candidates had difficulty expressing their answer to this part or referred to average
+ bond enthalpies. Despite being given the balanced symbol equation, many candidates
+ had difficulty calculating the energy required to break bonds or the energy released
+ when bonds form in Part (c). Whilst errors were carried forward to the final part of
+ the calculation, many did not divide by two to give the molar enthalpy change. The
+ definitions of the standard enthalpy of formation and Hess’s Law were well known
+ in Part (d)(i). Most candidates were able to write the equation representing the
+ standard enthalpy of formation of propane in Part (d)(iii) and correctly calculated the
+ value for propane in Part (d)(iv).
+Q16 This question assessed aspects of Group II Chemistry and proved to discriminate
+ effectively between candidates. Whilst most candidates achieved full marks for
+ the equation in Part (a)(i), most candidates had difficulty explaining the lack of a
+ precipitate in Part (a)(ii). Some candidates did refer to solubility but were not specific
+ enough and did not relate the concept to Group II hydroxides. In Part (b), candidates
+ were asked to apply knowledge to Strontium and most found it challenging. Most
+ candidates correctly gave the equation for the reaction between strontium and
+ water in Part (b)(i), however very few achieved full marks in Part (b)(ii), with many
+ stating incorrectly that the solid disappears. As noted in previous reports, it is
+ expected that electronic configurations are given in principal quantum number order
+ and consequently a significant number of candidates did not get the mark for the
+ configuration of strontium in Part (b)(iii). The comparison in reactivity between
+ calcium and strontium was very poorly answered in Part (b)(iv). Whilst many correctly
+ identified the increase in shielding as the main reason, candidates did not go on and
+ explain the relative ease in removing outer electrons. Many referred to the outer
+ electron, rather than electrons, in strontium which was not credited. The oxidation
+ half-equation in Part (b)(v) was also poorly answered, with many candidates including
+ water in the equation.
+Q17 The majority of candidates correctly identified acidified potassium dichromate(VI)
+ as the oxidising agent in Part (a). The Quality of Written Communication question
+ discriminated effectively between candidates. Most were able to state the names of
+ the two oxidation products as well as reference reflux and distillation as the relevant
+ experimental methods. Only the highest achieving candidates scored full marks
+ as candidates were expected to reference the C=O and O–H bonds in propan-1-ol,
+ propanal and propanoic acid. Many did not reference the lack of a C=O absorption
+ in propan-1-ol or the lack of an O–H absorption in propanal and so did not access
+ the higher band marks. The diagram illustrating hydrogen bonding between propan-
+ 1-ol and water was poorly answered in Part (c), with many candidates omitting
+ relevant lone pairs of electrons or not labelling the hydrogen bond. In Part (d), most
+ candidates correctly explained why 2-methylpropan-2-ol cannot be oxidised in
+ Part (d)(i) and received at least partial credit for naming and giving the structures
+ of other isomers which were also tertiary alcohols and could not be oxidised.
+ Connectivity between carbon and oxygen in the C–OH was poor in some structures,
+ with many drawing the bond from the carbon atom to the gap between the oxygen
+ and hydrogen atoms in the functional group. Similar poor connectivity was noted
+ when a bond was drawn between a carbon atom and a methyl group, with the bond
+ often being drawn to the hydrogen atoms in the –CH3 group.
+Assessment Unit AS 3A Basic Practical Chemistry
+ 		 Booklet A
+Summary Points
+• Some masses were not recorded to two decimal places and/or with correct units.

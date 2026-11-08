@@ -1,0 +1,422 @@
+<title>Quiztoplasm</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500;700&family=Caveat:wght@600&display=swap">
+<style>
+/* Layout: a hub page (microscope hero + one section per game); each game opens full-width below a slim bar. Green title, gold details. Diagrams sit on white "exam paper" in both themes. */
+:root{
+  --bg:#f1f4ec; --surface:#ffffff; --fg:#1c291e; --muted:#5d6b5e; --line:#d6dfcf; --bench:#e3e9dc;
+  --green:#2e7d32; --green-deep:#1d5420; --gold:#c9960c; --gold-soft:#f7e8b5; --cellfill:#dcefd2;
+  --good:#1f7a4d; --goodbg:#e1f2e6; --bad:#b3261e; --badbg:#fbe4e2;
+  --glass-a:rgba(255,255,255,.82); --glass-b:rgba(214,236,231,.5); --glass-edge:rgba(96,150,134,.55);
+  /* constant in both themes: printed paper, real stains, real objects */
+  --paper:#ffffff; --ink:#161616; --ink-soft:#5a5a5a; --gridc:#d3dcd3; --ruler:#f6efd8;
+  --okp:#d5efdb; --okink:#1f7a4d; --badp:#f8d6d2; --badink:#b3261e; --mark:#f6dc7a;
+  --oxy:#ffffff; --deoxy:#ffffff; --frost:#eef0ec; --pen:#203f8f;
+  --stain-e:#e48fb2; --stain-h:#4b2a7a; --stain-mb:#7fa6e0; --stain-mbn:#1d3f8f;
+  --display:"Black Ops One",Impact,"Arial Black",sans-serif;
+  --body:"Atkinson Hyperlegible",ui-sans-serif,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --hand:"Caveat","Segoe Print","Comic Sans MS",cursive;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1611; --surface:#17211a; --fg:#e7efe5; --muted:#98aa99; --line:#2b3a2e; --bench:#1b261d;
+  --green:#6cc070; --green-deep:#a6dea8; --gold:#e8b931; --gold-soft:#3b3214; --cellfill:#24432a;
+  --good:#6fd39f; --goodbg:#163626; --bad:#ff8a80; --badbg:#3d1a1a;
+  --glass-a:rgba(255,255,255,.16); --glass-b:rgba(170,220,210,.07); --glass-edge:rgba(140,200,180,.45); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1611; --surface:#17211a; --fg:#e7efe5; --muted:#98aa99; --line:#2b3a2e; --bench:#1b261d;
+  --green:#6cc070; --green-deep:#a6dea8; --gold:#e8b931; --gold-soft:#3b3214; --cellfill:#24432a;
+  --good:#6fd39f; --goodbg:#163626; --bad:#ff8a80; --badbg:#3d1a1a;
+  --glass-a:rgba(255,255,255,.16); --glass-b:rgba(170,220,210,.07); --glass-edge:rgba(140,200,180,.45); color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 32px}
+.wrap{max-width:900px;margin:0 auto;display:grid;gap:22px}
+p{margin:0}
+a{color:var(--green)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:disabled{cursor:default}
+button:focus-visible,a:focus-visible,[role=button]:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.muted{color:var(--muted)}
+
+/* hero */
+.hero{display:flex;align-items:center;gap:clamp(12px,3vw,28px);flex-wrap:wrap}
+.hero svg{width:clamp(130px,26vw,200px);height:auto;flex:none}
+.hero-text{display:grid;gap:8px;min-width:0}
+.title{font:400 clamp(40px,9vw,76px)/.95 var(--display);color:var(--green);margin:0;letter-spacing:.01em;overflow-wrap:anywhere}
+.tagline{font-weight:700;color:var(--fg);font-size:clamp(16px,2.6vw,19px)}
+.rule{height:5px;width:120px;background:var(--gold);border-radius:3px}
+.mic-green{fill:var(--green)} .mic-deep{fill:var(--green-deep)} .mic-gold{fill:var(--gold)} .mic-fg{fill:var(--fg)}
+.mic-arm{fill:none;stroke:var(--green);stroke-width:13;stroke-linecap:round}
+.view{fill:var(--surface);stroke:var(--gold);stroke-width:4}
+.pc-wall{fill:var(--cellfill);stroke:var(--green);stroke-width:2.5}
+.pc-vac{fill:var(--surface);stroke:var(--green-deep);stroke-width:1.5}
+.pc-nuc{fill:var(--green-deep)} .pc-chl{fill:var(--green)}
+
+/* hub sections */
+.game{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(16px,3vw,28px);align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:clamp(16px,3vw,26px)}
+@media (max-width:640px){.game{grid-template-columns:1fr}}
+.game h2{font:400 clamp(30px,5vw,40px)/1 var(--display);color:var(--green);margin:0}
+.game .copy{display:grid;gap:10px;min-width:0}
+.kicker{font:700 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.game ul{margin:0;padding-left:20px;display:grid;gap:2px;font-size:15px}
+.bench{background:var(--bench);border-radius:12px;padding:clamp(14px,3vw,24px);display:grid;place-items:center;min-width:0}
+.bench .paper{background:var(--paper);border-radius:6px;padding:6px;width:100%;box-shadow:0 6px 14px -8px rgba(0,0,0,.35)}
+.play{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:var(--surface);border:0;border-radius:10px;padding:11px 20px;font-weight:700;text-decoration:none;justify-self:start}
+.play:hover{background:var(--green-deep)}
+.best{font:500 13px var(--mono);color:var(--muted)}
+.best b{color:var(--gold)}
+footer{font-size:13px;color:var(--muted);display:grid;gap:4px}
+
+/* game bar */
+.gamebar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:3px solid var(--gold);padding-bottom:10px}
+.gamebar h2{font:400 clamp(28px,5vw,38px)/1 var(--display);color:var(--green);margin:0}
+.home-link{font:700 14px var(--body);text-decoration:none;color:var(--green);border:1.5px solid var(--line);border-radius:10px;padding:6px 12px;background:var(--surface)}
+.home-link b{font:400 15px var(--display)}
+
+/* realistic glass slide */
+.glass{position:relative;display:block;aspect-ratio:3/1;width:100%;max-width:560px;border-radius:5px;
+  background:linear-gradient(160deg,var(--glass-a),var(--glass-b) 45%,var(--glass-a) 58%,var(--glass-b));
+  border:1px solid var(--glass-edge);
+  box-shadow:inset 0 0 0 2px rgba(150,205,188,.3),inset 0 -4px 8px rgba(110,170,155,.22),0 12px 20px -10px rgba(0,0,0,.45);overflow:hidden}
+.glass::after{content:"";position:absolute;inset:0;background:linear-gradient(112deg,transparent 28%,rgba(255,255,255,.55) 36%,transparent 44%,transparent 70%,rgba(255,255,255,.25) 74%,transparent 78%);pointer-events:none}
+.frost{position:absolute;inset:0 70% 0 0;display:grid;align-content:center;justify-items:center;text-align:center;gap:0;padding:4px;
+  background-color:var(--frost);background-image:radial-gradient(rgba(0,0,0,.07) .8px,transparent 1.1px);background-size:3px 3px;border-right:1px solid rgba(0,0,0,.1);color:var(--pen);font-family:var(--hand);line-height:1.05}
+.frost .h1{font-size:clamp(18px,4vw,28px)}
+.frost .h2{font-size:clamp(13px,2.6vw,18px)}
+.slip{position:absolute;top:10%;height:80%;left:65%;transform:translateX(-50%);aspect-ratio:1;border:1px solid rgba(110,160,150,.55);background:rgba(255,255,255,.18);box-shadow:inset 0 0 6px rgba(255,255,255,.6);border-radius:2px;position:relative}
+.slip svg{width:100%;height:100%;display:block}
+.run-in{animation:runin .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes runin{from{transform:translateX(70%) rotate(2deg);opacity:0}to{transform:none;opacity:1}}
+
+/* shared game UI */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:clamp(16px,3.5vw,26px);display:grid;gap:16px}
+.panel h2,.panel h3{font:800 22px/1.2 var(--body);margin:0;text-wrap:balance}
+.primary{background:var(--green);color:var(--surface);border:0;border-radius:10px;padding:11px 18px;font-weight:700}
+.primary:disabled{opacity:.4}
+.ghost{background:transparent;border:1.5px solid var(--line);border-radius:10px;padding:10px 16px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.hud{display:flex;gap:14px;flex-wrap:wrap;font:500 13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.hud strong{color:var(--fg)} .hud .x{color:var(--gold);font-weight:700}
+.bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--gold);width:100%}
+.topic{font:700 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+.q{font:700 19px/1.4 var(--body)}
+.opts{display:grid;gap:8px}
+.opt{text-align:left;background:transparent;border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;display:flex;gap:12px;align-items:flex-start}
+.opt:hover:not(:disabled){border-color:var(--green)}
+.opt kbd{font:500 12px var(--mono);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--muted);flex:none}
+.opt.right{background:var(--goodbg);border-color:var(--good)}
+.opt.wrong{background:var(--badbg);border-color:var(--bad)}
+.explain{border-left:3px solid var(--gold);padding:8px 12px;font-size:15px;display:grid;gap:4px}
+.explain b{color:var(--green)} .explain.bad b{color:var(--bad)} .explain.ok b{color:var(--good)}
+.units{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.unit{text-align:left;background:var(--bench);border:1.5px solid transparent;border-radius:12px;padding:14px;display:grid;gap:10px;justify-items:center}
+.unit:hover{border-color:var(--gold)}
+.unit .txt{justify-self:stretch;display:grid;gap:2px}
+.unit b{font-weight:700} .unit small{color:var(--muted);font-size:13px}
+.big{font:400 52px/1 var(--display);color:var(--green);font-variant-numeric:tabular-nums}
+.breakdown{display:grid;gap:6px;font-size:14px}
+.breakdown div{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:4px}
+.breakdown span:last-child{font-family:var(--mono)}
+.pop{animation:pop .25s ease-out}
+@keyframes pop{from{transform:scale(.98);opacity:.6}to{transform:none;opacity:1}}
+
+/* Slide Lab UI */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:0;display:grid;overflow:hidden}
+.card:hover{border-color:var(--gold)}
+.thumb{background:var(--paper);border-bottom:1px solid var(--line);padding:8px;height:150px;display:flex;align-items:center;justify-content:center;gap:4px;pointer-events:none}
+.thumb svg{max-height:134px;width:auto;max-width:100%}
+.cbody{padding:12px 14px;display:grid;gap:4px}
+.cbody b{font-weight:700;font-size:17px}
+.meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.pill{border:1px solid var(--line);border-radius:99px;padding:1px 8px}
+.pill.u{color:var(--green);border-color:var(--green)}
+.stars{color:var(--gold);letter-spacing:2px;font-size:14px}
+.top{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.back{background:transparent;border:1.5px solid var(--line);border-radius:10px;padding:6px 12px;font-size:14px}
+.diagram{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:10px;min-width:0}
+svg.dg{display:block;width:100%;height:auto}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
+.slot{text-align:left;background:transparent;border:1.5px dashed var(--line);border-radius:10px;padding:8px 10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;min-height:46px}
+.slot.ready{border-color:var(--gold)}
+.slot.filled{border-style:solid}
+.slot.ok{background:var(--goodbg);border:1.5px solid var(--good)}
+.slot.bad{background:var(--badbg);border:1.5px solid var(--bad)}
+.slot i{color:var(--muted);font-size:14px}
+.slot .fix{flex-basis:100%;font-size:13px;color:var(--good);font-weight:700}
+.let{font:700 14px Arial,Helvetica,sans-serif;width:26px;height:26px;border-radius:4px;border:1.5px solid var(--fg);color:var(--fg);display:inline-flex;align-items:center;justify-content:center;flex:none}
+.bank{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--surface);border:1.5px solid var(--green);color:var(--green);border-radius:99px;padding:6px 14px;font-size:15px;font-weight:700}
+.chip.on{background:var(--green);color:var(--surface)}
+.keys{display:flex;flex-wrap:wrap;gap:6px}
+.key{font:700 16px Arial,Helvetica,sans-serif;width:42px;height:42px;border-radius:8px;border:1.5px solid var(--fg);color:var(--fg);background:transparent}
+.key:disabled{opacity:.3}
+.trail{font:500 15px var(--mono);min-height:24px;word-break:break-word}
+.stages{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.stage{background:var(--paper);color:var(--ink);border:1.5px solid var(--line);border-radius:10px;padding:8px;display:grid;gap:6px;justify-items:center;position:relative}
+.stage:hover:not(:disabled){border-color:var(--gold)}
+.stage.picked{border-color:var(--green);box-shadow:0 0 0 2px var(--green)}
+.stage.ok{border-color:var(--okink);background:var(--okp)}
+.stage.bad{border-color:var(--badink);background:var(--badp)}
+.stage .num{position:absolute;top:6px;right:6px;width:26px;height:26px;border-radius:50%;background:var(--green);color:var(--surface);font:700 13px var(--mono);display:flex;align-items:center;justify-content:center}
+.stage small{font:700 13px Arial,Helvetica,sans-serif}
+input#ans{font:500 17px var(--mono);background:var(--surface);color:var(--fg);border:1.5px solid var(--line);border-radius:10px;padding:9px 12px;width:9em;max-width:100%}
+.notes{display:grid;gap:6px;font-size:14px;margin:0;padding:0;list-style:none}
+.notes li{display:flex;gap:10px;align-items:flex-start}
+.qhead{font:700 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+.qtext{font:700 18px/1.4 var(--body)}
+.result{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-end;border-top:1px dashed var(--line);padding-top:14px}
+.labnote{font-size:13px;color:var(--muted)}
+
+/* exam-style line diagrams: black ink on white paper */
+.dg{font-family:Arial,Helvetica,sans-serif}
+.dg .ln{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.dg .thin{stroke-width:1}
+.dg .muscle{fill:url(#stip);stroke:var(--ink);stroke-width:1.5}
+.dg .oxy,.dg .deoxy{fill:var(--paper);stroke:var(--ink);stroke-width:1.5}
+.dg .tube{fill:none;stroke:var(--ink);stroke-width:25;stroke-linejoin:round}
+.dg .tube-o,.dg .tube-d{fill:none;stroke:var(--paper);stroke-width:22;stroke-linejoin:round}
+.dg .cyto{fill:var(--paper);stroke:var(--ink);stroke-width:1.2}
+.dg .green{fill:var(--paper);stroke:var(--ink);stroke-width:1.3}
+.dg .nucl{fill:url(#stipd);stroke:var(--ink);stroke-width:1.5}
+.dg .dash{stroke-dasharray:4 3}
+.dg .dark{fill:var(--ink)}
+.dg .vac{fill:var(--paper);stroke:var(--ink);stroke-width:1.5}
+.dg .grana{stroke:var(--ink);stroke-width:1.1}
+.dg .gdot{fill:var(--paper);stroke:var(--ink);stroke-width:.9}
+.dg .gol{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round}
+.dg .wax{fill:var(--ink-soft)}
+.dg .xy{fill:var(--paper);stroke:var(--ink);stroke-width:2.6}
+.dg .bund{fill:url(#stip);stroke:var(--ink);stroke-width:1.2}
+.dg .chr{fill:none;stroke:var(--ink);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+.dg .chrom{fill:none;stroke:var(--ink);stroke-width:1.3}
+.dg .spin{fill:none;stroke:var(--ink-soft);stroke-width:.8}
+.dg .crista{fill:var(--paper);stroke:var(--ink);stroke-width:1.1}
+.dg .bar{fill:var(--ink)}
+.dg .ruler{fill:var(--ruler);stroke:var(--ink);stroke-width:1.3}
+.dg .tickl{stroke:var(--ink);stroke-width:.9}
+.dg .guide{stroke:var(--ink-soft);stroke-width:.8;stroke-dasharray:3 3}
+.dg .grid{stroke:var(--gridc);stroke-width:.8}
+.dg .axis{fill:none;stroke:var(--ink);stroke-width:1.4}
+.dg .tick{fill:var(--ink);font:400 11px Arial,Helvetica,sans-serif}
+.dg .atitle{fill:var(--ink);font:400 12px Arial,Helvetica,sans-serif}
+.dg .lead{stroke:var(--ink);stroke-width:1}
+.dg .dot{display:none}
+.dg .pin{cursor:pointer}
+.dg .pin circle{fill:var(--paper);stroke:transparent;stroke-width:2}
+.dg .pin:hover circle{stroke:var(--gold)}
+.dg .pin text,.dg .clab text{fill:var(--ink);font:700 15px Arial,Helvetica,sans-serif;text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.dg .pin.sel circle{fill:var(--mark)}
+.dg .pin.ok circle{fill:var(--okp);stroke:var(--okink)} .dg .pin.ok text{fill:var(--okink)}
+.dg .pin.bad circle{fill:var(--badp);stroke:var(--badink)} .dg .pin.bad text{fill:var(--badink)}
+.dg .curve{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round}
+.dg .curve.ok{stroke:var(--okink);stroke-width:4} .dg .curve.bad{stroke:var(--badink);stroke-dasharray:6 4;stroke-width:3}
+.dg .hit{fill:none;stroke:transparent;stroke-width:18;pointer-events:stroke;cursor:pointer}
+.dg .clab{cursor:pointer}
+.dg .clab circle{fill:var(--paper);stroke:transparent}
+@media (prefers-reduced-motion:reduce){.run-in,.pop{animation:none}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <pattern id="stip" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" style="fill:var(--paper)"/><circle cx="1.5" cy="1.8" r=".75" style="fill:var(--ink)"/><circle cx="5.2" cy="5" r=".65" style="fill:var(--ink)"/></pattern>
+  <pattern id="stipd" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" style="fill:var(--paper)"/><circle cx="1" cy="1" r=".7" style="fill:var(--ink)"/><circle cx="3" cy="3" r=".6" style="fill:var(--ink)"/></pattern>
+</defs></svg>
+
+<div class="wrap">
+  <div id="hub">
+    <div style="display:grid;gap:22px">
+      <header class="hero">
+        <svg viewBox="0 0 200 150" role="img" aria-label="A microscope looking at a plant cell">
+          <circle class="mic-gold" cx="66" cy="12" r="3"/><circle class="mic-gold" cx="80" cy="16" r="4"/><circle class="mic-gold" cx="96" cy="24" r="5"/>
+          <circle class="view" cx="150" cy="52" r="42"/>
+          <rect class="pc-wall" x="122" y="30" width="56" height="44" rx="7"/>
+          <ellipse class="pc-vac" cx="157" cy="54" rx="14" ry="12"/>
+          <circle class="pc-nuc" cx="134" cy="41" r="6"/>
+          <ellipse class="pc-chl" cx="134" cy="63" rx="6" ry="3.5"/><ellipse class="pc-chl" cx="168" cy="37" rx="6" ry="3.5"/><ellipse class="pc-chl" cx="148" cy="35" rx="4" ry="2.5"/>
+          <rect class="mic-deep" x="10" y="132" width="92" height="13" rx="5"/>
+          <rect class="mic-green" x="70" y="98" width="15" height="36" rx="2"/>
+          <path class="mic-arm" d="M58,36 C96,36 100,80 78,104"/>
+          <rect class="mic-green" x="36" y="18" width="22" height="52" rx="3"/>
+          <rect class="mic-gold" x="39" y="4" width="16" height="16" rx="2"/>
+          <rect class="mic-gold" x="30" y="68" width="34" height="8" rx="3"/>
+          <rect class="mic-gold" x="41" y="76" width="12" height="14" rx="2"/>
+          <rect class="mic-fg" x="14" y="94" width="74" height="7" rx="2"/>
+          <circle class="mic-gold" cx="47" cy="116" r="7"/>
+          <circle class="mic-gold" cx="89" cy="66" r="8"/>
+        </svg>
+        <div class="hero-text">
+          <h1 class="title">Quiztoplasm</h1>
+          <div class="rule"></div>
+          <p class="tagline">Revision games for CCEA AS Biology</p>
+          <p class="muted">Two games covering AS1 Molecules and Cells and AS2 Organisms and Biodiversity.</p>
+        </div>
+      </header>
+
+      <section class="game" aria-labelledby="g-run">
+        <div class="bench" id="run-preview"></div>
+        <div class="copy">
+          <div class="kicker">Timed quiz · 48 questions</div>
+          <h2 id="g-run">Slide Run</h2>
+          <p>A new slide slides onto the stage every question. You have 20 seconds to answer.</p>
+          <ul><li>Choose AS1, AS2 or a mixed paper</li><li>Answer fast to build a streak multiplier</li><li>Get an explanation after every answer and a list of topics to revise</li></ul>
+          <p class="best" id="run-best"></p>
+          <a class="play" href="#slide-run">Play Slide Run →</a>
+        </div>
+      </section>
+
+      <section class="game" aria-labelledby="g-lab">
+        <div class="bench"><div class="paper" id="lab-preview"></div></div>
+        <div class="copy">
+          <div class="kicker">Diagram puzzles · 8 puzzles</div>
+          <h2 id="g-lab">Slide Lab</h2>
+          <p>Exam-style diagrams to label, trace, put in order, read and measure.</p>
+          <ul><li>Heart, plant cell and leaf labelling</li><li>Blood route through the heart and the stages of mitosis</li><li>Oxygen dissociation, enzyme inhibition and magnification</li></ul>
+          <p class="best" id="lab-best"></p>
+          <a class="play" href="#slide-lab">Play Slide Lab →</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>Diagrams are original drawings in the style of exam figures, not copies of CCEA papers. Check content against the CCEA specification.</p>
+        <p>Scores are saved in your own browser only.</p>
+      </footer>
+    </div>
+  </div>
+
+  <div id="runwrap" hidden>
+    <div style="display:grid;gap:18px">
+      <div class="gamebar"><h2>Slide Run</h2><a class="home-link" href="#">← <b>Quiztoplasm</b></a></div>
+      <section class="panel" id="run"></section>
+      <p class="labnote">12 questions a round, 20 seconds each. Keys 1–4 pick an answer, Enter moves on.</p>
+    </div>
+  </div>
+
+  <div id="labwrap" hidden>
+    <div style="display:grid;gap:18px">
+      <div class="gamebar"><h2>Slide Lab</h2><a class="home-link" href="#">← <b>Quiztoplasm</b></a></div>
+      <main id="lab"></main>
+    </div>
+  </div>
+</div>
+
+<script>
+const $$=s=>document.querySelector(s);
+
+/* ================= Slide Run ================= */
+const Run=(()=>{
+const Q=/*@@Q@@*/;
+const ROUND=12,TIME=20,root=$$("#run");
+let st={phase:"home"},clipN=0;
+const store={get(k){try{return +localStorage.getItem(k)||0}catch(e){return 0}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const STAIN={AS1:{name:"H&E",bg:"var(--stain-e)",nu:"var(--stain-h)"},AS2:{name:"Methylene blue",bg:"var(--stain-mb)",nu:"var(--stain-mbn)"}};
+
+function tissue(unit){
+  const s=STAIN[unit]||STAIN.AS1,id="tc"+(++clipN),n=14,pts=[];
+  for(let i=0;i<n;i++){const a=i/n*Math.PI*2,r=28+Math.random()*13;pts.push([50+Math.cos(a)*r,50+Math.sin(a)*r])}
+  const mid=(p,q)=>[((p[0]+q[0])/2).toFixed(1),((p[1]+q[1])/2).toFixed(1)];
+  let d=`M${mid(pts[0],pts[1]).join(",")}`;
+  for(let i=1;i<=n;i++){const p=pts[i%n],q=pts[(i+1)%n];d+=`Q${p[0].toFixed(1)},${p[1].toFixed(1)} ${mid(p,q).join(",")}`}
+  d+="Z";
+  let cells="";
+  for(let i=0;i<46;i++){const x=8+Math.random()*84,y=8+Math.random()*84,rx=3.5+Math.random()*2.5,ry=2.8+Math.random()*2;
+    cells+=`<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="${rx.toFixed(1)}" ry="${ry.toFixed(1)}" style="fill:none;stroke:${s.nu};stroke-opacity:.3;stroke-width:.6"/><circle cx="${(x+Math.random()-.5).toFixed(1)}" cy="${y.toFixed(1)}" r="${(1.2+Math.random()).toFixed(1)}" style="fill:${s.nu};opacity:.75"/>`}
+  return `<svg viewBox="0 0 100 100" aria-hidden="true"><defs><clipPath id="${id}"><path d="${d}"/></clipPath></defs><path d="${d}" style="fill:${s.bg};opacity:.55"/><g clip-path="url(#${id})"><circle cx="${30+Math.random()*40}" cy="${30+Math.random()*40}" r="22" style="fill:${s.bg};opacity:.45"/>${cells}</g></svg>`;
+}
+function glass(lines,unit,cls=""){
+  return `<div class="glass ${cls}"><div class="frost">${lines.map((t,i)=>`<span class="${i?"h2":"h1"}">${esc(t)}</span>`).join("")}</div><div class="slip">${tissue(unit)}</div></div>`;
+}
+
+function home(){
+  clearInterval(st.timer);st={phase:"home"};
+  const units=[["AS1","Molecules and Cells","Molecules, enzymes, DNA, cells, transport, division"],["AS2","Organisms and Biodiversity","Exchange, transport, the heart, adaptation, classification"],["MIX","Mixed paper","Questions from both units"]];
+  root.innerHTML=`<div class="topic">Choose a slide</div><h3>Which unit are you revising?</h3>
+  <div class="units">${units.map(([k,t,d])=>`<button class="unit" data-u="${k}">${glass([k==="MIX"?"AS1+2":k,k==="MIX"?"Mixed":STAIN[k].name],k==="MIX"?(Math.random()<.5?"AS1":"AS2"):k)}<span class="txt"><b>${t}</b><small>${d}</small><small>Best: ${store.get("ss-best-"+k)}</small></span></button>`).join("")}</div>`;
+  root.querySelectorAll(".unit").forEach(b=>b.onclick=()=>start(b.dataset.u));
+}
+function start(u){
+  const pool=Q.filter(q=>u==="MIX"||q[0]===u);
+  st={phase:"q",unit:u,qs:shuffle(pool).slice(0,ROUND),i:0,score:0,streak:0,best:0,correct:0,topics:{}};
+  ask();
+}
+const mult=()=>st.streak>=6?3:st.streak>=3?2:1;
+function ask(){
+  const q=st.qs[st.i];
+  st.order=shuffle([0,1,2,3]);st.left=TIME;st.answered=false;
+  root.innerHTML=`<div class="hud"><span>Slide <strong>${st.i+1}</strong>/${st.qs.length}</span><span>Score <strong>${st.score}</strong></span><span>Streak <strong>${st.streak}</strong>${st.streak>=3?` <span class="x">×${mult()}</span>`:""}</span><span>Time <strong id="rt">${TIME}</strong>s</span></div>
+  <div class="bar"><i id="rbar"></i></div>
+  <div class="bench">${glass([q[0],q[1],`No. ${st.i+1}`],q[0],"run-in")}</div>
+  <div class="q pop">${esc(q[2])}</div>
+  <div class="opts">${st.order.map((o,n)=>`<button class="opt" data-o="${o}"><kbd>${n+1}</kbd><span>${esc(q[3][o])}</span></button>`).join("")}</div>
+  <div id="rafter"></div>`;
+  root.querySelectorAll(".opt").forEach(b=>b.onclick=()=>answer(+b.dataset.o));
+  const t0=performance.now();clearInterval(st.timer);
+  st.timer=setInterval(()=>{st.left=Math.max(0,TIME-(performance.now()-t0)/1000);
+    const t=$$("#rt"),b=$$("#rbar");if(!t){clearInterval(st.timer);return}
+    t.textContent=Math.ceil(st.left);b.style.width=(st.left/TIME*100)+"%";if(st.left<=0)answer(-1)},100);
+}
+function answer(o){
+  if(st.answered)return;st.answered=true;clearInterval(st.timer);
+  const q=st.qs[st.i],ok=o===q[4],tp=st.topics[q[1]]||(st.topics[q[1]]=[0,0]);tp[1]++;
+  let gained=0;
+  if(ok){st.streak++;st.correct++;tp[0]++;gained=(100+Math.round(st.left*5))*mult();st.score+=gained;st.best=Math.max(st.best,st.streak)}else st.streak=0;
+  root.querySelectorAll(".opt").forEach(b=>{b.disabled=true;const v=+b.dataset.o;if(v===q[4])b.classList.add("right");else if(v===o)b.classList.add("wrong")});
+  const last=st.i===st.qs.length-1;
+  $$("#rafter").innerHTML=`<div class="explain pop ${ok?"ok":"bad"}"><b>${ok?`Correct · +${gained}`:o<0?"Time's up":"Not quite"}</b><span>${esc(q[5])}</span></div>
+  <div class="row" style="margin-top:12px"><button class="primary" id="rnext">${last?"See results":"Next slide"}</button></div>`;
+  $$("#rnext").onclick=next;$$("#rnext").focus();
+}
+function next(){st.i++;st.i<st.qs.length?ask():results()}
+function results(){
+  st.phase="end";
+  const key="ss-best-"+st.unit,prev=store.get(key),isBest=st.score>prev;if(isBest)store.set(key,st.score);
+  const pct=Math.round(st.correct/st.qs.length*100),grade=pct>=80?"A":pct>=70?"B":pct>=60?"C":pct>=50?"D":pct>=40?"E":"U";
+  const rows=Object.entries(st.topics).sort((a,b)=>a[1][0]/a[1][1]-b[1][0]/b[1][1]),weak=rows.filter(([,v])=>v[0]<v[1]).map(([k])=>k);
+  root.innerHTML=`<div class="topic">Results · ${st.unit==="MIX"?"AS1 + AS2":st.unit}</div>
+  <div class="row" style="gap:28px;align-items:flex-end"><div><div class="big">${st.score}</div><div class="muted">points${isBest?" · new best":""}</div></div>
+  <div><div class="big" style="color:var(--gold)">${grade}</div><div class="muted">${st.correct}/${st.qs.length} correct (${pct}%)</div></div>
+  <div><div class="big">${st.best}</div><div class="muted">best streak</div></div></div>
+  <p class="muted" style="font-size:13px">The grade is a rough guide from this quiz only, not a CCEA grade boundary.</p>
+  <h3>By topic</h3>
+  <div class="breakdown">${rows.map(([k,v])=>`<div><span>${esc(k)}</span><span>${v[0]}/${v[1]}</span></div>`).join("")}</div>
+  ${weak.length?`<p><b>Revise next:</b> ${weak.map(esc).join(", ")}</p>`:`<p><b>Clean sweep.</b> Try another unit.</p>`}
+  <div class="row"><button class="primary" id="ragain">Play again</button><button class="ghost" id="rmenu">Change unit</button></div>`;
+  $$("#ragain").onclick=()=>start(st.unit);$$("#rmenu").onclick=home;$$("#ragain").focus();
+}
+document.addEventListener("keydown",e=>{
+  if($$("#runwrap").hidden||st.phase!=="q")return;
+  if(!st.answered&&/^[1-4]$/.test(e.key)){const b=root.querySelectorAll(".opt")[+e.key-1];b&&b.click()}
+  else if(st.answered&&e.key==="Enter"&&document.activeElement?.id!=="rnext")next();
+});
+return {start:home,stop:()=>clearInterval(st.timer),preview:()=>glass(["AS1","Enzymes","No. 3"],"AS1"),
+  best:()=>Math.max(...["AS1","AS2","MIX"].map(k=>store.get("ss-best-"+k)))};
+})();
+
+/* ================= Slide Lab ================= */
+const Lab=(()=>{
+/*@@LAB@@*/
+return {start:home,preview:()=>diagramSVG("heart"),done:()=>P.filter(p=>store.get("sl-best-"+p.id)>0).length,total:P.length};
+})();
+
+/* ================= Router ================= */
+function route(){
+  const h=location.hash.slice(1);
+  Run.stop();
+  $$("#hub").hidden=!!(h==="slide-run"||h==="slide-lab");
+  $$("#runwrap").hidden=h!=="slide-run";
+  $$("#labwrap").hidden=h!=="slide-lab";
+  if(h==="slide-run")Run.start();
+  else if(h==="slide-lab")Lab.start();
+  else{
+    $$("#run-preview").innerHTML=Run.preview();
+    $$("#lab-preview").innerHTML=Lab.preview();
+    const b=Run.best();$$("#run-best").innerHTML=b?`Your best score: <b>${b}</b>`:"Not played yet";
+    const d=Lab.done();$$("#lab-best").innerHTML=d?`Puzzles completed: <b>${d}/${Lab.total}</b>`:"Not played yet";
+  }
+  window.scrollTo({top:0});
+}
+window.addEventListener("hashchange",route);
+route();
+</script>

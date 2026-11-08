@@ -1,0 +1,59 @@
+<!doctype html><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@700&display=swap">
+<style>
+@font-face{font-family:SuperBrain;src:url(SuperBrain-yYjL2.ttf)}
+:root{--deep:#1d0b3d;--plum:#3b1a78;--purple:#6d3fd1;--violet:#9b7bff;--lav:#d9ccff;--pink:#ff7ac6;--gold:#ffd166;--mint:#5ee6c1}
+body{margin:0;width:1200px;font-family:'Atkinson Hyperlegible',sans-serif;color:#1d0b3d;
+ background-color:var(--deep);
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='200'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.07' stroke-width='2'%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3Cpath d='M48,40 C80,40 90,70 120,72 M40,48 C40,80 70,95 70,130 M33,35 L10,15 M120,72 l20,-10 M120,72 l12,18'/%3E%3Ccircle cx='170' cy='150' r='7'/%3E%3Cpath d='M163,150 C130,150 120,175 90,178 M170,143 C170,120 190,110 205,96'/%3E%3C/g%3E%3C/svg%3E"),linear-gradient(180deg,#1d0b3d 0,#2c1160 260px,#4a2296 620px,#7a52e0 1000px,#b79cff 1300px);
+ background-repeat:repeat,no-repeat}
+.hero{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center;padding:36px 44px 10px}
+.title{font:clamp(60px,8vw,96px)/1 SuperBrain;color:#fff;margin:0;letter-spacing:.02em}
+.title span{color:var(--pink)}
+.tag{font:700 13px 'JetBrains Mono',monospace;letter-spacing:.14em;color:var(--mint);margin-top:10px}
+.realm{border-left:4px solid var(--gold);padding-left:14px;margin-top:16px;display:grid;gap:6px}
+.realm .k{font:700 22px 'Atkinson Hyperlegible';letter-spacing:.18em;color:#fff}
+.realms{display:flex;gap:8px}
+.rl{border:1.5px solid rgba(217,204,255,.45);border-radius:10px;padding:6px 12px;background:rgba(29,11,61,.5);display:grid}
+.rl span{font:700 10.5px 'JetBrains Mono';letter-spacing:.12em;color:#c9b8ff}.rl b{font:700 14px 'Atkinson Hyperlegible';color:#fff;letter-spacing:.06em}
+.rl.cur{border-color:var(--pink)}.rl.cur b{color:var(--pink)}
+.m{font-weight:700;color:var(--gold)} .c{font-size:13px;color:#e4dcff}
+.worlds{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:22px 44px 50px}
+.w{border-radius:16px;padding:22px;background:rgba(246,242,255,.95);border:2px solid var(--violet);box-shadow:0 14px 30px -14px rgba(10,0,40,.8);display:grid;gap:10px;position:relative;overflow:hidden}
+.w.u2{border-color:var(--pink);background:rgba(255,240,249,.95)}
+.w .k{font:700 13px 'JetBrains Mono';letter-spacing:.12em;color:var(--purple)} .w.u2 .k{color:#c2307f}
+.w h2{font:44px/1.05 SuperBrain;margin:0;color:var(--deep)}
+.w p{margin:0;font-size:17px}
+.w svg.corner{position:absolute;right:10px;bottom:6px;width:120px;opacity:.95}
+.go{justify-self:start;background:var(--deep);color:#fff;border-radius:10px;padding:10px 18px;font-weight:700}
+</style>
+<div class="hero">
+ <div>
+  <h1 class="title">The <span>Psyche</span>verse</h1>
+  <div class="tag">WJEC PSYCHOLOGY</div>
+  <div class="realm"><div class="k">THE SCIENCE REALMS</div>
+   <div class="realms"><div class="rl"><span>THE LIVING REALM</span><b>BIOLOGY</b></div><div class="rl"><span>THE ATOMIC REALM</span><b>CHEMISTRY</b></div><div class="rl cur"><span>THE MIND REALM</span><b>PSYCHOLOGY</b></div></div>
+   <div class="m">Explore. Learn. Master.</div><div class="c">Created and developed by Adrianna Kelly · 2026</div></div>
+ </div>
+ <svg viewBox="0 0 360 300" aria-label="Two mini researchers studying a giant brain">
+  <ellipse cx="180" cy="282" rx="160" ry="12" fill="#000" opacity=".25"/>
+  <!-- brain -->
+  <path d="M110,150 C90,100 130,55 180,62 C230,55 272,98 252,150 C268,190 236,228 196,222 C188,236 170,236 162,222 C122,228 92,190 110,150 Z" fill="#ff9ad5" stroke="#3b1a78" stroke-width="5"/>
+  <path d="M181,66 C176,110 186,160 178,220" fill="none" stroke="#3b1a78" stroke-width="4"/>
+  <path d="M126,118 c14,-14 30,4 22,18 c-8,14 12,26 24,14 M140,180 c-10,-16 10,-30 22,-20 M128,150 c12,6 22,-6 18,-16 M214,96 c-16,2 -14,24 2,26 c14,2 20,18 8,28 M240,140 c-16,-4 -24,14 -12,24 M212,190 c10,-12 30,-6 26,10 M222,128 c10,6 20,0 20,-10" fill="none" stroke="#3b1a78" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- spark -->
+  <path d="M186,26 l6,14 l14,2 l-11,9 l4,14 l-13,-8 l-13,8 l4,-14 l-11,-9 l14,-2 z" fill="#ffd166"/>
+  <!-- researcher 1 with clipboard -->
+  <g transform="translate(40,170)"><rect x="8" y="44" width="44" height="58" rx="12" fill="#fff" stroke="#3b1a78" stroke-width="3"/><circle cx="30" cy="28" r="20" fill="#f6c7a1" stroke="#3b1a78" stroke-width="3"/><path d="M10,22 q20,-24 40,0" fill="#5a3a22"/><circle cx="23" cy="30" r="6" fill="none" stroke="#3b1a78" stroke-width="2.5"/><circle cx="38" cy="30" r="6" fill="none" stroke="#3b1a78" stroke-width="2.5"/><path d="M29,30 h3" stroke="#3b1a78" stroke-width="2.5"/><path d="M24,40 q6,4 12,0" fill="none" stroke="#3b1a78" stroke-width="2"/><rect x="40" y="58" width="24" height="30" rx="3" fill="#ffd166" stroke="#3b1a78" stroke-width="2.5"/><path d="M45,66 h14 M45,72 h14 M45,78 h9" stroke="#3b1a78" stroke-width="2"/><path d="M14,102 v14 M44,102 v14" stroke="#3b1a78" stroke-width="5" stroke-linecap="round"/></g>
+  <!-- researcher 2 with magnifying glass -->
+  <g transform="translate(270,160)"><rect x="8" y="48" width="44" height="58" rx="12" fill="#fff" stroke="#3b1a78" stroke-width="3"/><circle cx="30" cy="30" r="20" fill="#c98b62" stroke="#3b1a78" stroke-width="3"/><path d="M10,26 q4,-30 40,-6 q4,6 0,10 q-18,-14 -40,-4" fill="#1f1f2e"/><circle cx="23" cy="32" r="2.5" fill="#3b1a78"/><circle cx="37" cy="32" r="2.5" fill="#3b1a78"/><path d="M24,42 q6,5 12,0" fill="none" stroke="#3b1a78" stroke-width="2"/><circle cx="-6" cy="56" r="13" fill="#d9ccff" fill-opacity=".6" stroke="#3b1a78" stroke-width="3"/><path d="M3,66 l12,10" stroke="#3b1a78" stroke-width="5" stroke-linecap="round"/><path d="M14,106 v14 M44,106 v14" stroke="#3b1a78" stroke-width="5" stroke-linecap="round"/></g>
+  <!-- thought bubbles -->
+  <circle cx="300" cy="120" r="5" fill="#d9ccff"/><circle cx="312" cy="100" r="8" fill="#d9ccff"/><ellipse cx="320" cy="68" rx="30" ry="20" fill="#d9ccff"/><text x="320" y="75" text-anchor="middle" style="font:20px SuperBrain;fill:#3b1a78">?!</text>
+ </svg>
+</div>
+<div class="worlds">
+ <div class="w"><div class="k">WJEC PSYCHOLOGY · UNIT 1</div><h2>The Theoretical Frontier</h2><p>The different psychological approaches, theories and explanations of human behaviour.</p><div class="go">Enter Unit 1 →</div>
+  <svg class="corner" viewBox="0 0 120 90" aria-hidden="true"><path d="M20,50 C10,25 35,8 60,12 C85,8 110,25 100,50 C108,70 92,84 72,80 C66,88 54,88 48,80 C28,84 12,70 20,50 Z" fill="#d9ccff" stroke="#6d3fd1" stroke-width="3"/><path d="M60,14 V80 M34,36 c8,-8 18,2 12,10 M84,32 c-8,0 -8,12 2,14 M40,64 c6,-8 16,-4 14,4 M78,66 c4,-8 16,-6 14,4" fill="none" stroke="#6d3fd1" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+ <div class="w u2"><div class="k">WJEC PSYCHOLOGY · UNIT 2</div><h2>The Research Frontier</h2><p>Research methods, experimental design, data collection and analysis.</p><div class="go">Enter Unit 2 →</div>
+  <svg class="corner" viewBox="0 0 120 90" aria-hidden="true"><rect x="16" y="50" width="14" height="30" fill="#ff7ac6"/><rect x="36" y="34" width="14" height="46" fill="#9b7bff"/><rect x="56" y="18" width="14" height="62" fill="#ff7ac6"/><path d="M10,80 H90" stroke="#3b1a78" stroke-width="3"/><circle cx="96" cy="30" r="14" fill="none" stroke="#3b1a78" stroke-width="4"/><path d="M106,40 l10,10" stroke="#3b1a78" stroke-width="5" stroke-linecap="round"/></svg></div>
+</div>

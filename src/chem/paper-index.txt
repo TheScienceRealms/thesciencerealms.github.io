@@ -1,0 +1,156 @@
+### AS2 old PAPER (lines 11745-12493)
+Q11: Decane is an alkane found in petrol.
+Q12: (a) Calcium and barium are found in Group II of the Periodic Table.
+Q13: Sodium carbonate, Na2CO3, is manufactured from concentrated brine and limestone.
+Q14: Sulfuric acid is manufactured by the Contact process. Sulfur is burned to form sulfur
+Q16: (a) Butane and butan-1-ol are both used as fuels.
+### AS2 old PAPER (lines 12493-13152)
+Q11: (a) C10H22 [1]
+Q12: (a) Outer electron(s) are in an s-subshell/orbital [1]
+Q13: (a) (i) 106/(106 + 111) × 100 = 48.8% AVAILABLE
+Q14: (a) (i) vanadium(V) oxide/vanadium pentoxide [1] AVAILABLE
+Q15: (a) (i) Electrophilic addition [1] AVAILABLE
+Q16: (a) (i) C4H10 + 6 2 O2 → 4CO2 + 5H2O [1] AVAILABLE
+### AS2 2022 PAPER (lines 13152-13551)
+Q11: (a) radical [1]
+Q12: (a) a formula which shows the actual number of atoms of each element
+Q13: (a) ethanol and (2-)methylpropan-2-ol [1] AVAILABLE
+Q14: (a) (i) the enthalpy change when one mole of a substance is completely
+Q15: (a) a reaction in which all the reactants and products are in the same AVAILABLE
+Q16: (a) (i) atom: 1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 [1]
+Q17: (a) molecules which have the same molecular formula but a different AVAILABLE
+Q18: (a) (i) hydrogen bonds between propan-2-ol AVAILABLE
+### AS2 2022 PAPER (lines 13551-14496)
+Q11: An excess of methane reacts with chlorine, in the presence of UV light, to form
+Q12: Analysis of an organic compound shows that it contains carbon, hydrogen and
+Q13: Bromoethane and 2-bromo-2-methylpropane both react with a hot dilute aqueous
+Q14: The standard enthalpy of combustion of ethane can be estimated using average
+Q15: At very high temperatures, in a closed system, nitrogen can be oxidised to form
+Q16: Strontium and magnesium are both s-block elements. The chemistry of the two
+Q17: There are five aliphatic structural isomers with molecular formula C5H10.
+Q18: Propan-2-ol is a secondary alcohol which has a relatively high boiling point. It is
+### AS2 2023 PAPER (lines 14496-14816)
+Q11: (a) CaCO3 + 2NaCI  CaCI2 + Na2CO3 [2]
+Q12: (a) (i) a reaction in which all the reactants and products are not in the same
+Q14: (a) atomic radius increases down the group [1]
+Q15: (a) A = electrophilic [1] addition [1] AVAILABLE
+### AS2 2023 PAPER (lines 14816-15834)
+Q11: The Solvay process is used to produce sodium carbonate. The process consists of
+Q12: The thermal decomposition of potassium hydrogencarbonate establishes a dynamic
+Q13: Isooctane (2,2,4-trimethylpentane) is an important component of petrol used in cars.
+Q14: The Group II elements are known as the alkaline earth metals and they display
+Q15: Propene (C3H6) is a raw material obtained from crude oil which can be used to
+### AS2 2024 PAPER (lines 15834-16217)
+Q12: (a) (i) the energy required to break one mole of a given bond [1] AVAILABLE
+Q13: (a) H H H H H H AVAILABLE
+Q14: (a) rate of the forward reaction is equal to the rate of the backwards reaction [1] AVAILABLE
+Q15: (a) moles of C2H6 = 30 = 395 MARKS
+Q16: (a) maximum mass of solute that will dissolve in 100 g of solvent/water at a AVAILABLE
+### AS2 2024 PAPER (lines 16217-17326)
+Q11: Halogenoalkanes are reactive organic molecules.
+Q12: Enthalpy changes may be determined using average bond enthalpy values and by
+Q13: Organic compounds undergo a wide range of reactions.
+Q14: Sulfuric acid is manufactured by the Contact process.
+Q15: (a) Catalytic converters convert unreacted hydrocarbons, such as ethane, to less
+Q16: The solubility of Group II compounds in water varies greatly.
+### AS2 2025 PAPER (lines 17326-17697)
+Q11: (a) (i) radical substitution [1]
+Q12: (a) (i) Br AVAILABLE
+Q13: (a) (i) (restricted rotation about the) C C [1] AVAILABLE
+Q15: (a) (i) number of molecules [1] AVAILABLE
+Q16: (a) (i) compound 1 [1] AVAILABLE
+### AS2 2025 PAPER (lines 17697-19024)
+Q11: (a) Three steps in the mechanism for the bromination of ethane are shown below.
+Q12: There are eight structural isomers of C5H11Br including 2-bromo-3-methylbutane
+Q13: (a) 3-methylhex-2-ene, CH3CHC(CH3)CH2CH2CH3, exhibits E-Z isomerism.
+Q14: (a) The enthalpy change for a neutralisation reaction may be determined
+Q15: (a) A Maxwell–Boltzmann distribution curve for a reaction mixture at 200 K is shown
+Q16: (a) Some tests were carried out on three Group II compounds (Compounds 1, 2
+### AS2 2026 PAPER (lines 19024-19402)
+Q11: (a) restricted rotation due to an energy barrier about the C=C [1]
+Q12: (a) C H N
+Q13: (a) (i) position of equilibrium moves to left [1] AVAILABLE
+Q14: (a) molecules which have the same molecular formula but a different AVAILABLE
+Q15: (a) moles of hexane = 86 = 0.0536 [1]
+Q16: (a) (i) Mg(NO3)2 + 2NaOH  Mg(OH)2 + 2NaNO3 [2] AVAILABLE
+Q17: (a) acidified potassium dichromate(VI) [1]
+### AS2 2026 PAPER (lines 19402-20485)
+Q12: An alkene X reacts with bromine to form a dibromoalkane Y. Dibromoalkane Y reacts
+Q13: (a) Propane can undergo dehydrogenation. The equation for this reaction is
+Q15: The enthalpy of combustion of hexane was determined by experiment using a spirit
+Q16: Group II compounds vary in their solubility in water. Some Group II compounds
+Q17: The oxidation of propan-1-ol results in the formation of two different organic products
+### AS1 old PAPER (lines 20485-21139)
+Q11: (a) include a light bulb or an ammeter in the circuit [1]
+Q12: (a) (i) a salt which contains water of crystallisation [1]
+Q13: (a) S AVAILABLE
+Q14: (a) chlorine is poisonous/toxic [1] AVAILABLE
+Q15: (a) AVAILABLE
+### AS1 old PAPER (lines 21139-21982)
+Q11: The electrolysis of a concentrated solution of sodium chloride can be carried out
+Q12: A sample of hydrated potassium chlorate(VII), KClO4xH2O, was gently heated using
+Q13: The sulfite, sulfate and thiosulfate ions have the following formulae.
+Q14: Iodine reacts with chlorine at room temperature to produce iodine monochloride
+Q15: The Periodic Table on the data leaflet shows the elements with their relative atomic
+### AS1 2022 PAPER (lines 21982-22273)
+Q11: (a) (i) oxidation and reduction of the same element in the same reaction [2]
+Q12: (a) iodine in water: yellow/brown [1]
+Q13: (a) (i) Li(g) → Li+(g) + e– [2] AVAILABLE
+Q14: (a) (i) the average (weighted mean) mass of a formula unit relative to AVAILABLE
+Q15: (a) (i) metallic bonding [1]
+Q16: (a) a salt which contains water of crystallisation [1] AVAILABLE
+### AS1 2022 PAPER (lines 22273-23153)
+Q11: Copper(I) oxide is a red solid. It reacts with sulfuric acid in a disproportionation
+Q12: The halogens are Group VII in the Periodic Table.
+Q13: The table below shows the first ionisation energies and the electronegativity values
+Q14: Saline solution contains 0.90 g sodium chloride in 100 cm3 of solution.
+Q15: (a) Thallium is a metallic element that exhibits typical metallic properties. It has a
+Q16: Oxalic acid is a weak acid which can form a hydrated salt, (COOH)2.xH2O.
+### AS1 2023 PAPER (lines 23153-23473)
+Q11: (a) (i) protons = 12
+Q12: (a) sulfate(VI) [1] AVAILABLE
+Q13: (a) indicative content: AVAILABLE
+Q14: (a) (i) H [1] AVAILABLE
+Q15: (a) (i) Mg2+(aq) + 2OH–(aq) → Mg(OH)2(s) [2] AVAILABLE
+### AS1 2023 PAPER (lines 23473-24324)
+Q11: Magnesium has three naturally occurring isotopes: 24Mg, 25Mg and 26Mg.
+Q12: Concentrated sulfuric acid reacts with the solids, sodium chloride, sodium bromide
+Q13: Elements and compounds show different types of bonding and structure.
+Q14: Ethane (CH3CH3) and methylamine (CH3NH2) have similar relative
+Q15: Sodium hydroxide solution is used in precipitation reactions and in titrations.
+### AS1 2024 PAPER (lines 24324-24646)
+Q12: (a) (i) H Ga×
+Q13: (a) (i) the energy required to convert one mole of gaseous ions with a AVAILABLE
+Q14: (a) molecular covalent element: any one from I2/S8/correct alternative [1] AVAILABLE
+Q15: (a) fluorine most electronegative element [1]
+Q16: (a) Indicative content AVAILABLE
+### AS1 2024 PAPER (lines 24646-25713)
+Q11: The table below shows some details of five chemical tests used to identify the ions
+Q12: Gallium (atomic number 31) forms many compounds including gallane, GaH3, and
+Q13: (a) The graph below shows the third ionisation energies of elements with atomic
+Q14: Substances can be classified based on their bonding and structure. In general,
+Q15: The halogens (Group VII) are a group of highly reactive non-metals. They form ions
+Q16: Tartaric acid, C4H6O6, is a weak acid and is used to clean copper coins. It is found
+### AS1 2025 PAPER (lines 25713-26047)
+Q12: (a) Cl(g)  Cl+(g) + e– [1] AVAILABLE
+Q13: (a) (i) (a compound composed of) two or more diﬀerent halogens bonded AVAILABLE
+Q14: (a) (i) rotten egg smell [1] AVAILABLE
+Q15: (a) dissolve in a small volume of deionised water stirring with a glass rod [1] AVAILABLE
+### AS1 2025 PAPER (lines 26047-27083)
+Q11: (a) Complete the following table.
+Q12: The halogens are in Group VII of the Periodic Table. The first ionisation energy of the
+Q13: (a) Chlorine trifluoride, ClF3, is an extremely reactive interhalogen compound used
+Q14: Sulfur reacts with metals and with non-metals.
+Q15: The identity of M in an unknown anhydrous metal carbonate, M2CO3, may be
+### AS1 2026 PAPER (lines 27083-27449)
+Q11: (a) (i) H– [1]
+Q12: (a) (i) 3Cl2 + 6NaOH → NaClO3 + 5NaCl + 3H2O [2] AVAILABLE
+Q13: (a) (i) ethanoic acid [1] AVAILABLE
+Q14: (a) (i) partially dissociates in solution [1] AVAILABLE
+Q15: (a) attraction between positive ions and delocalised electrons [1] AVAILABLE
+### AS1 2026 PAPER (lines 27449-28486)
+Q11: Ions can be classified as simple ions or as molecular ions.
+Q12: Group VII elements and their compounds undergo a variety of chemical reactions.
+Q13: The physical properties of a substance are dependent on its bonding and structure.
+Q14: Group I carbonates are weak bases and they dissolve in water forming alkaline
+Q15: Sodium peroxide is formed in a two-stage process from sodium via sodium oxide.

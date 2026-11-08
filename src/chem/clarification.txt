@@ -1,0 +1,572 @@
+GCE
+
+
+
+
+Revised GCE
+Support Material
+Chemistry
+Clarification of terms
+AS and A2 Effective from September 2016
+Acceptable Definitions
+
+The current specification has several definitions. It is not the function of the specification
+to actually define every term that is mentioned.
+
+Most examinations ask for some explanation of the terms used in the specification. When
+such a question is asked the term is usually listed in bold type.
+
+In order to improve the answers to such questions a list of definitions has been produced
+using all of the terms in the specification. The list was made using current text books. It
+may be that some definitions are not commonly found in text books either because an
+explanation is used or, sometimes, that the definition is not featured.
+
+It should be borne in mind that QCA has no influence in the production of definitions.
+Some examination boards either produce their own sponsored text book or they
+recommend a series of text books which include definitions.
+
+The list of definitions produced is an indication of what might be expected in an
+examination. Some definitions are short and some are long. It is not expected that every
+word in a definition be reproduced exactly in an examination. At all times examiners will
+exercise discretion in what marks to award for the definitions supplied by candidates.
+
+It is not expected that the definitions supplied will have errors within them and it is not
+intended that there will be debate on the definitions supplied. However, if there are errors
+or questions to be asked please contact:
+
+Elaine Lennox (Education Manager for Chemistry)
+
+Tel: 028 90261200 [Ext. 2320]
+
+Email: elennox@ccea.org.uk
+
+
+
+
+                                                1
+        AS1
+
+Specification   Concept/Term         Essential points
+Reference
+1.1.1           Molecular ion        Two or more atoms covalently bonded with an overall charge
+
+1.1.4           Avogadro constant    Number of atoms in 12.000g of carbon-12.
+                (Avogradro’s
+                constant)
+1.1.4           Mole                 The amount of substance which contains the
+                                     Avogadro constant of atoms, molecules or groups of ions.
+
+1.1.4           Molar mass           The mass of one mole of a substance.
+
+1.1.7           Anhydrous (salt)     A salt which contains no water of crystallisation.
+
+1.1.7           Hydrated (salt)      A salt which contains water of crystallisation.
+
+1.1.7           Water of             Water chemically bonded within a crystal structure.
+                crystallisation
+1.2.2           Atomic number        The number of protons in (the nucleus of) an atom.
+
+1.2.2           Mass number          The total number of protons and neutrons in (the nucleus of)
+                                     an atom.
+
+1.2.3           Relative atomic      The average (weighted mean) mass of an atom of an element
+                mass (RAM)           relative to one-twelfth of the mass of an atom of carbon-12.
+
+1.2.3           Relative isotopic    The mass of an atom of an isotope of an element relative to
+                mass (RIM)           one-twelfth of the mass of an atom of carbon-12.
+
+1.2.4           Isotopes             Atoms which have the same atomic number but a different
+                                     mass number (contain the same number of protons but a
+                                     different number of neutrons).
+
+1.2.5           Relative formula     The average (weighted mean) mass of a formula unit relative to
+                mass (RFM)           one-twelfth of the mass of an atom of carbon-12.
+
+1.2.5           Relative molecular   The average (weighted mean) mass of a molecule relative to
+                mass (RMM)           one-twelfth of the mass of an atom of carbon-12.
+
+1.2.11          First ionisation     The energy required to convert one mole of gaseous atoms into
+                energy               gaseous ions with a single positive charge.
+
+1.2.11          Second ionisation    The energy required to convert one mole of gaseous ions with a
+                energy               single positive charge into gaseous ions with a double positive
+                                     charge.
+1.2.11          Third ionisation     The energy required to convert one mole of gaseous ions with a
+                energy               double positive charge into gaseous ions with a triple positive
+                                     charge.
+1.3.3           Covalent bond        The electrostatic attraction between a shared pair of electrons
+                                     and the nuclei of bonded atoms.
+1.3.5           Co-ordinate          A shared pair of electrons between two atoms. One atom
+                (Dative) bond        provides both electrons.
+
+                                                 2
+Specification   Concept/Term         Essential points
+Reference
+1.3.7           Octet rule           When reacting, an atom tends to gain, lose or share electrons to
+                                     achieve eight in its outer shell.
+
+1.3.8           Electronegativity    The extent to which an atom attracts the bonding electrons in a
+                                     covalent bond.
+
+1.3.9           Polar bond           A covalent bond in which there is unequal sharing of the
+                                     bonding electrons.
+
+1.3.10          Delocalised          Outer electrons do not have fixed positions but move freely.
+                electrons
+1.4.1           Intermolecular       Between neighbouring molecules (as opposed to
+                                     intramolecular).
+
+1.4.1           van der Waals’       The attraction between instantaneous and induced dipoles on
+                forces               neighbouring molecules.
+
+1.4.1           Permanent            Attraction between the positive end, δ+, of the permanent
+                dipole-dipole        dipole on a molecule with the negative end, δ-, of the
+                attraction           permanent dipole of a neighbouring molecule.
+
+1.4.1           Hydrogen bond        The attraction between a lone pair of electrons on a very
+                                     electronegative atom (i.e. N,O, F) in one molecule and a
+                                     hydrogen atom in a neighbouring molecule, in which the
+                                     hydrogen atom is covalently bonded to a very electronegative
+                                     atom (N,O,F).
+
+1.7.2           Redox                Oxidation and reduction occur in the same reaction.
+
+1.7.2           Oxidation            Loss of electrons/Increase in oxidation state.
+
+1.7.2           Reduction            Gain of electrons/Decrease in oxidation state.
+
+1.7.3           Oxidising agent      Electron acceptor
+
+1.7.3           Reducing agent       Electron donor
+
+1.7.4           Disproportionation   Oxidation and reduction of the same element in the same
+                                     reaction.
+
+1.9.1           Strong acid/base     Fully dissociates in solution.
+
+1.9.1           Weak acid base       Partially dissociates in solution.
+
+1.9.7           Molarity             Concentration in mol dm-3 expressed using M.
+
+1.9.7           Concentration        Number of moles or mass present in a stated volume.
+
+1.9.8           Standard solution    A solution for which the concentration is known.
+
+
+
+
+                                                  3
+        AS2
+
+Specification   Concept/Term          Essential points
+Reference
+2.1.1           Empirical formula     A formula which shows the simplest whole number ratio of
+                                      atoms of each element in a compound.
+
+2.1.1           Molecular formula     A formula which shows the actual number of atoms of each
+                                      element in a molecule.
+
+2.1.3           Molar gas volume      The volume of one mole of gas under specified conditions of
+                                      temperature and pressure e.g. 24 dm3 at 20 °C (293K) and one
+                                      atmosphere pressure.
+
+2.1.4           Percentage yield
+
+
+2.1.6           Atom economy
+
+
+2.2.1           Homologous            Compounds which have the same general formula, similar
+                series                chemical properties, show a gradation in physical properties and
+                                      successive members differ by a CH2 unit.
+
+2.2.1           Functional group      Reactive group within a compound.
+
+2.2.1           Structural isomers    Molecules which have the same molecular formula but a
+                                      different structural formula.
+
+2.2.1           Geometric             Molecules with the same structural formula, but different
+                isomers               arrangement of atoms due to the presence of one or more C=C
+                                      bond.
+
+2.3.1           Saturated             Contains no C=C or C≡C bond.
+                hydrocarbon
+
+2.3.1           Hydrocarbon           Contains hydrogen and carbon only.
+
+2.3.8           Substitution          Replacing one atom or group with a different atom or group.
+
+2.3.9           Homolytic fission     Bond breaking in which one of the shared electrons goes to
+                                      each atom.
+
+2.3.9, 2.4.7    Heterolytic fission   Bond breaking in which both electrons in the shared pair go to
+                                      a single atom.
+
+2.3.9           Radical               A particle with an unpaired electron.
+
+2.4.1           Unsaturated           Contains at least one C=C or C≡C bond.
+                hydrocarbon
+
+2.4.3           Sigma bond            A covalent bond formed by the linear overlap of atomic
+                                      orbitals.
+2.4.3           Pi bond               A covalent bond formed by the sideways overlap of p orbitals.
+
+2.4.3           Bond length           The distance between the nuclei of two covalently bonded
+                                      atoms.
+                                                  4
+Specification   Concept/Term        Essential points
+Reference
+2.4.5           Hydrogenation       Addition of a hydrogen molecule across a C=C.
+
+2.4.7           Electrophile        An ion or molecule that attacks regions of high electron
+                                    density.
+
+2.4.9           Primary             A carbocation which has one carbon atom directly bonded to
+                carbocation         the positively charged carbon.
+
+2.4.9           Secondary           A carbocation which has two carbon atoms directly bonded to
+                carbocation         the positively charged carbon.
+
+2.4.9           Tertiary            A carbocation which has three carbon atoms directly bonded to
+                carbocation         the positively charged carbon.
+
+2.4.10          Polymerisation      Joining together of many small molecules (monomers) to form
+                                    a large molecule.
+
+2.4.10          Monomers            Many small molecules which join together to form a polymer.
+
+2.4.10          Polymer             A large molecule formed when monomers join together.
+
+2.5.3           Primary             A halogenoalkane which has one carbon atom directly bonded
+                halogenoalkane      to the carbon atom that is bonded to the halogen. (Exceptions
+                                    are halomethanes.)
+
+2.5.3           Secondary           A halogenoalkane which has two carbon atoms directly bonded
+                halogenoalkane      to the carbon atom that is bonded to the halogen.
+
+2.5.3           Tertiary            A halogenoalkane which has three carbon atoms directly
+                halogenoalkane      bonded to the carbon atom that is bonded to the halogen.
+
+2.5.4           Reflux              Repeated boiling and condensing of a (reaction) mixture.
+
+2.5.5           Hydrolysis          Breaking up molecules by reaction with water.
+
+2.5.6           Nucleophile         An ion or molecule, with a lone pair of electrons, that attacks
+                                    regions of low electron density.
+
+2.5.8           Elimination         A reaction in which a small molecule is removed from a larger
+                                    molecule.
+
+2.6.1           Miscibility         Liquids which mix in all proportions i.e. form a single layer.
+
+2.6.2           Primary alcohol     An alcohol which has one carbon atom directly bonded to the
+                                    carbon atom that is bonded to the –OH group. (Exception is
+                                    methanol.)
+2.6.2           Secondary alcohol   An alcohol which has two carbon atoms directly bonded to the
+                                    carbon atom that is bonded to the –OH group.
+
+2.6.2           Tertiary alcohol    An alcohol which has three carbons atoms directly bonded to
+                                    the carbon atom that is bonded to the –OH group.
+
+2.7.1           Ground state        A molecular vibration which is in the lowest possible energy
+                (infrared           state
+                spectroscopy)
+                                                5
+Specification   Concept/Term        Essential points
+Reference
+2.7.3           Wavenumber          The reciprocal of the wavelength and it is measured in cm-1.
+
+2.8.1           Endothermic         A reaction in which the enthalpy of the products is greater than
+                                    the enthalpy of the reactants.
+
+2.8.1           Exothermic          A reaction in which the enthalpy of the products is less than the
+                                    enthalpy of the reactants.
+
+2.8.2           Standard            298K and 100kPa.
+                conditions
+
+2.8.3           Standard            Change in heat energy at constant pressure, measured at
+                enthalpy change     standard conditions.
+
+2.8.5           Standard enthalpy   The enthalpy change when one mole of a substance is
+                of combustion       completely burnt in oxygen under standard conditions.
+
+2.8.5           Standard enthalpy   The enthalpy change when one mole of a compound is formed
+                of formation        from its elements under standard conditions.
+
+2.8.5           Standard enthalpy   The enthalpy change when one mole of water is produced in a
+                of neutralisation   neutralisation reaction under standard conditions.
+
+2.8.8           Conservation of     Energy cannot be created or destroyed but it can change from
+                energy              one form to another.
+
+2.8.8           Hess’s Law          The enthalpy change for a reaction is independent of the route
+                                    taken, provided the initial and final conditions are the same.
+
+2.8.11          Average bond        The energy required to break one mole of a given bond
+                enthalpy            averaged over many compounds.
+
+2.9.1           Reaction rate       The change of the concentration (amount) of a reactant or
+                                    product with respect to time.
+
+2.9.1           Catalyst            A substance which increases the rate of a chemical reaction but
+                                    does not get used up.
+
+2.9.2           Activation energy   The minimum amount of energy required for a reaction to
+                                    occur.
+
+2.10.1          Reversible          A reaction which goes in both the forward and backward
+                                    directions.
+
+2.10.1          Dynamic             Rate of forward reaction is equal to the rate of the backward
+                (equilibria)        reaction.
+
+2.10.1          Equilibrium         A reversible reaction in which the amount of each reactant /
+                                    product remains constant.
+
+
+                                                6
+Specification   Concept/Term      Essential points
+Reference
+2.10.1          Homogeneous       A reaction in which all the reactants and products are in the
+                                  same physical state.
+
+2.10.2          Heterogeneous     A reaction in which all the reactants and products are not in the
+                (equilibria)      same physical state.
+
+2.10.4          Kc                       [C]c [D]d
+                                  KC =
+                                         [A]a [B]b
+
+                                  for a reaction in the format
+                                  aA + bB ⇌ cC + dD
+
+2.10.5          Heterogeneous     The catalyst is in a different phase from the reactants.
+                (catalyst)
+2.11.1          s-block element   An element which has an atom with highest energy/outer
+                                  electron in an s-subshell (orbital).
+
+2.11.8          Solubility        The maximum mass of solute that will dissolve in 100 g of
+                                  solvent at a stated temperature.
+
+
+
+
+                                              7
+        A21
+
+Specification   Concept/Term         Essential points
+Reference
+4.1.1           Lattice enthalpy     The enthalpy change when one mole of an ionic compound is
+                                     converted to gaseous ions.
+
+4.1.2           Enthalpy of          The enthalpy change when one mole of gaseous atoms is
+                atomisation          formed from the element in its standard state.
+
+4.1.2           First electron       The enthalpy change when one mole of gaseous atoms is
+                affinity             converted into gaseous ions with a single negative charge.
+
+4.1.3           Enthalpy of          The enthalpy change when one mole of a solute dissolves in
+                solution             water.
+
+4.1.3           Enthalpy of          The enthalpy change when one mole of gaseous ions is
+                hydration            converted to one mole of aqueous ions.
+
+4.2.2           Feasible             A reaction for which ΔG < 0.
+4.2.6
+4.2.3           Entropy              A measure of disorder (randomness).
+
+4.2.5           Free energy          ΔG=ΔH-TΔS
+                change (ΔG)
+4.3.2           Rate of reaction     The change of the concentration (amount) of a reactant or
+                                     product with respect to time
+
+4.3.2           Order of reaction    The power to which the concentration of a reactant is raised in
+                (with respect to a   the rate equation.
+                reactant)
+
+4.3.2           Order of reaction    The sum of the powers to which the concentration terms are
+                (overall)            raised in the rate equation.
+
+4.3.2           Rate constant        The proportionality constant which links the rate of the
+                                     reaction to the concentrations in the rate equation.
+
+4.3.6           Rate determining     The slowest step in the mechanism of a reaction.
+                step
+4.5.1           Brønsted acid        Proton donor.
+
+4.5.1           Brønsted base        Proton acceptor.
+
+4.5.2           Kw                   Kw=[H+][OH−]
+
+4.5.2           Ka                          [H+][ A-]
+                                     Ka =
+                                              [HA]
+
+4.5.2           pH                   pH=-log10[H+]
+
+4.5.2           pKw                  pKw=-log10Kw
+
+4.5.4           Buffer solution      A solution which resists changes in pH on addition of small
+                                     amounts of acid or alkali.
+                                                  8
+Specification   Concept/Term          Essential points
+Reference
+4.5.5           Monobasic acid        Donates one proton per molecule.
+
+4.6.2           Asymmetric            An atom which has four different atoms or groups attached.
+                (chiral) centre
+4.6.4           Optical isomers       Molecules which exist as non-superimposable mirror images.
+
+4.6.5           Optically active      A sample which rotates the plane of plane polarised light.
+
+4.6.5           Racemic mixture       A 50:50 mixture of two optical isomers.
+
+4.9.2           Monoester             An ester which contains only one ester group.
+
+4.9.7           Transesterification   A reaction where the alkyl group of an ester is exchanged with
+                                      the alkyl group of an alcohol.
+
+4.9.7           Biodiesel             A fuel, similar to diesel, which is made from vegetable sources.
+                                      e.g. from the reaction of rape seed oil with methanol.
+
+4.10.1          Delocalisation        The π electrons are spread over several atoms.
+                (arenes)
+
+
+
+
+                                                  9
+        A22
+
+Specification   Concept/Term        Essential points
+Reference
+5.1.1           Base peak           Peak of greatest abundance in a mass spectrum.
+
+5.1.1           Molecular ion       A peak produced by an ion formed by the removal of one
+                peak                electron from a molecule.
+
+5.1.1           M+1 peak            A peak produced by a molecular ion with an increased mass
+                                    due to the presence of one carbon-13 atom.
+
+5.1.1           Fragmentation ion   A positively charged ion produced when the molecular ion
+                                    breaks apart.
+
+5.2.1           Low resolution      A spectrum which does not show the spin-spin splitting
+                nmr                 pattern.
+
+5.2.1           High resolution     A spectrum which does show the spin-spin splitting pattern.
+                nmr
+
+5.2.6           Doublet             A signal which appears as a pair of lines of equal intensity
+
+5.2.6           Triplet             A signal which appears as three lines in the approximate
+                                    intensity ratio (1:2:1)
+
+5.2.6           Quartet             A signal which appears as four lines in the approximate
+                                    intensity ratio (1:3:3:1)
+
+5.3.4           Back titration      Method where an excess of a reagent is reacted with a sample.
+                                    The unreacted reagent is then determined by titration.
+
+5.4.1           Rf values           Retardation factor, this is calculated using the expression:
+                                            Distance moved by spot
+                                    Rf =
+                                           Distance moved by solvent
+5.4.2           Retention time      The time taken from injection until a component reaches the
+                                    detector.
+
+5.5.1           Transition metal    An element which forms at least one stable ion with a
+                                    partially filled d-subshell.
+
+5.5.3           Complex             A central metal atom or ion with ligands bonded by
+                                    co-ordinate bonds.
+
+5.5.4           Ligand              An ion or molecule with a lone pair of electrons which forms a
+                                    co-ordinate bond with a central metal atom or ion in a
+                                    complex.
+5.5.5           Co-ordination       The number of co-ordinate bonds to a central metal atom or
+                number              ion in a complex.
+5.5.7           Monodentate         A ligand which uses only one lone pair of electrons to form a
+                                    co-ordinate bond with a central metal atom or ion in a
+                                    complex.
+
+                                                10
+Specification   Concept/Term         Essential points
+Reference
+
+5.5.7           Bidentate            A ligand which uses two lone pairs of electrons to form two
+                                     co-ordinate bonds with a central metal atom or ion in a
+                                     complex.
+
+5.5.7           Polydentate          A ligand which uses many lone pairs of electrons to form more
+                                     than two co-ordinate bonds with a central metal atom or ion in
+                                     a complex.
+
+5.6.1           Standard electrode The potential difference measured when a half-cell is connected
+                potential          to the standard hydrogen electrode under standard conditions.
+
+5.6.2           e.m.f.               The potential difference measured when two half-cells are
+                                     connected.
+
+5.7.1           Primary amine        Only one carbon atom directly bonded to the nitrogen atom
+                                     and therefore has the (-NH2) group.
+
+5.7.1           Secondary amine      Two carbon atoms directly bonded to the
+                                                          |
+                                     nitrogen atom i.e. ―NH
+
+5.7.1           Tertiary amine       Three carbon atoms directly bonded to the
+                                                         |
+                                     nitrogen atom i.e. ―N
+                                                         |
+5.7.8           Coupling             A reaction in which two benzene rings are linked together
+                                     through an azo (-N=N-) group.
+
+5.8.3           Dehydration of       A reaction which involves the elimination of water from the
+                amides               amide.
+
+5.9.3           Zwitterions          Ions which have a permanent positive and negative charge but
+                                     which are neutral overall.
+
+5.9.6           Primary structure    Sequence of amino acids joined by peptide links in the chain.
+                (protein)
+
+5.9.6           Secondary            The twisting/coiling of the chain to form a β-pleated sheet/α-
+                structure            helix by intramolecular hydrogen bonding.
+                (protein)
+
+5.9.6           Tertiary structure   The bending/folding of the secondary structure to give a
+                (protein)            precise 3D shape held together by hydrogen bonding/disulfide
+                                     bridges/ionic interactions/van der Waals’ forces.
+5.9.7           Enzyme               A protein which is a biological catalyst.
+
+5.9.7           Active site          The site on the surface of the enzyme into which the substrate
+                                     fits.
+
+5.9.7           Induced fit          The substrate induces a change of shape of the active site of the
+
+                                                11
+Specification   Concept/Term      Essential points
+Reference
+                                  enzyme.
+5.10.1          Condensation      Polymers formed by the elimination of small molecules such as
+                polymers          water or hydrogen chloride when monomers bond together.
+
+5.10.4          Biodegradable     A polymer which can be hydrolysed by the action of
+                polymer           microorganisms.
+
+5.11.5          DNA replication   The process by which a double stranded DNA molecule is
+                                  copied to produce two identical DNA molecules.
+
+5.11.8          GLC-MS            A gas liquid chromatograph attached to a mass spectrometer.
+
+5.11.10         Sequestering      The formation of a complex so that an ion is no longer
+                                  available for reactions.
+
+
+
+
+                                             12
+© CCEA 2016
+

@@ -1,0 +1,11 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch();const p=await b.newPage();p.on('pageerror',e=>console.log('ERR',e.message));
+await p.goto('file://'+__dirname+'/../quiztoplasm.html#sim-food');await p.waitForTimeout(500);
+const btns=await p.$$eval('#sim [data-act="ftid"]',d=>d.map(x=>x.tagName+' '+x.dataset.k+' '+x.className).slice(0,6));console.log(btns);
+await p.click('#sim [data-act="ftid"][data-k="A:starch"]');await p.waitForTimeout(100);
+console.log(await p.$$eval('#sim [data-act="ftid"].on',d=>d.map(x=>x.dataset.k)));
+await p.goto('file://'+__dirname+'/../quiztoplasm.html#sim-enzyme');await p.waitForTimeout(800);
+console.log(await p.$$eval('#sim [data-act]',d=>d.map(x=>x.dataset.act+':'+x.dataset.k+':'+x.disabled)));
+await p.locator('#sim [data-act="eq"]').first().click();await p.waitForTimeout(100);
+console.log(await p.$$eval('#sim [data-act]',d=>d.map(x=>x.dataset.act+':'+x.dataset.k+':'+x.disabled+':'+x.className)));
+await b.close()})();

@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<style>body{margin:0;background:#111}.p{width:512px;height:512px;display:block}</style></head><body>
+<svg id="defs" width="0" height="0" style="position:absolute"><defs>
+ <radialGradient id="bg" cx="50%" cy="42%" r="70%"><stop offset="0" stop-color="#2c4a30"/><stop offset=".7" stop-color="#1f3322"/><stop offset="1" stop-color="#142217"/></radialGradient>
+ <radialGradient id="gold" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#f3d27a"/><stop offset=".6" stop-color="#e2bd5a"/><stop offset="1" stop-color="#b8902f"/></radialGradient>
+ <path id="arcTop" d="M80,256 A176,176 0 0,1 432,256"/><path id="arcBot" d="M62,256 A194,194 0 0,0 450,256"/>
+ <g id="spark"><path d="M0,-12 l3,8 l9,1 l-9,3 l-3,9 l-3,-9 l-9,-3 l9,-1 z"/></g>
+ <!-- little science icons in ivory line art -->
+ <g id="atom" fill="none" stroke="#f3ecdc" stroke-width="3"><ellipse rx="22" ry="8"/><ellipse rx="22" ry="8" transform="rotate(60)"/><ellipse rx="22" ry="8" transform="rotate(-60)"/><circle r="3.5" fill="#e2bd5a" stroke="none"/></g>
+ <g id="cell" fill="none" stroke="#f3ecdc" stroke-width="3"><rect x="-20" y="-16" width="40" height="32" rx="9"/><ellipse cx="4" cy="1" rx="8" ry="6" fill="#7f9a7a" stroke="none"/></g>
+ <g id="brain" fill="none" stroke="#f3ecdc" stroke-width="3" stroke-linecap="round"><path d="M0,-16 C-14,-18 -22,-6 -18,4 C-22,12 -12,20 0,16 C12,20 22,12 18,4 C22,-6 14,-18 0,-16 Z M0,-16 V16 M-10,-6 q6,4 0,10 M10,-6 q-6,4 0,10"/></g>
+</defs></svg>
+
+<!-- A: the seal -->
+<svg class="p" id="A" viewBox="0 0 512 512"><rect width="512" height="512" fill="url(#bg)"/>
+ <circle cx="256" cy="256" r="214" fill="none" stroke="#e2bd5a" stroke-width="3" opacity=".9"/>
+ <circle cx="256" cy="256" r="140" fill="none" stroke="#e2bd5a" stroke-width="2" opacity=".55"/>
+ <text font-family="Fraunces" font-weight="900" font-size="34" letter-spacing="3" fill="#f3ecdc"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">THE SCIENCE REALMS</textPath></text><text font-family="JetBrains Mono" font-weight="700" font-size="17" letter-spacing="4" fill="#e2bd5a"><textPath href="#arcBot" startOffset="50%" text-anchor="middle">BIOLOGY · CHEMISTRY · PSYCHOLOGY</textPath></text><g fill="#e2bd5a"><use href="#spark" x="70" y="262"/><use href="#spark" x="442" y="262"/></g>
+ <circle cx="256" cy="256" r="118" fill="url(#gold)" stroke="#8a6a1c" stroke-width="6"/>
+ <circle cx="256" cy="256" r="100" fill="none" stroke="#8a6a1c" stroke-width="2" stroke-dasharray="4 6" opacity=".7"/>
+ <path transform="translate(256,250) scale(3.2)" d="M0,-20 l5.5,11.5 l12.5,1.6 l-9.2,8.6 l2.4,12.5 l-11.2,-6.2 l-11.2,6.2 l2.4,-12.5 l-9.2,-8.6 l12.5,-1.6 z" fill="#fbf8f1" stroke="#8a6a1c" stroke-width="1"/>
+</svg>
+
+<!-- B: the envelope -->
+<svg class="p" id="B" viewBox="0 0 512 512"><rect width="512" height="512" fill="url(#bg)"/>
+ <g fill="#e2bd5a"><use href="#spark" x="120" y="120"/><use href="#spark" x="398" y="138" transform="translate(398,138) scale(.7) translate(-398,-138)"/><use href="#spark" x="410" y="330" transform="translate(410,330) scale(.6) translate(-410,-330)"/><use href="#spark" x="104" y="340" transform="translate(104,340) scale(.6) translate(-104,-340)"/></g>
+ <g transform="translate(66,96)">
+  <path d="M30,120 L190,30 L350,120" fill="#ede2c6" stroke="#c8a03e" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="78" y="40" width="224" height="150" rx="8" fill="#fff" stroke="#c8a03e" stroke-width="3"/>
+  <rect x="104" y="64" width="76" height="76" rx="9" fill="#e2bd5a" stroke="#8a6a1c" stroke-width="2"/><text x="142" y="120" text-anchor="middle" font-family="Fraunces" font-weight="900" font-size="44" fill="#1f3322">A*</text>
+  <rect x="196" y="64" width="76" height="76" rx="9" fill="#1f3322" stroke="#8a6a1c" stroke-width="2"/><text x="234" y="120" text-anchor="middle" font-family="Fraunces" font-weight="900" font-size="44" fill="#e2bd5a">A</text>
+  <path d="M30,120 V290 H350 V120 L190,214 Z" fill="#f6efdd" stroke="#c8a03e" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M30,290 L158,196 M350,290 L222,196" stroke="#c8a03e" stroke-width="2.5" stroke-linecap="round" opacity=".6"/>
+  <circle cx="190" cy="216" r="36" fill="url(#gold)" stroke="#8a6a1c" stroke-width="4"/>
+  <path transform="translate(190,214) scale(1.15)" d="M0,-20 l5.5,11.5 l12.5,1.6 l-9.2,8.6 l2.4,12.5 l-11.2,-6.2 l-11.2,6.2 l2.4,-12.5 l-9.2,-8.6 l12.5,-1.6 z" fill="#fbf8f1"/>
+ </g>
+</svg>
+
+<!-- C: monogram -->
+<svg class="p" id="C" viewBox="0 0 512 512"><rect width="512" height="512" fill="url(#bg)"/>
+ <circle cx="256" cy="256" r="224" fill="none" stroke="#e2bd5a" stroke-width="3" opacity=".8"/>
+ <use href="#cell" x="256" y="100"/><use href="#atom" x="132" y="352"/><use href="#brain" x="380" y="352"/>
+ <text x="252" y="318" text-anchor="middle" font-family="Fraunces" font-weight="900" font-size="196" fill="#f3ecdc" letter-spacing="-8">S<tspan fill="#e2bd5a" font-style="italic" font-weight="800">R</tspan></text>
+ <g fill="#e2bd5a"><use href="#spark" x="394" y="170"/><use href="#spark" x="118" y="176" transform="translate(118,176) scale(.6) translate(-118,-176)"/></g>
+ <text x="256" y="410" text-anchor="middle" font-family="JetBrains Mono" font-weight="700" font-size="16" letter-spacing="5" fill="#c6d2c0">THE SCIENCE REALMS</text>
+</svg>
+</body></html>

@@ -1,0 +1,10 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch();const errs=[];const F='file://'+__dirname+'/../quiztoplasm.html';
+const p=await b.newPage({viewport:{width:1100,height:1200},colorScheme:'dark'});p.on('pageerror',e=>errs.push(e.message));
+await p.goto(F);await p.waitForTimeout(1500);await p.screenshot({path:__dirname+'/qa.png'});
+const hs=await p.$$eval('a[href^="#"]',a=>a.map(x=>x.getAttribute('href')).filter(h=>h.length>1));
+await p.goto(F+hs[0]);await p.waitForTimeout(500);const h2=await p.$$eval('#view a[href^="#"], a[href^="#"]',a=>a.map(x=>x.getAttribute('href')).filter(h=>/run|slide|quiz/i.test(h)));
+if(h2[0]){await p.goto(F+h2[0]);await p.waitForTimeout(600)}await p.screenshot({path:__dirname+'/qb.png'});
+const l=await b.newPage({viewport:{width:1100,height:700},colorScheme:'light'});await l.goto(F);await l.waitForTimeout(800);await l.screenshot({path:__dirname+'/qc.png'});
+const m=await b.newPage({viewport:{width:390,height:844},colorScheme:'dark'});await m.goto(F);await m.waitForTimeout(800);console.log('sw',await m.evaluate(()=>document.documentElement.scrollWidth),hs[0],h2[0]);
+console.log(errs);await b.close()})();

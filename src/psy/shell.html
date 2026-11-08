@@ -1,0 +1,271 @@
+<title>The Psycheverse</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233b1a78'/%3E%3Cpath d='M13,34 C7,21 18,10 32,12 C46,10 57,21 51,34 C56,45 46,55 37,52 C35,57 29,57 27,52 C18,55 8,45 13,34 Z' fill='%23ff9ad5' stroke='%23ffffff' stroke-width='2.5'/%3E%3Cpath d='M32,13 V52 M19,26 c5,-5 11,1 8,6 c-3,5 4,9 8,5 M45,23 c-6,0 -6,8 1,9 c5,1 6,6 2,9 M21,42 c3,-4 9,-3 8,2' fill='none' stroke='%233b1a78' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+@font-face{font-family:"SuperBrain";src:url(data:font/ttf;base64,/*@@FONT@@*/) format("truetype");font-display:swap}
+/* Layout: deep-purple-to-lavender ombre with faint neurons; Super Brain display font; frosted light panels for reading and play. One deliberate look in both themes. */
+:root{
+  color-scheme:light;
+  --deep:#1d0b3d; --plum:#3b1a78; --purple:#6d3fd1; --violet:#9b7bff; --lav:#d9ccff; --pink:#ff7ac6; --pinkd:#c2307f; --gold:#ffd166; --goldd:#a87a00; --mint:#5ee6c1;
+  --panel:rgba(248,245,255,.96); --ink:#1d0b3d; --muted:#5b4a7d; --line:#d6cbef;
+  --good:#127a3e; --goodbg:#dff5e6; --bad:#b3261e; --badbg:#fbe1de;
+  --display:"SuperBrain","Atkinson Hyperlegible",sans-serif;
+  --body:"Atkinson Hyperlegible",ui-sans-serif,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+html{background:var(--deep)}
+body{margin:0;min-height:100vh;color:var(--ink);font:16px/1.5 var(--body);
+  background-color:var(--deep);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='200'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.07' stroke-width='2'%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3Cpath d='M48,40 C80,40 90,70 120,72 M40,48 C40,80 70,95 70,130 M33,35 L10,15 M120,72 l20,-10 M120,72 l12,18'/%3E%3Ccircle cx='170' cy='150' r='7'/%3E%3Cpath d='M163,150 C130,150 120,175 90,178 M170,143 C170,120 190,110 205,96'/%3E%3C/g%3E%3C/svg%3E"),linear-gradient(180deg,#1d0b3d 0,#2c1160 300px,#4a2296 800px,#7a52e0 1500px,#b79cff 2300px);
+  background-repeat:repeat,no-repeat;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:22px 40px}
+.wrap{max-width:1000px;margin:0 auto;display:grid;gap:22px}
+p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+button:disabled{cursor:default}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+[hidden]{display:none!important}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:20px;align-items:center}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.hero svg.art{max-width:300px;margin:0 auto}}
+.hero svg.art{width:100%;height:auto;display:block}
+.title{font:clamp(34px,6.2vw,76px)/1.05 var(--display);color:#fff;margin:0;letter-spacing:.02em}
+.title .nw{white-space:nowrap}
+.title .nw>span{color:var(--pink)}
+.tag{font:700 13px var(--mono);letter-spacing:.14em;color:var(--mint);margin-top:10px}
+.lead{color:#e9e1ff;max-width:60ch;margin-top:14px}
+.realm{display:grid;gap:6px;border-left:4px solid var(--gold);padding-left:14px;margin-top:16px}
+.realm-k{font:700 clamp(18px,3vw,22px)/1.1 var(--body);letter-spacing:.18em;color:#fff}
+.realms{display:flex;flex-wrap:wrap;gap:8px}
+.rl{display:grid;gap:1px;text-decoration:none;border:1.5px solid rgba(217,204,255,.45);border-radius:10px;padding:6px 12px;background:rgba(29,11,61,.55)}
+.rl span{font:700 10.5px var(--mono);letter-spacing:.12em;color:#c9b8ff} .rl b{font:700 14px var(--body);letter-spacing:.06em;color:#fff}
+.rl:hover{border-color:var(--gold)} .rl.cur{border-color:var(--pink)} .rl.cur b{color:var(--pink)}
+.realm-m{font:700 15px var(--body);color:var(--gold)}
+.realm-c{font-size:13px;color:#e4dcff}
+
+/* unit cards */
+.worlds{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.wcard{border-radius:16px;padding:22px;background:rgba(246,242,255,.96);border:2px solid var(--violet);box-shadow:0 14px 30px -14px rgba(10,0,40,.8);display:grid;gap:10px;position:relative;overflow:hidden;align-content:start}
+.wcard.u2{border-color:var(--pink);background:rgba(255,240,249,.96)}
+.k{font:700 13px var(--mono);letter-spacing:.12em;color:var(--purple)} .u2 .k{color:var(--pinkd)}
+.wname{font:clamp(32px,5vw,44px)/1.05 var(--display);margin:0;color:var(--deep)}
+.wcard svg.corner{position:absolute;right:10px;top:12px;width:96px;opacity:.9}
+.wcard .k,.wcard .wname,.wcard>p:first-of-type{padding-right:84px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}
+.chips li{font:500 12px var(--mono);border:1px solid var(--line);background:#fff;border-radius:99px;padding:2px 9px;color:var(--muted)}
+.go{display:inline-flex;align-items:center;gap:8px;justify-self:start;background:var(--deep);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:11px 18px;border:0}
+.go:hover{background:var(--purple)} .u2 .go:hover{background:var(--pinkd)}
+.prog{font:500 13px var(--mono);color:var(--muted)} .prog b{color:var(--pinkd)}
+.about{background:var(--panel);border-radius:16px;padding:clamp(16px,3.4vw,26px);display:grid;gap:8px;max-width:820px;box-shadow:0 14px 30px -16px rgba(10,0,40,.7)}
+.about h2{margin:0;font:700 24px var(--body);color:var(--deep)} .about h3{margin:8px 0 0;font:700 16px var(--body);color:var(--purple)} .about ul{margin:0;padding-left:20px;display:grid;gap:6px}
+footer{color:#fff;font-size:13px;display:grid;gap:4px;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.credit{text-align:center;font-size:12.5px;color:#fff;margin:4px 0 0;text-shadow:0 1px 2px rgba(0,0,0,.4)}
+
+/* bars and panels */
+.mini{display:inline-flex;gap:8px;align-items:center;text-decoration:none;justify-self:start}
+.mini svg{width:36px;height:29px}
+.mini span{font:22px var(--display);color:#fff} .mini i{font-style:normal;color:var(--pink)}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-bottom:3px solid var(--pink);padding-bottom:12px}
+.bar>div{min-width:0}
+.bar h2{font:clamp(30px,5vw,44px)/1.05 var(--display);color:#fff;margin:4px 0 0}
+.bar h2.gt{font:700 clamp(22px,3.6vw,32px)/1.2 var(--body)}
+.bar .kk{font:700 12px var(--mono);letter-spacing:.12em;color:var(--gold)}
+.back{font:700 14px var(--body);text-decoration:none;color:var(--deep);background:var(--panel);border-radius:10px;padding:7px 12px}
+.unitpaper{color:#e9e1ff;font:500 13px var(--mono)}
+.panel{background:var(--panel);border-radius:16px;padding:clamp(16px,3.4vw,26px);display:grid;gap:14px;align-content:start;overflow:hidden;box-shadow:0 14px 30px -16px rgba(10,0,40,.7)}
+.panel h3{margin:0;font:700 20px/1.25 var(--body)}
+.muted{color:var(--muted)} .small{font-size:14px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.primary{background:var(--deep);color:#fff;border:0;border-radius:10px;padding:11px 18px;font-weight:700}
+.primary:hover:not(:disabled){background:var(--purple)}
+.primary:disabled{opacity:.4}
+.ghost{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px 16px;font-weight:700;text-decoration:none;color:var(--ink)}
+.intro{color:#fff;background:rgba(29,11,61,.45);border-left:4px solid var(--mint);border-radius:0 10px 10px 0;padding:10px 14px}
+.sech{color:#fff;font:700 22px var(--body);margin:8px 0 0}
+
+/* unit page */
+.wtop{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.wtop .panel{gap:8px}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px}
+.tcard{background:var(--panel);border-radius:14px;padding:16px;display:grid;gap:10px;align-content:start;box-shadow:0 10px 24px -16px rgba(10,0,40,.7);min-width:0}
+.thead{display:flex;gap:10px;align-items:center}
+.tcode{font:700 13px var(--mono);background:var(--deep);color:var(--lav);border-radius:6px;padding:3px 8px;flex:none}
+.u2w .tcode{color:var(--pink)}
+.thead h3{margin:0;font:700 17px/1.25 var(--body)}
+.acts{display:grid;gap:6px}
+.act{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;text-decoration:none;color:var(--ink);font-weight:700;font-size:15px}
+.act:hover{border-color:var(--purple)}
+.act>span:first-child{display:grid;min-width:0}
+.act small{font:500 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.act .sc{font:700 13px var(--mono);color:var(--pinkd);flex:none}
+.act.ff-act{border-color:var(--violet);background:#f1ecff}
+.debrow{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px;display:grid;gap:6px;font-size:15px}
+.mbtn{font:700 12px var(--mono);border:1.5px solid var(--deep);color:var(--deep);background:#fff;border-radius:8px;padding:6px 9px;text-decoration:none}
+.mbtn:hover,.mbtn.cur{background:var(--deep);color:#fff}
+
+/* games */
+.hud{display:flex;gap:14px;flex-wrap:wrap;font:500 13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.hud strong{color:var(--ink)}
+.qcard{background:var(--deep);color:#fff;border-radius:14px;padding:16px 18px;font:700 clamp(17px,2.6vw,20px)/1.4 var(--body);border-left:6px solid var(--pink)}
+.qcard small{display:block;font:700 12px var(--mono);color:var(--lav);margin-bottom:4px}
+.scenario{background:#fff8e1;border:2px solid var(--gold);border-radius:14px;padding:14px 16px;display:grid;gap:6px}
+.scenario b{font:700 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--goldd)}
+.mono{font:700 18px var(--mono)}
+.opts{display:grid;gap:8px}
+.opt{text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;display:flex;gap:12px;align-items:flex-start}
+.opt:hover:not(:disabled){border-color:var(--purple)}
+.opt kbd{font:500 12px var(--mono);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--muted);flex:none}
+.opt.on{border-color:var(--deep);box-shadow:inset 0 0 0 1px var(--deep)}
+.opt.right{background:var(--goodbg);border-color:var(--good)}
+.opt.wrong{background:var(--badbg);border-color:var(--bad)}
+.opt.missed{border-style:dashed;border-color:var(--good)}
+.numin{font:700 18px var(--mono);border:2px solid var(--line);border-radius:10px;padding:8px 12px;width:150px;max-width:100%;background:#fff;color:var(--ink)}
+.numin.sm{width:84px;font-size:15px;padding:4px 8px}
+.explain{border-left:4px solid var(--violet);background:#fff;border-radius:0 10px 10px 0;padding:10px 14px;display:grid;gap:4px;font-size:15px}
+.explain.ok{border-color:var(--good)} .explain.bad{border-color:var(--bad)}
+.explain.ok b{color:var(--good)} .explain.bad b{color:var(--bad)}
+.big{font:700 52px/1 var(--body);color:var(--deep);font-variant-numeric:tabular-nums}
+.stars{color:var(--goldd);letter-spacing:2px}
+.pop{animation:pop .25s ease-out}
+@keyframes pop{from{transform:scale(.98);opacity:.6}to{transform:none;opacity:1}}
+.slidein{animation:slidein .4s cubic-bezier(.2,.8,.2,1)}
+@keyframes slidein{from{transform:translateX(40%);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.slidein,.pop{animation:none}}
+
+/* sorter */
+.pool{display:flex;flex-wrap:wrap;gap:8px;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:10px;min-height:52px}
+.chipm{background:#fff;border:1.5px solid var(--deep);border-radius:10px;padding:6px 11px;font-weight:700;font-size:14px;text-align:left;display:grid}
+.chipm.on{background:var(--deep);color:#fff}
+.chipm.right{border-color:var(--good);background:var(--goodbg)} .chipm.wrong{border-color:var(--bad);background:var(--badbg)}
+.chipm em{font:500 11px var(--mono);font-style:normal;color:var(--bad)}
+.bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:10px}
+.bin{background:#f6f2ff;border:2px dashed var(--violet);border-radius:12px;padding:10px;text-align:left;display:grid;gap:8px;min-height:90px;align-content:start;cursor:pointer}
+.bin>b{font:700 13px var(--mono);letter-spacing:.04em;color:var(--purple);text-transform:uppercase}
+.bin.ready{border-color:var(--pink);background:#fff0f8}
+.bin>span{display:flex;flex-wrap:wrap;gap:6px}
+
+/* answer builder */
+.qbox{background:var(--panel);border-radius:14px;padding:14px 16px;font:700 18px/1.4 var(--body);border-left:6px solid var(--gold)}
+.cw{font:700 12px var(--mono);background:var(--gold);color:var(--deep);border-radius:6px;padding:2px 8px;vertical-align:middle}
+.stages{display:flex;gap:6px;flex-wrap:wrap}
+.stg{font:700 12px var(--mono);border-radius:99px;padding:4px 10px;border:1.5px solid var(--line);color:var(--muted);background:#fff}
+.stg.on{border-color:var(--deep);color:#fff;background:var(--deep)} .stg.done{border-color:var(--good);color:var(--good)}
+.kit{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:8px}
+.kitbtn{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;text-align:left;font-weight:700;font-size:15px;display:grid;gap:3px}
+.kitbtn small{font:500 12px var(--body);color:var(--bad)}
+.kitbtn.on{border-color:var(--deep);box-shadow:inset 0 0 0 1px var(--deep)}
+.kitbtn.right{background:var(--goodbg);border-color:var(--good)} .kitbtn.wrong{background:var(--badbg);border-color:var(--bad)} .kitbtn.missed{border-style:dashed;border-color:var(--good)}
+textarea{width:100%;min-height:200px;font:16px/1.5 var(--body);border:1.5px solid var(--line);border-radius:12px;padding:12px;background:#fff;color:var(--ink);box-sizing:border-box}
+.check{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:9px 12px;text-align:left;font-size:15px}
+.check .box{flex:none;width:22px;height:22px;border-radius:5px;border:2px solid var(--muted);display:grid;place-items:center;font-weight:700;color:#fff}
+.check.on{border-color:var(--good);background:var(--goodbg)} .check.on .box{background:var(--good);border-color:var(--good)}
+.bandtable{width:100%;border-collapse:collapse;font-size:14px}
+.bandtable td,.bandtable th{border:1px solid var(--line);padding:6px 8px;text-align:left;background:#fff}
+.bandtable tr.hit td{background:var(--goodbg);font-weight:700}
+.tblwrap{overflow-x:auto}
+.sdt td,.sdt th{text-align:center;font-family:var(--mono)}
+.model{background:#fff;border-radius:12px;border:1px solid var(--line);padding:12px 14px;font-size:15px;display:grid;gap:6px}
+
+/* notes, plans, essays */
+.ffgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:14px}
+.kp{margin:0;padding-left:20px;display:grid;gap:6px}
+.notelead{border-left:6px solid var(--pink)} .notelead p{font-size:17px;font-weight:700}
+.tipbox{border-left:6px solid var(--gold)}
+.essay{display:grid;gap:12px}
+.essay h4,.exbody h4{margin:0 0 2px;font:700 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--purple)}
+.essay p{line-height:1.65}
+.plan{display:grid;gap:10px}
+.planhead{background:var(--deep);color:#fff;border-radius:12px;padding:12px 16px;display:grid;gap:4px} .planhead b{font:700 12px var(--mono);letter-spacing:.08em;color:var(--gold);text-transform:uppercase}
+.pcard{background:#fff;border:1.5px solid var(--line);border-left:6px solid var(--violet);border-radius:12px;padding:12px 14px;display:grid;gap:6px;position:relative}
+.pcard.for{border-left-color:var(--good)} .pcard.against{border-left-color:var(--bad)} .pcard.extra{border-left-color:var(--gold)} .pcard.killer{border-left-color:var(--pink);background:#fff0f8}
+.pcard h4{margin:0;font:700 16px var(--body)}
+.pcard ul{margin:0;padding-left:20px;display:grid;gap:4px;font-size:15px}
+.pcard .lab{font:700 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.pcard ul.ao3 li{color:var(--plum)}
+.side{font:700 11px var(--mono);letter-spacing:.1em;justify-self:start;border-radius:99px;padding:1px 8px;background:var(--goodbg);color:var(--good)}
+.against .side{background:var(--badbg);color:var(--bad)} .extra .side{background:#fff4d1;color:var(--goldd)}
+details.exm{background:var(--panel);border-radius:14px;padding:12px 16px;box-shadow:0 10px 24px -16px rgba(10,0,40,.7)}
+details.exm summary{cursor:pointer;display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:16px}
+details.exm summary b{font:700 12px var(--mono);color:var(--pinkd);flex:none;align-self:center}
+details.exm[open] summary{margin-bottom:10px}
+.exbody{display:grid;gap:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.6}
+.fbgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:10px;margin-top:10px}
+.fb{border-radius:12px;padding:10px 14px;font-size:15px} .fb h4{margin:0 0 4px} .fb ul{margin:0;padding-left:20px;display:grid;gap:4px}
+.fb.good{background:var(--goodbg)} .fb.lost{background:#fff4d1}
+.timing{display:grid;gap:6px} .timing div{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px 10px} .timing b{font:700 14px var(--mono);color:var(--pinkd);min-width:56px}
+</style>
+
+<div class="wrap">
+  <section id="hub">
+    <div style="display:grid;gap:24px">
+      <header class="hero">
+        <div>
+          <h1 class="title">The <span class="nw"><span>Psyche</span>verse</span></h1>
+          <div class="tag">WJEC AS PSYCHOLOGY</div>
+          <div class="realm"><a class="realm-k" href="https://claude.ai/artifact/7zQafH3KN4pFKvkcYsVba5" target="_blank" rel="noopener" style="text-decoration:none">THE SCIENCE REALMS ↗</a><div class="realms"><a class="rl" href="https://claude.ai/artifact/1bmrq61vRrKWHcCwrQiSLM" target="_blank" rel="noopener"><span>THE LIVING REALM</span><b>BIOLOGY</b></a><a class="rl" href="https://claude.ai/artifact/5jkpgBox9Ey3AnuWFttyVD" target="_blank" rel="noopener"><span>THE ATOMIC REALM</span><b>CHEMISTRY</b></a><a class="rl cur" href="#" aria-current="page"><span>THE MIND REALM</span><b>PSYCHOLOGY</b></a></div><div class="realm-m">Explore. Learn. Master.</div><div class="realm-c">Created and developed by Adrianna Kelly · 2026</div></div>
+          <p class="lead">Two frontiers, one for each AS unit. Learn the five approaches, crack the classic studies, write top-band answers and debates, and master research methods.</p>
+        </div>
+        <svg class="art" viewBox="0 0 360 300" role="img" aria-label="Two mini researchers studying a giant brain">
+          <ellipse cx="180" cy="282" rx="160" ry="12" fill="#000" opacity=".25"/>
+          <path d="M110,150 C90,100 130,55 180,62 C230,55 272,98 252,150 C268,190 236,228 196,222 C188,236 170,236 162,222 C122,228 92,190 110,150 Z" fill="#ff9ad5" stroke="#3b1a78" stroke-width="5"/>
+          <path d="M181,66 C176,110 186,160 178,220" fill="none" stroke="#3b1a78" stroke-width="4"/>
+          <path d="M126,118 c14,-14 30,4 22,18 c-8,14 12,26 24,14 M140,180 c-10,-16 10,-30 22,-20 M128,150 c12,6 22,-6 18,-16 M214,96 c-16,2 -14,24 2,26 c14,2 20,18 8,28 M240,140 c-16,-4 -24,14 -12,24 M212,190 c10,-12 30,-6 26,10 M222,128 c10,6 20,0 20,-10" fill="none" stroke="#3b1a78" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M186,26 l6,14 l14,2 l-11,9 l4,14 l-13,-8 l-13,8 l4,-14 l-11,-9 l14,-2 z" fill="#ffd166"/>
+          <g transform="translate(40,170)"><rect x="8" y="44" width="44" height="58" rx="12" fill="#fff" stroke="#3b1a78" stroke-width="3"/><circle cx="30" cy="28" r="20" fill="#f6c7a1" stroke="#3b1a78" stroke-width="3"/><path d="M10,22 q20,-24 40,0" fill="#5a3a22"/><circle cx="23" cy="30" r="6" fill="none" stroke="#3b1a78" stroke-width="2.5"/><circle cx="38" cy="30" r="6" fill="none" stroke="#3b1a78" stroke-width="2.5"/><path d="M29,30 h3" stroke="#3b1a78" stroke-width="2.5"/><path d="M24,40 q6,4 12,0" fill="none" stroke="#3b1a78" stroke-width="2"/><rect x="40" y="58" width="24" height="30" rx="3" fill="#ffd166" stroke="#3b1a78" stroke-width="2.5"/><path d="M45,66 h14 M45,72 h14 M45,78 h9" stroke="#3b1a78" stroke-width="2"/><path d="M14,102 v14 M44,102 v14" stroke="#3b1a78" stroke-width="5" stroke-linecap="round"/></g>
+          <g transform="translate(270,160)"><rect x="8" y="48" width="44" height="58" rx="12" fill="#fff" stroke="#3b1a78" stroke-width="3"/><circle cx="30" cy="30" r="20" fill="#c98b62" stroke="#3b1a78" stroke-width="3"/><path d="M10,26 q4,-30 40,-6 q4,6 0,10 q-18,-14 -40,-4" fill="#1f1f2e"/><circle cx="23" cy="32" r="2.5" fill="#3b1a78"/><circle cx="37" cy="32" r="2.5" fill="#3b1a78"/><path d="M24,42 q6,5 12,0" fill="none" stroke="#3b1a78" stroke-width="2"/><circle cx="-6" cy="56" r="13" fill="#d9ccff" fill-opacity=".6" stroke="#3b1a78" stroke-width="3"/><path d="M3,66 l12,10" stroke="#3b1a78" stroke-width="5" stroke-linecap="round"/><path d="M14,106 v14 M44,106 v14" stroke="#3b1a78" stroke-width="5" stroke-linecap="round"/></g>
+          <circle cx="300" cy="120" r="5" fill="#d9ccff"/><circle cx="312" cy="100" r="8" fill="#d9ccff"/><ellipse cx="320" cy="68" rx="30" ry="20" fill="#d9ccff"/><text x="320" y="75" text-anchor="middle" style="font:20px SuperBrain,sans-serif;fill:#3b1a78">?!</text>
+        </svg>
+      </header>
+      <div class="worlds">
+        <article class="wcard">
+          <svg class="corner" viewBox="0 0 120 90" aria-hidden="true"><path d="M20,50 C10,25 35,8 60,12 C85,8 110,25 100,50 C108,70 92,84 72,80 C66,88 54,88 48,80 C28,84 12,70 20,50 Z" fill="#d9ccff" stroke="#6d3fd1" stroke-width="3"/><path d="M60,14 V80 M34,36 c8,-8 18,2 12,10 M84,32 c-8,0 -8,12 2,14 M40,64 c6,-8 16,-4 14,4 M78,66 c4,-8 16,-6 14,4" fill="none" stroke="#6d3fd1" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <div class="k">WJEC PSYCHOLOGY · UNIT 1</div>
+          <h2 class="wname">The Theoretical Frontier</h2>
+          <p>The different psychological approaches, theories and explanations of human behaviour.</p>
+          <ul class="chips" id="u1-chips"></ul>
+          <p class="prog" id="u1-prog"></p>
+          <a class="go" href="#theoretical-frontier">Enter Unit 1 →</a>
+        </article>
+        <article class="wcard u2">
+          <svg class="corner" viewBox="0 0 120 90" aria-hidden="true"><rect x="16" y="50" width="14" height="30" fill="#ff7ac6"/><rect x="36" y="34" width="14" height="46" fill="#9b7bff"/><rect x="56" y="18" width="14" height="62" fill="#ff7ac6"/><path d="M10,80 H90" stroke="#3b1a78" stroke-width="3"/><circle cx="96" cy="30" r="14" fill="none" stroke="#3b1a78" stroke-width="4"/><path d="M106,40 l10,10" stroke="#3b1a78" stroke-width="5" stroke-linecap="round"/></svg>
+          <div class="k">WJEC PSYCHOLOGY · UNIT 2</div>
+          <h2 class="wname">The Research Frontier</h2>
+          <p>Research methods, experimental design, data collection and analysis.</p>
+          <ul class="chips" id="u2-chips"></ul>
+          <p class="prog" id="u2-prog"></p>
+          <a class="go" href="#research-frontier">Enter Unit 2 →</a>
+        </article>
+      </div>
+      <section class="about" aria-labelledby="about-h"><h2 id="about-h">About The Science Realms</h2>
+<p><b>The Psycheverse</b> is part of <b>The Science Realms</b>, an interactive revision platform I created and developed during my 2026–2027 gap year. It covers CCEA AS Biology, CCEA AS Chemistry and WJEC AS Psychology. This site is the WJEC AS Psychology realm.</p>
+<p><a href="https://claude.ai/artifact/7zQafH3KN4pFKvkcYsVba5" target="_blank" rel="noopener" style="font-weight:700">Read about the project and visit all three realms ↗</a></p>
+<h3>How the games help</h3><ul>
+<li><b>Approach Arena, Therapy Lab and Relationship Builder</b> sort the five approaches, their therapies and their explanations of relationship formation.</li>
+<li><b>Case Files and Fact Checks</b> drill the classic research, from methodology to ethics.</li>
+<li><b>Answer Builder</b> plans, writes and self-marks 2 to 10-mark answers against indicative content and WJEC-style levels, and <b>Describe vs Evaluate</b> trains the command words.</li>
+<li><b>Debate Arena</b>, model essays and 20/20 plans prepare the five contemporary debates.</li>
+<li><b>Method Match, Sampling Sort, Scenario Lab, the Ethics Committee and the Standard Deviation Lab</b> build Section B research methods skills, and <b>Mind Notes</b> give concise notes and exam tips for every topic.</li></ul>
+
+<p class="small muted">The Science Realms is an independent educational project and is not affiliated with or endorsed by CCEA or WJEC.</p></section>
+      <section class="about ack" aria-labelledby="ack-h"><h2 id="ack-h">Acknowledgements</h2>
+<p>I developed this project independently during my 2026–2027 gap year, but I would not have got here without the people who taught and supported me.</p>
+<p>Special thanks to <b>Gavin McCay – The Chemistry Tutor, Derry</b>: my rock, my guide post and, as I like to call him, the <b>King of Chemistry</b>. Gavin took me from failing Chemistry to an A overall at A level, including 91% in my AS. His ability to make complex chemical concepts accessible transformed my understanding of the subject and inspired my approach to creating this revision platform.</p>
+<p>I would also like to thank <b>Mrs C Devine</b>, <b>Ms C Barr</b> and <b>Mr J Quigley</b> for their teaching, encouragement and support throughout my studies.</p>
+<p class="muted">With gratitude to the teachers who helped make this project possible.</p></section>
+      <footer>
+        <p>Questions, scenarios and essays are original, written to match the WJEC AS Psychology specification.</p>
+        <p>Titles use the Super Brain font (freeware). Scores are saved in your own browser only.</p>
+      </footer>
+    </div>
+  </section>
+
+  <section id="view" hidden></section>
+  <p class="credit">An educational project by Adrianna Kelly · 2026</p>
+</div>
+
+<script>
+/*@@SCRIPT@@*/
+</script>

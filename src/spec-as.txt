@@ -1,0 +1,1007 @@
+3.1 Unit AS 1: Molecules and Cells
+This unit deals with molecules, enzymes, viruses, cells, cell physiology, continuity of
+cells, and tissues and organs. These are core topics in GCE Biology and underpin
+many of the other topics involved.
+Assessment for this unit consists of a written examination that includes both short
+and extended questions. For more details, see Section 6.
+ Content Learning Outcomes
+ 1.1.1 demonstrate knowledge and understanding of the
+ importance of water as a solvent; and
+ 1.1.2 outline the role of inorganic ions – potassium, calcium,
+ magnesium, iron, hydrogencarbonate, nitrate and
+ phosphate to include their role:
+ • as components of biologically important
+ compounds (calcium pectate, chlorophyll,
+ haemoglobin, ATP, nucleic acids,
+ phospholipids); and
+ • in osmotic and buffering systems (details of the
+ physical chemistry of buffering systems not
+ required).
+ Content Learning Outcomes
+ (cont.) 1.1.3 demonstrate knowledge and understanding of the
+ occurrence, structure and function of carbohydrates:
+ • monosaccharides (α- and β-glucose, fructose,
+ C6H12O6);
+ • condensation reactions in the synthesis and
+ hydrolysis reactions in the breakdown of
+ disaccharides and polysaccharides;
+ • the glycosidic bond;
+ • maltose and sucrose as disaccharides;
+ • cellulose – a structural polymer of β-glucose;
+ • starch and glycogen as storage polymers of
+ α-glucose; and
+ • pentoses as components of nucleic acids (ribose
+ and deoxyribose) and ATP (ribose); and
+ 1.1.4 demonstrate knowledge and understanding of the
+ occurrence, structure and function of lipids:
+ • lipids as fats and oils;
+ • triglycerides as condensation products of
+ glycerol and fatty acids and the release of these
+ on hydrolysis;
+ • saturated and unsaturated fatty acids; and
+ • the structure and properties of phospholipids
+ as components of membranes.
+ Content Learning Outcomes
+ (cont.) 1.1.5 demonstrate knowledge and understanding of the
+ occurrence, structure and function of proteins:
+ • the general structure of an amino acid molecule
+ as:
+ • proteins as condensation products of amino acids
+ and the release of these on hydrolysis;
+ • primary structure: the amino acid sequence of a
+ polypeptide involving peptide bonds;
+ • secondary structure: α-helix and β-pleated sheet
+ involving H-bonds;
+ • tertiary structure: the folding of a polypeptide
+ involving H-, ionic and disulfide bonds and
+ hydrophobic interaction;
+ • quaternary structure: more than one polypeptide
+ making up a protein;
+ • overall shape in relation to function in fibrous
+ (collagen) and globular (enzyme) proteins;
+ • conjugated proteins (glycoprotein and
+ haemoglobin) containing prosthetic groups; and
+ • prions as a disease-causing protein, due to
+ changes in secondary structure giving a form rich
+ in β-sheets:
+ − infection can occur through eating prion-rich food;
+ and
+ − prion diseases are neurodegenerative disorders
+ such as scrapie, Bovine Spongiform Encephalopathy
+ (BSE) in animals and Creutzfeldt–Jakob Disease
+ (CJD) in humans.
+ Content Learning Outcomes
+ (cont.) 1.1.6 demonstrate knowledge and understanding of the
+ occurrence, structure and function of nucleic acids:
+ • nucleic acids as condensation products of
+ nucleotides and the release of these on
+ hydrolysis;
+ • nucleotides as condensation products of a
+ pentose sugar, a nitrogenous base and
+ inorganic phosphate;
+ • helical structure of DNA in terms of two
+ antiparallel chains with specific base pairings; and
+ • comparison of DNA and RNA;
+ 1.1.7 demonstrate knowledge and understanding of the
+ replication of DNA:
+ • replication as a semi-conservative process
+ involving opening the helix (by DNA helicase)
+ followed by the synthesis of complementary
+ nucleic acid chains alongside each of the
+ existing chains to form two identical helices;
+ • the role of DNA polymerase; and
+ • the Meselson–Stahl experiment;
+ 1.1.8 carry out practical work to detect the presence of
+ carbohydrate and proteins using biochemical tests:
+ • iodine test;
+ • Benedict’s test;
+ • glucose specific tests; and
+ • Biuret test; and
+ 1.1.9 carry out practical work to identify amino acids using
+ paper chromatography:
+ • prepare, run and develop the chromatogram; and
+ • calculate Rf values.
+ Content Learning Outcomes
+ 1.2.1 demonstrate knowledge and understanding of the
+ structure of enzymes as globular proteins, including:
+ • the concept of the active site;
+ • specificity; and
+ • the role of cofactors and coenzymes;
+ 1.2.2 demonstrate knowledge and understanding of the
+ relationship between enzyme structure and function,
+ including:
+ • catalysts that lower the activation energy
+ through the formation of enzyme–substrate
+ complexes;
+ • the lock and key hypothesis and induced-fit
+ hypothesis;
+ • the effect of temperature, pH, substrate and
+ enzyme concentrations on activity; and
+ • enzyme inhibitors (competitive and non-
+ competitive);
+ 1.2.3 demonstrate knowledge and understanding of the
+ importance of enzymes as biomarkers of disease,
+ including:
+ • that some enzymes are only present or active
+ during disease processes (for example white
+ blood cells can release elastase during
+ respiratory infections, hydrolysing the structural
+ protein elastin within the lung leading to
+ reduced lung function); and
+ • that detecting the presence of these enzymes in
+ clinical samples such as blood, urine and
+ sputum can be used for diagnosis or monitoring
+ of disease; and
+ 1.2.4 demonstrate knowledge and understanding of
+ applying inhibitors as therapeutic drugs, including
+ the activity of enzymes that contribute to disease
+ processes, which can be targeted with active
+ site-directed inhibitors.
+ Content Learning Outcomes
+ (cont.) 1.2.5 demonstrate knowledge and understanding of applying
+ immobilised enzymes in biotechnology:
+ • methods of immobilisation (physically or
+ chemically securing enzymes on or inside
+ insoluble support materials such as fibres, gels or
+ plastic beads);
+ • immobilisation as a technique that enables
+ cost-effective enzyme applications (though with
+ reduced activity because some active sites are
+ inaccessible) with benefits including:
+ − increased enzyme stability;
+ − facilitation of continuous flow processes; and
+ − enzyme-free products; and
+ • diagnostic reagent strips using enzymes or
+ inhibitors as biosensors (for example glucose
+ monitoring strips or pregnancy tests); and
+ 1.2.6 carry out practical work:
+ • investigating factors, such as temperature, pH,
+ substrate concentration and enzyme
+ concentration that affect enzyme activity;
+ • illustrating enzyme immobilisation; and
+ • using a colorimeter to follow the course of a
+ starch–amylase catalysed reaction (or other
+ appropriate reaction).
+ Content Learning Outcomes
+ 1.3.1 demonstrate knowledge and understanding of the
+ structure of bacteriophages (phages) and the human
+ immunodeficiency virus (HIV) to include:
+ • phages containing DNA bounded by a protein
+ coat; and
+ • HIV containing RNA bounded by a protein coat
+ and a lipid bilayer containing glycoprotein and, as
+ a retrovirus, containing reverse transcriptase
+ whereby RNA is used to synthesise viral DNA
+ (details of transcription should not be dealt with
+ until A2);
+ 1.3.2 demonstrate knowledge and understanding that viruses
+ replicate in host cells (thereby destroying them),
+ including:
+ • that phages invade bacteria, where they replicate,
+ destroying the bacterial cells (details of the phage
+ life cycle not required); and
+ • that HIV invades a type of lymphocyte (helper
+ T-cell) thereby weakening the immune system
+ (details of the immune system should not be
+ dealt with until A2); and
+ 1.4 Cells 1.4.1 demonstrate knowledge and understanding of the
+ ultrastructure of eukaryotic and prokaryotic cells:
+ • prokaryotic cells (for example, bacteria) as those
+ without nuclei, mitochondria or endoplasmic
+ reticulum and possessing naked, circular DNA,
+ small ribosomes, possibly plasmids, and a cell
+ wall; and
+ • eukaryotic cells as those with a membrane-bound
+ nucleus, chromosomes (helical DNA with a
+ histone protein coat), mitochondria, endoplasmic
+ reticulum, ribosomes, Golgi apparatus, vesicles,
+ lysosomes and microtubules.
+ Content Learning Outcomes
+ 1.4.2 demonstrate knowledge and understanding of the
+ structure and function of membranes, including:
+ • membrane structure (fluid mosaic model):
+ phospholipid bilayer, intrinsic and extrinsic
+ protein, carbohydrate glycocalyx, glycoproteins
+ and glycolipids, cholesterol (in animal cells); and
+ • functions of membrane components:
+ − proteins or glycoproteins as carriers;
+ − hydrophilic channels;
+ − enzymes;
+ − receptors;
+ − antigens;
+ − recognition features; and
+ − cholesterol in membrane stability.
+ Content Learning Outcomes
+ 1.4.3 demonstrate knowledge and understanding of the
+ structure and function of eukaryotic cell
+ components:
+ • membranes (fluid mosaic model) as structures
+ surrounding cells and contributing to their
+ internal structures to include their role defining
+ the boundaries of organelles within the
+ cytoplasm;
+ • mitochondria (envelope, cristae and matrix);
+ • chloroplasts (envelope, lamellae, thylakoids,
+ grana, stroma, lipid droplets and starch grains);
+ • rough endoplasmic reticulum (a membrane
+ system with attached ribosomes);
+ • ribosomes as sites of protein synthesis;
+ • smooth endoplasmic reticulum;
+ • Golgi apparatus;
+ • lysosomes;
+ • microtubules (centrioles and cell spindle) as
+ components of the cytoskeleton enabling
+ movement of structures within the cell;
+ • plasmodesmata as plant cell to cell junctions; and
+ • nuclear components:
+ − chromosomes (DNA and histones as
+ constituents, but without detail of their
+ configuration);
+ − nucleolus (the location of the DNA that codes
+ for ribosomal RNA);
+ − the nuclear envelope as a perforated double
+ membrane; and
+ − the outer membrane of the envelope is
+ encrusted with ribosomes and is the site of
+ origin of rough endoplasmic reticulum (RER).
+ Content Learning Outcomes
+ 1.4.4 demonstrate knowledge and understanding of the
+ different types of eukaryotic cell structure:
+ • plant cells as protoplasts bordered by an
+ extracellular cellulose cell wall and possessing
+ chloroplasts and a large permanent vacuole
+ bounded by a tonoplast membrane;
+ • neighbouring cell walls adhered by a middle
+ lamella (a sticky material composed of calcium
+ pectate);
+ • fungal cells as protoplasm (often multinucleate)
+ bounded by an extracellular wall of chitin; and
+ • animal cells as lacking chloroplasts and a cell wall
+ and possessing centrioles;
+ 1.4.5 demonstrate knowledge and understanding of using
+ microscopy to examine cell structure, including:
+ • light microscope;
+ • electron microscope (transmission electron
+ microscope (TEM) or scanning electron
+ microscope (SEM), as appropriate); and
+ • the difference between magnification and
+ resolution;
+ 1.4.6 carry out practical work to demonstrate knowledge
+ and understanding of the use of homogenisation and
+ centrifugation; and
+ 1.4.7 carry out practical work:
+ • examining photomicrographs and electron
+ micrographs;
+ • recognising cell structures from photomicrographs
+ and electron micrographs;
+ • drawing individual cells or cell sections;
+ • staining tissues to aid observation when using a
+ microscope (for example using iodine or
+ methylene blue);
+ • calculating true size (in μm) and magnification,
+ including using scale bars; and
+ • using a graticule and stage micrometer to
+ measure cell length.
+ Content Learning Outcomes
+ physiology 1.5.1 demonstrate knowledge and understanding of the
+ mechanisms by which substances move across
+ membranes:
+ • diffusion;
+ • osmosis to include understanding of the terms:
+ − solute potential (ψs), pressure potential (ψp) and
+ water potential (ψcell);
+ − lysis and crenation in animal cells; and
+ − turgor, incipient plasmolysis and plasmolysis in
+ plant cells;
+ • facilitated diffusion involving the use of proteins in
+ the membrane as channels or carriers;
+ • active transport involving membrane carriers and
+ energy expenditure;
+ • endocytosis (phagocytosis, pinocytosis); and
+ • exocytosis;
+ 1.5.2 account for membrane permeability in terms of:
+ • movement of fat-soluble substances (and water as
+ it is sufficiently small) through the phospholipid
+ bilayer;
+ • movement of water-soluble substances through
+ hydrophilic protein channels; and
+ • the role of membrane carriers; and
+ 1.5.3 calculate the water potential of a cell as the algebraic
+ sum of the solute and pressure potentials of a cell.
+ Content Learning Outcomes
+ physiology 1.5.4 carry out practical work to include:
+ (cont.)
+ • measuring the average water potential of cells in
+ a plant tissue:
+ − using a weighing method for a potato or other
+ suitable tissue;
+ − calculating the percentage change in mass; and
+ − determining the average water potential from a
+ graph of percentage change in mass against
+ solute potential of immersing solution;
+ • measuring the average solute potential of cells at
+ incipient plasmolysis by:
+ − using onion epidermis or other suitable tissue;
+ − calculating percentage plasmolysis; and
+ − determining the average solute potential from a
+ graph of percentage plasmolysis against solute
+ potential of the immersing solution (at 50%
+ plasmolysis the average pressure potential is zero);
+ and
+ 1.6 Continuity of 1.6.1 demonstrate knowledge and understanding of the cell
+ cells cycle:
+ • the main events during G1, S and G2 of interphase;
+ • that the two gap phases are more than time
+ delays as they give time for the cell to monitor the
+ internal and external environment to ensure all is
+ ready for the S and M phases
+ (in many cases, including unfavourable
+ conditions, cells can delay progress through G1
+ and go into G0 [resting state], which they can
+ remain in for days, weeks or years);
+ • nuclear division (mitosis) following the replication
+ of DNA during the S phase;
+ • cytokinesis in animal and plant cells; and
+ • the link between loss of control points in the cell
+ cycle and cancer.
+ Content Learning Outcomes
+ cells (cont.) 1.6.2 demonstrate knowledge and understanding that
+ chromosome structure includes DNA and histones in the
+ nucleus of eukaryotic cells;
+ 1.6.3 demonstrate knowledge and understanding of the
+ process of mitosis:
+ • its significance in maintaining genetic constancy;
+ and
+ • the events of prophase, metaphase, anaphase
+ and telophase and the appearance and behaviour
+ of chromosomes;
+ 1.6.4 demonstrate knowledge and understanding of the
+ relationship of anticancer drugs to the cell cycle:
+ • mitotic poisons that inhibit microtubule
+ formation, for example vincristine; and
+ • antimetabolities as S-phase inhibitors preventing
+ DNA synthesis, for example 5’Fluorouracil;
+ 1.6.5 demonstrate knowledge and understanding of the
+ chromosome number of a cell and its significance in
+ haploidy (where cells have one set of non-homologous
+ chromosomes) and diploidy (where cells have two sets
+ of homologous chromosomes):
+ • the chromosome number of a cell as shown in a
+ photomicrograph; and
+ • chromosomes and homologous pairs as shown in
+ a human karyotype; and
+ 1.6.6 demonstrate knowledge and understanding of the
+ process of meiosis and understand its significance in
+ producing haploid cells and genetic variation:
+ • the events of prophase I (excluding the names of
+ the prophase stages), metaphase I, anaphase I,
+ telophase I, prophase II, metaphase II, anaphase
+ II, and telophase II including the appearance and
+ behaviour of chromosomes; and
+ • recombination of genes resulting from chiasma
+ formation (crossing-over) during prophase I as a
+ source of genetic variation.
+ Content Learning Outcomes
+ cells (cont.) 1.6.7 demonstrate knowledge and understanding of the
+ independent assortment of chromosomes resulting
+ from the random alignment of homologous pairs on the
+ spindle as a source of genetic variation;
+ 1.6.8 carry out practical work:
+ • preparing and staining root tip squashes;
+ • recognising chromosomes at different stages of
+ cell division;
+ • identifying the stages of mitosis; and
+ • examining prepared slides or photographs of the
+ processes of mitosis and meiosis and identifying
+ the structures visible and the different stages; and
+ 1.7 Tissues and 1.7.1 demonstrate knowledge and understanding that
+ organs cells in tissues and organs are specialised:
+ • a tissue as an amalgamation of cells that all
+ perform the same function; and
+ • an organ as a body part composed of several
+ tissues grouped together to perform an overall
+ function.
+ Content Learning Outcomes
+ organs 1.7.2 demonstrate knowledge and understanding of
+ (cont.) the structure and function of the ileum
+ (a mammalian organ):
+ • the tissue layers as the mucosa, muscularis
+ mucosa, submucosa, muscularis externa and
+ serosa;
+ • the role of the mucosa:
+ − columnar epithelium (with microvilli for absorption
+ and containing goblet cells for secretion of mucus);
+ − villi increasing surface area for absorption;
+ − crypts of Lieberkühn with Paneth cells
+ (antimicrobial function to protect actively dividing
+ stem cells at the bottom of the crypts); and
+ − blood capillaries and lacteals for transporting
+ products of digestion;
+ • the adaptations of the epithelium for absorption
+ to include a brush border of microvilli and
+ numerous mitochondria:
+ − the roles of diffusion, active transport and
+ pinocytosis in absorption; and
+ − absorption of amino acids and monosaccharides
+ into blood capillaries and fats into lacteals (details
+ of digestive enzymes not required);
+ • the role of the muscularis mucosa in movement of
+ the villi (improving contact with the products of
+ digestion);
+ • the role of the submucosa as a layer containing
+ blood and lymphatic vessels;
+ • the role of the muscularis externa in pendular
+ movements, in local constrictions churning food,
+ and in peristalsis in movement of food along the
+ gut; and
+ • the role of the serosa as a protective and
+ supportive layer.
+ Content Learning Outcomes
+ organs 1.7.3 demonstrate knowledge and understanding of
+ (cont.) the structure and function of a mesophytic leaf
+ (a plant organ):
+ • the tissue layers as the upper epidermis, palisade
+ mesophyll, spongy mesophyll, xylem, phloem,
+ lower epidermis and stomata;
+ • the role of the upper epidermis with its waxy
+ cuticle for conserving water;
+ • the large surface area of the leaf as an adaptation
+ for photosynthesis;
+ • the role of the palisade mesophyll with its packed
+ arrangement of cells and the distribution of
+ chloroplasts for maximum light absorption;
+ • the role of the spongy mesophyll with its loose
+ arrangement of cells creating air spaces that
+ facilitate diffusion of gases;
+ • the role of xylem vessels within leaf veins
+ (vascular bundles) in supplying the leaf with water
+ and inorganic ions;
+ • the role of phloem sieve-tubes in translocating
+ sugars produced in photosynthesis away from the
+ leaf;
+ • the role of the lower epidermis with its waxy
+ cuticle in reducing water loss;
+ • the role of stomata (mostly in the lower
+ epidermis) in gas exchange, surrounded by guard
+ cells and closing at night to reduce transpirational
+ water loss; and
+ • the leaf as an organ with adaptations for
+ maximising photosynthesis while minimising
+ transpirational water loss.
+ Content Learning Outcomes
+ organs 1.7.4 carry out practical work to include:
+ (cont.)
+ • examining stained sections of the ileum using the
+ light microscope and electron micrographs or
+ photomicrographs to identify the villi (and
+ associated blood capillaries and lacteals), crypts
+ of Lieberkühn (and Paneth cells), mucosa,
+ columnar epithelium, goblet cells, muscularis
+ mucosa, submucosa, muscularis externa and
+ serosa;
+ • examining sections of a mesophytic leaf using the
+ light microscope or photographs to identify the
+ epidermal layers, waxy cuticles, palisade
+ mesophyll, chloroplasts, spongy mesophyll,
+ vascular tissue (xylem and phloem), and guard
+ cells and stomata; and
+ • making accurate drawings of sections of the ileum
+ and the leaf to show the tissue layers and drawing
+ block diagrams of tissues within the ileum and the
+ leaf.
+3.2 Unit AS 2: Organisms and Biodiversity
+This unit covers transport and exchange mechanisms in plants and mammals,
+adaptations of organisms and biodiversity with an emphasis on local contexts.
+Assessment for this unit consists of a written examination that includes both short
+and extended questions. For more details, see Section 6.
+ Content Learning Outcomes
+ and 2.1.1 demonstrate knowledge and understanding
+ exchange of the relationship between an organism’s
+ mechanisms size and its surface area to volume ratio:
+ • surface area as the total number of cells in
+ (a) The
+ direct contact with the surrounding
+ principles of
+ environment;
+ exchange
+ • surface area affects the rate of exchange of
+ and
+ materials at exchange surfaces;
+ transport
+ • volume as the total three-dimensional space
+ occupied by metabolically active tissues;
+ • volume of metabolically active tissue
+ influences the demand for metabolites;
+ • surface area influences the rate of supply of
+ metabolites to tissues;
+ • as an organism’s size increases, its surface area
+ increases less than its volume (many cells are
+ not in direct contact with the surrounding
+ environment);
+ • large animals have a small surface area to
+ volume ratio; and
+ • small animals have a large surface area to
+ volume ratio; and
+ 2.1.2 demonstrate knowledge and understanding
+ of the features of exchange surfaces that aid
+ passive and active transport:
+ • methods of increasing surface area;
+ • thin separating surface;
+ • concentration gradients; and
+ • examples to include leaf mesophyll, root hairs,
+ capillaries, red blood cells and alveoli.
+ Content Learning Outcomes
+ and 2.1.3 demonstrate knowledge and understanding of
+ exchange the principle of mass transport:
+ mechanisms
+ • the need for mass transport systems in
+ (a) The flowering plants and mammals; and
+ principles of • examples to include water transport in xylem,
+ exchange translocation in phloem, and circulation and
+ and ventilation in a mammal;
+ transport
+ (cont.)
+ (b) Gaseous 2.1.4 demonstrate knowledge and understanding of
+ exchange the factors affecting the rate of gas exchange:
+ • a large surface area for exchange;
+ • a moist surface into which gases dissolve;
+ • diffusion gradients for O2 and CO2;
+ • a diffusion path; and
+ • an appreciation of the relationship between the
+ factors shown in Fick’s law:
+ 2.1.5 demonstrate knowledge and understanding of
+ gas exchange in plants:
+ • exchanging of O2 and CO2 gases and the
+ processes of respiration and photosynthesis;
+ • net exchange of gases (mostly photosynthetic at
+ midday, only respirational at night) and the
+ compensation point;
+ • mesophyll surface representing a large, moist
+ surface area for exchange of gases; and
+ • diffusion path: thinness of leaves, air space
+ system through the spongy mesophyll and open
+ stomata during the day facilitating CO2 uptake.
+ Content Learning Outcomes
+ and 2.1.6 demonstrate knowledge and understanding of
+ exchange gas exchange in a mammal:
+ mechanisms
+ • mass flow of air to respiratory surface
+ (maintaining diffusion gradients);
+ (b) Gaseous
+ • large surface area provided by alveoli;
+ exchange
+ • thin respiratory surface (simple squamous
+ (cont.)
+ epithelium of alveoli and simple squamous
+ endothelium of a blood capillary wall);
+ • moist outer surface of alveoli;
+ • surfactant in moisture layer of alveoli to reduce
+ surface tension; and
+ • rich vascular supply (maintaining diffusion
+ gradients);
+ 2.1.7 demonstrate knowledge and understanding of
+ the structure and functioning of the breathing
+ system of a mammal:
+ • respiratory tree (trachea, bronchi, bronchioles,
+ alveolar ducts and alveoli);
+ • intercostal muscles and ribcage, diaphragm;
+ • mechanism of inspiration and expiration
+ (nervous regulation not required); and
+ • the effects of smoking to include cilia damage,
+ bronchitis, emphysema and lung cancer; and
+ 2.1.8 carry out practical work to include understanding how
+ to use a simple respirometer to:
+ • measure O2 consumption (with KOH present); and
+ • measure the net difference between CO2
+ production and O2 consumption (with no KOH
+ present) and so determine CO2 production.
+ Content Learning Outcomes
+ and 2.1.9 demonstrate knowledge and understanding of
+ exchange plant tissues in relation to water (and ion)
+ mechanisms transport and translocation:
+ • epidermis;
+ (c) Transport in
+ • endodermis;
+ plants and
+ • xylem (protoxylem and metaxylem) vessels and
+ transpiration
+ their distinctive lignification patterns; and
+ • phloem tissue (sieve-tube elements and
+ companion cells);
+ 2.1.10 demonstrate knowledge and understanding of
+ the uptake of water and mineral ions by root
+ hairs:
+ • water uptake involving osmosis; and
+ • ion uptake involving active transport;
+ 2.1.11 demonstrate knowledge and understanding of
+ the apoplast and symplast pathways through
+ plant tissues:
+ • the apoplast pathway along cellulose cell walls;
+ • the symplast pathway through protoplasts
+ connected by plasmodesmata;
+ • the apoplast and symplast pathways in the root
+ and leaf; and
+ • the role of the endodermis in ensuring the
+ symplast pathway into the stele; and
+ 2.1.12 demonstrate knowledge and understanding of
+ transpiration and the factors influencing its
+ rate:
+ • stomata as the main route of transpiration;
+ • the cuticle as a minor alternative route of
+ transpiration;
+ • internal factors to include leaf surface area,
+ stomatal density and cuticle thickness; and
+ • external factors including light intensity
+ (influencing stomatal aperture), air currents,
+ temperature, humidity and soil water
+ availability.
+ Content Learning Outcomes
+ and 2.1.13 demonstrate knowledge and understanding of
+ exchange the movement of water (and dissolved ions)
+ mechanisms through xylem:
+ • cohesion-tension theory;
+ (c) Transport in
+ • transpiration creating a negative pressure
+ plants and
+ within leaf xylem vessels resulting in the
+ transpiration
+ transpiration stream;
+ (cont.)
+ • the cohesive and adhesive forces of water; and
+ • the root pressure hypothesis;
+ 2.1.14 demonstrate knowledge and understanding of
+ the translocation of organic solutes through
+ phloem:
+ • involving energy expenditure and two-way flow;
+ and
+ • providing evidence for the above properties
+ (theories of translocation not required);
+ 2.1.15 demonstrate knowledge and understanding of
+ the structural adaptations of xerophytes and
+ hydrophytes:
+ • xerophytic adaptations to include leaf
+ curvature, reduced surface area, cuticular
+ thickening, hairs, sunken stomata, succulent
+ tissue, deep roots and spines; and
+ • hydrophytic adaptations to include stomata
+ mainly on the upper surface of leaves and a
+ prominent air space system (aerenchyma); and
+ (d) Circulatory 2.1.16 demonstrate knowledge and understanding of
+ system in the layout of the mammalian circulatory
+ mammals (cardiovascular) system:
+ • double circulation; and
+ • the major blood vessels of the thorax and
+ abdomen.
+ Content Learning Outcomes
+ exchange 2.1.17 demonstrate knowledge and understanding of
+ mechanisms the histological structure and function of
+ arteries, veins and capillaries:
+ (d) Circulatory
+ • squamous endothelium, smooth muscle, elastic
+ system in
+ and fibrous tissue in arteries and veins;
+ mammals
+ • capillaries consisting of squamous endothelium;
+ (cont.)
+ • arteries containing numerous elastic fibres
+ (allowing distension of the artery and
+ development of a pulse wave) and smooth
+ muscle (allowing vasoconstriction or
+ vasodilation to control blood supply to organs);
+ • atherosclerosis and atheroma; and
+ • veins containing abundant fibrous tissue for
+ protection and valves and large lumen to
+ facilitate the return of blood to the heart; and
+ 2.1.18 demonstrate knowledge and understanding of
+ the functioning of the mammalian heart:
+ • structure, including the atria, ventricles, septa,
+ AV-valves (tricuspid, bicuspid), chordae tendinae
+ and papillary muscles;
+ • the phases of the cardiac cycle as diastole, atrial
+ systole and ventricular systole;
+ • the flow of blood through the heart along
+ pressure gradients involving the operation of
+ valves;
+ • myogenic stimulation and the wave of excitation
+ through heart muscle: SA-node, AV-node,
+ bundle of His and Purkinje fibres;
+ • the changes in the volume of the heart
+ chambers during the cardiac cycle;
+ • the changes in pressure in the heart chambers
+ and major arteries (aorta and pulmonary) during
+ the cardiac cycle;
+ • the heart sounds and the representation of the
+ excitation wave in an electrocardiogram (ECG);
+ and
+ • investigation of blood vessels by angiograph for
+ diagnosis of coronary heart disease, aneurysm,
+ and atherosclerosis.
+ Content Learning Outcomes
+ and 2.1.19 carry out practical work:
+ exchange
+ • examining prepared slides and/or photographs
+ mechanisms
+ of blood vessels (in section) to distinguish
+ between arteries, veins and capillaries; and
+ (d) Circulatory
+ • dissecting the mammalian heart to identify
+ system in
+ heart chambers, AV valves, semilunar valves,
+ mammals
+ chordae tendinae, papillary muscles,
+ (cont.)
+ interventricular septum and major blood vessels:
+ vena cavae, pulmonary artery and aorta;
+ 2.1.20 demonstrate knowledge and understanding of
+ the composition and functions of mammalian
+ body fluids, including:
+ • adaptations of red blood cells for O2 transport;
+ • polymorphs and monocytes;
+ • lymphocytes:
+ − B-cells in antibody production; and
+ − T-cells in cell-mediated immunity
+ (details of the process of immunity not
+ required);
+ • plasma as the liquid component of blood
+ transporting products of digestion, ions, carbon
+ dioxide, urea, heat, prothrombin, fibrinogen
+ and clotting factors; and
+ • tissue fluid as the liquid medium bathing all cells
+ within tissues and involved in exchange of
+ metabolites with tissues;
+ 2.1.21 carry out practical work examining stained
+ blood films using light microscopes and/or
+ photomicrographs to identify red blood cells,
+ polymorphs, monocytes, lymphocytes and
+ platelets; and
+ 2.1.22 demonstrate knowledge and understanding of the
+ mechanism of blood clotting, including the role of
+ platelets, thromboplastins (thrombokinase),
+ prothrombin, clotting factors (for example Factors VIII
+ and Xa, calcium ions, vitamin K), fibrinogen and fibrin.
+ Content Learning Outcomes
+ and 2.1.23 demonstrate knowledge and understanding of the
+ exchange structure and chemical composition of haemoglobin in
+ mechanisms relation to its role in O2 transport, including:
+ • conjugated protein, the prosthetic groups
+ (d) Circulatory (haem) that contain Fe2+; and
+ systems in • each haemoglobin molecule contains four haem
+ mammals groups, each of these can transport one
+ (cont.) molecule of oxygen;
+ 2.1.24 demonstrate knowledge and understanding of the
+ concept of partial pressure of oxygen and its effect on
+ O2 transport by haemoglobin, including:
+ • loading haemoglobin with oxygen at higher pO2;
+ • unloading oxygen from haemoglobin at lower pO2;
+ • the effect initial binding of oxygen with
+ haemoglobin has on subsequent oxygen loading
+ by haemoglobin; and
+ • the haemoglobin oxygen dissociation curve; and
+ 2.1.25 demonstrate knowledge and understanding of the
+ Bohr effect on O2 transport by haemoglobin and the
+ physiological advantage this gives a tissue, including:
+ • increased pCO2/temperature and/or decreased
+ pH shifts the oxygen dissociation curve to the
+ right;
+ • increased pCO2/temperature and/or decreased
+ pH increases the dissociation of oxygen from
+ haemoglobin; and
+ • increased oxygen supply to tissues where the
+ CO2 and temperature have increased due to
+ increased rate of respiration and meeting the
+ increased demand for oxygen.
+ Content Learning Outcomes
+ and 2.1.26 demonstrate knowledge and understanding that
+ exchange myoglobin’s affinity for oxygen is higher than that of
+ mechanisms haemoglobin, enabling aerobic respiration to
+ continue for longer and delaying the onset of
+ (d) Circulatory anaerobic respiration:
+ systems in • myoglobin as a pigment present in red muscle;
+ mammals • oxygen dissociation curve for myoglobin is
+ (cont.) displaced to the left of that for haemoglobin;
+ and
+ • oxygen only dissociates from myoglobin when
+ the pO2 in muscle tissue is very low; and
+ 2.1.27 demonstrate knowledge and understanding of how
+ altitude affects the way haemoglobin transports O2:
+ • lower pO2 in air at higher altitude;
+ • haemoglobin of high altitude dwellers saturates
+ with oxygen at a lower pO2 than the
+ haemoglobin of lower altitude dwellers; and
+ • increased red blood cell production by athletes
+ during high altitude training.
+ Content Learning Outcomes
+ adaptation of 2.2.1 demonstrate knowledge and understanding of how
+ organisms organisms adapt to their environment, including:
+ • adaptation as a combination of behavioural,
+ physiological and morphological ways in which
+ an organism meets a particular environmental
+ challenge;
+ • studying organisms in their habitat; and
+ • referring to xerophytic and hydrophytic
+ adaptations given in 2.1.15;
+ 2.2.2 demonstrate knowledge and understanding of how
+ ecological factors influence the distribution of
+ organisms, including:
+ • climatic factors (temperature ranges, availability
+ of water, light intensity, light quality and day
+ length);
+ • edaphic factors (pH values, availability of
+ macronutrients and micronutrients, and
+ aeration of soils);
+ • biotic factors (limits on populations imposed by
+ competitors, predators and the accumulation of
+ waste); and
+ • the term ecological niche; and
+ 2.2.3 carry out practical work to include the qualitative and
+ quantitative techniques used to investigate the
+ distribution and relative abundance of plants and
+ animals in a habitat:
+ • sampling procedures to include:
+ − random sampling;
+ − line transect; and
+ − belt transect;
+ • sampling devices, including quadrats, pin
+ frames, pitfall traps, sweep nets and pooters;
+ • estimating species abundance, density,
+ frequency and percentage cover; and
+ • appreciating and, where possible, measuring the
+ biotic and abiotic factors that may be
+ influencing the distribution of organisms.
+ Content Learning Outcomes
+ 2.3.1 demonstrate knowledge and understanding that the
+ biochemical basis of life is similar for all organisms and
+ that all living organisms contain the biochemicals
+ carbohydrates, lipids, nucleic acids and proteins;
+ 2.3.2 demonstrate knowledge and understanding that
+ biodiversity involves variation among living organisms
+ at all levels of biological organisation, including:
+ • genetic diversity as the diversity of genes within
+ a species;
+ • species diversity as the diversity among species
+ in an ecosystem; and
+ • ecosystem diversity as the variety of ecosystems
+ in the biosphere;
+ 2.3.3 measure species diversity and know that genetic
+ diversity can be measured:
+ • species diversity is measured using Simpson’s
+ index;
+ • the formula for Simpson’s index is:
+ where N is the total percentage cover or total
+ number of organisms of all species and n is the
+ percentage cover of a species or number of
+ organisms of a particular species; and
+ • for plant species the percentage cover in a
+ quadrat is usually used (as it is usually very
+ difficult to count all the individual plants) or
+ frequency, for animal species the number of
+ organisms of a species is used; and
+ 2.3.4 demonstrate knowledge and understanding of the
+ principle of taxonomy, including:
+ • nomenclature – scientific naming of organisms
+ using the binomial system; and
+ • systematics – placing organisms into groups
+ based on their similarities and differences.
+ Content Learning Outcomes
+ (cont.) 2.3.5 demonstrate knowledge and understanding of the
+ concept of a species as a group of individuals of
+ common ancestry that closely resemble each other
+ and are normally capable of interbreeding to produce
+ fertile offspring;
+ 2.3.6 demonstrate knowledge and understanding of the
+ other taxa within which species can be grouped,
+ including:
+ • genus as a group of similar and closely related
+ species;
+ • family as a group of apparently related genera;
+ • order as a group of apparently related families;
+ • class as a group of orders within a phylum;
+ • phylum as a group of organisms constructed on
+ a similar plan; and
+ • kingdom as the largest and most inclusive
+ group; and
+ 2.3.7 demonstrate knowledge and understanding of
+ phylogenetic taxonomy as a way to classify sets of
+ species according to ancestral relationships, including
+ establishing relationships between organisms
+ according to a number of measurable features:
+ • morphology and anatomy (external and internal
+ features);
+ • cell structure (prokaryote/eukaryote);
+ • biochemistry (comparisons of DNA, RNA and the
+ amino acid sequences in proteins); and
+ • closely related organisms having a high degree
+ of agreement in the molecular structure of DNA
+ (base sequence), RNA (base sequence) and
+ protein (amino acid sequence), while the
+ molecules of organisms distantly related usually
+ show a pattern of dissimilarity.
+ Content Learning Outcomes
+ (cont.) 2.3.8 demonstrate knowledge and understanding of the five
+ kingdom system of classification:
+ • prokaryotae;
+ • protoctista;
+ • fungi;
+ • plantae; and
+ • animalia;
+ 2.3.9 demonstrate an awareness of other systems of
+ classification, for example the archaea as a separate
+ domain (super-kingdom), distinct from both the
+ bacteria domain and eukarya (eukaryote) domain;
+ 2.3.10 demonstrate knowledge and understanding of the
+ features of prokaryotae, for example a rod-shaped
+ bacterium, including:
+ • structure of prokaryotae cells; and
+ • reproduction by division;
+ 2.3.11 demonstrate knowledge and understanding of the
+ features of protoctista:
+ • eukaryotic;
+ • unicellular or showing limited differentiation; and
+ • that some are heterotrophs, for example
+ paramecium, and others are autotrophs, for
+ example pleurococcus;
+ 2.3.12 demonstrate knowledge and understanding of the
+ features of fungi, for example moulds, including:
+ • lysotrophs (decomposers);
+ • consisting of hyphae with chitinous cell walls; and
+ • feeding by extracellular digestion; and
+ 2.3.13 demonstrate knowledge and understanding of the
+ features of plantae including that plants:
+ • are autotrophs (producers);
+ • have chlorophyll in chloroplasts; and
+ • have cellulose cell walls.
+ Content Learning Outcomes
+ (cont.) 2.3.14 demonstrate knowledge and understanding of the
+ features of animalia, including that animals are
+ heterotrophs and capable of locomotion;
+ 2.4 Human 2.4.1 demonstrate knowledge and understanding that
+ impact on agricultural practices can have an impact on
+ biodiversity biodiversity, including:
+ • those that can promote biodiversity by
+ developing a variety of habitats and/or
+ providing different foods sources, for example:
+ − polyculture versus monoculture;
+ − crop rotation;
+ − hedgerow conservation and maintenance;
+ − using predator strips at field margins; and
+ − integrated pest management and biological
+ control versus pesticide use;
+ • the additional advantages and disadvantages of
+ the agricultural practices listed above; and
+ • intensive agricultural practices that result in
+ increased food production, as well as economic
+ benefits, but have biodiversity costs;
+ 2.4.2 demonstrate knowledge and understanding of the
+ significant consequences on biodiversity that can be
+ caused by pollution of waterways by, for example:
+ • organic pollution by slurry and silage effluent; and
+ • mineral enrichment (eutrophication) as a result
+ of fertiliser run-off; and
+ 2.4.3 demonstrate knowledge and understanding of the
+ effects these organic pollutants and mineral
+ enrichment have on biological oxygen demand (BOD),
+ and on flora and fauna in waterways, and strategies to
+ reduce the incidence of these types of aquatic
+ pollution.
+ Content Learning Outcomes
+ impact on 2.4.4 demonstrate an awareness that there is a range of
+ biodiversity initiatives to conserve habitats and promote
+ (cont.) biodiversity, including:
+ • Areas of Special Scientific Interest (ASSI);
+ • Special Areas of Conservation;
+ • Biodiversity Action Plans (students should
+ access one or more of these to become aware
+ of the habitats and species discussed for their
+ own district council area);
+ • Department of Agriculture and Rural
+ Development (DARD) agri-environment
+ schemes; and
+ • Northern Ireland priority habitat and species
+ lists (2010); and
+ 2.4.5 demonstrate knowledge and understanding of global
+ warming and climate change, including:
+ • consequences for flora and fauna, for example
+ local extinctions or shifts in ecological ranges; and
+ • potential consequences for species and
+ ecosystem biodiversity.
+3.3 Unit AS 3: Practical Skills in AS Biology

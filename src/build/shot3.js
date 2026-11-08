@@ -1,0 +1,10 @@
+const {chromium}=require('playwright');
+(async()=>{const b=await chromium.launch();const errs=[];
+const p=await b.newPage({viewport:{width:1000,height:900}});p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>m.type()==='error'&&errs.push(m.text()));
+const f='file://'+__dirname+'/../quiztoplasm.html';
+await p.goto(f);await p.waitForTimeout(1200);await p.screenshot({path:__dirname+'/h.png',fullPage:true});
+await p.goto(f+'#cellular-frontier');await p.waitForTimeout(400);await p.screenshot({path:__dirname+'/w1.png',fullPage:true});
+await p.goto(f+'#run-b');await p.waitForTimeout(600);await p.click('.opt');await p.waitForTimeout(300);await p.screenshot({path:__dirname+'/rb.png'});
+await p.goto(f+'#lab-oxygen');await p.waitForTimeout(400);await p.screenshot({path:__dirname+'/ox.png'});
+await p.click('.back');await p.waitForTimeout(300);console.log('after back:',await p.evaluate(()=>location.hash));
+console.log(errs);await b.close()})();
