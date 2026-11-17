@@ -7,7 +7,7 @@
 <script>
 /* count each game, lab, topic or notes screen opened (these sites change screens with #links) */
 (function(){var last="";function send(){var h=location.hash;if(!h||h.length<2||h===last)return;last=h;
- var p=location.pathname+h;if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:p,title:document.title+" · "+h.slice(1)})}else{setTimeout(function(){last="";send()},1500)}}
+ var p=location.pathname+(/^#(set|results)=/.test(h)?h.split("=")[0]:h);if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:p,title:document.title+" · "+h.slice(1)})}else{setTimeout(function(){last="";send()},1500)}}
  window.addEventListener("hashchange",send);window.addEventListener("load",function(){setTimeout(send,800)})})();
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -213,7 +213,46 @@ details.exm[open] summary{margin-bottom:10px}
 .fb{border-radius:12px;padding:10px 14px;font-size:15px} .fb h4{margin:0 0 4px} .fb ul{margin:0;padding-left:20px;display:grid;gap:4px}
 .fb.good{background:var(--goodbg)} .fb.lost{background:#fff4d1}
 .timing{display:grid;gap:6px} .timing div{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:6px 10px} .timing b{font:700 14px var(--mono);color:var(--pinkd);min-width:56px}
-</style>
+
+/* teacher assignments */
+.tq-pg{display:grid;gap:18px;color:var(--tq-fg)}.tq-pg h3{font-family:var(--body)}.tq-pg a:not(.tq-btn){color:var(--tq-acc)}.tq-col{display:grid;gap:12px;align-content:start}.tq-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.tq-row.sp{justify-content:space-between}
+.tq-k{font:700 12px var(--mono,monospace);letter-spacing:.14em;color:var(--tq-acc);text-transform:uppercase}
+.tq-h{margin:0;font-size:30px;line-height:1.15}.tq-h.sm{font-size:26px}.tq-lead{margin:0;color:var(--tq-mut);font-size:16px;line-height:1.5}.tq-mut{color:var(--tq-mut);font-size:14px;line-height:1.45}
+.tq-hero{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;align-items:center}
+.tq-btn{display:inline-flex;align-items:center;gap:6px;background:var(--tq-btn);color:var(--tq-btnfg);font-weight:800;border-radius:999px;padding:11px 20px;border:0;text-decoration:none;white-space:nowrap;font-size:15px;cursor:pointer}
+.tq-btn.g{background:transparent;color:var(--tq-fg);border:1.5px solid var(--tq-line)}.tq-btn.sm{padding:7px 14px;font-size:13px}.tq-btn.big{justify-content:center;font-size:17px;padding:14px 22px}.tq-btn:disabled{opacity:.45;cursor:default}
+.tq-link{background:none;border:0;color:var(--tq-acc);font:inherit;text-decoration:underline;cursor:pointer;padding:0}
+.tq-priv{border:2px solid var(--tq-good);background:var(--tq-goodbg);border-radius:14px;padding:12px 16px;display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.45;color:var(--tq-fg)}.tq-lock{font-size:22px}
+.tq-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.tq-step{background:var(--tq-surf);border:1px solid var(--tq-line);border-radius:16px;padding:16px;display:grid;gap:8px;align-content:start;position:relative}
+.tq-step>b{font-size:17px}.tq-step>span{color:var(--tq-mut);font-size:14px;line-height:1.45}.tq-ic{font-size:32px}.tq-arr{position:absolute;right:-13px;top:44%;font-style:normal;color:var(--tq-acc);z-index:2}
+.tq-num{width:34px;height:34px;border-radius:50%;background:var(--tq-btn);color:var(--tq-btnfg);font-weight:900;display:grid;place-items:center;font-size:16px;flex:none}
+.tq-box{background:var(--tq-surf);border:1px solid var(--tq-line);border-radius:16px;padding:16px 18px;display:grid;gap:10px;align-content:start}
+.tq-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}.tq-two.w{grid-template-columns:1.1fr 1fr}.tq-two.w2{grid-template-columns:.8fr 1.7fr}
+.tq-fig{margin:0;background:var(--tq-surf);border:1px solid var(--tq-line);border-radius:16px;overflow:hidden;display:grid}.tq-fig img{width:100%;height:auto;display:block;background:#fff}.tq-fig figcaption{padding:12px 16px;font-size:14px;color:var(--tq-mut);line-height:1.45}.tq-fig figcaption b{color:var(--tq-fg)}
+.tq-faq{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.tq-howto ol{margin:0;padding-left:20px;display:grid;gap:8px;line-height:1.45}
+.tq-list{display:grid;gap:8px}.tq-item{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 14px;border:1px solid var(--tq-line);border-radius:12px;text-decoration:none;color:var(--tq-fg);background:var(--tq-surf)}.tq-item>div:first-child{display:grid;gap:2px}
+.tq-chip{font:700 12px var(--mono,monospace);border:1.5px solid var(--tq-line);border-radius:999px;padding:5px 11px;color:var(--tq-mut);background:transparent;cursor:pointer}.tq-chip.on{background:var(--tq-btn);color:var(--tq-btnfg);border-color:var(--tq-acc)}
+.tq-grp{font:700 12px var(--mono,monospace);color:var(--tq-acc);margin-top:6px}
+.tq-task{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;text-align:left;padding:10px 12px;border:1px solid var(--tq-line);border-radius:10px;background:transparent;color:var(--tq-fg);font:inherit;cursor:pointer}.tq-task>span:last-child{display:grid;gap:2px}.tq-task.on{border-color:var(--tq-acc);background:var(--tq-sel)}
+.tq-cb{width:22px;height:22px;border-radius:6px;border:1.5px solid var(--tq-line);display:grid;place-items:center;font-weight:900;font-size:13px}.tq-task.on .tq-cb{background:var(--tq-btn);border-color:var(--tq-acc);color:var(--tq-btnfg)}
+.tq-lab{display:grid;gap:5px;font-size:13px;color:var(--tq-mut)}.tq-in{background:var(--tq-inbg);border:1.5px solid var(--tq-line);border-radius:10px;padding:10px 12px;font:inherit;font-size:15px;color:var(--tq-fg);width:100%;box-sizing:border-box}.tq-in.tq-err{border-color:var(--tq-bad)}.tq-ro{line-height:1.5}
+.tq-ta{min-height:220px;font:600 12px/1.7 var(--mono,monospace);resize:vertical;white-space:pre;overflow-x:auto}
+.tq-code{font:700 14px var(--mono,monospace);background:#fff;color:#1c291e;border-radius:10px;padding:10px 12px;border:2px solid var(--tq-acc);word-break:break-all}.tq-code.big{font-size:17px;text-align:center;padding:14px}
+.tq-out{border:2px solid var(--tq-acc)}
+.tq-stu{max-width:640px;margin:0 auto;width:100%}.tq-tk{display:flex;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--tq-line);border-radius:14px;background:var(--tq-surf)}.tq-tk>b{flex:1}.tq-tk.done{border-color:var(--tq-good)}.tq-tk.done .tq-num{background:var(--tq-good);color:#fff}.tq-sc{font-weight:800;color:var(--tq-acc);white-space:nowrap}
+.tq-done{text-align:center;display:grid;gap:4px;font-size:24px}.tq-party{font-size:44px}
+.tq-ban{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-top:14px;padding:12px 16px;border:2px solid var(--tq-acc);border-radius:14px;background:var(--tq-sel);font-size:15px}
+.tq-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.tq-big{font-size:22px;color:var(--tq-acc);line-height:1.2}.tq-big.sm{font-size:16px}.tq-ok{color:var(--tq-good);font-size:14px}.tq-bad{color:var(--tq-bad)}.tq-gold{color:var(--tq-acc)!important}
+.tq-scroll{overflow-x:auto}.tq-tab{width:100%;border-collapse:separate;border-spacing:4px}.tq-tab th{font:700 11px var(--mono,monospace);color:var(--tq-mut);padding:2px 4px}.tq-tab td{padding:7px 6px;border-radius:7px;font:700 13px var(--mono,monospace);text-align:center;white-space:nowrap}.tq-tab td.n{text-align:left;font:700 14px var(--body,inherit);color:var(--tq-fg)}
+.tq-avg{outline:2px solid var(--tq-acc)}.tq-h9{background:#166534;color:#dcfce7}.tq-h7{background:#3f7d3a;color:#ecfccb}.tq-h5{background:#a16207;color:#fef3c7}.tq-h3{background:#9f1239;color:#ffe4e6}.tq-h0{background:rgba(127,127,127,.15);color:var(--tq-mut)}
+.tq-flag{display:block;font-size:12px;word-break:break-all;color:var(--tq-bad)}
+.tqhome{margin-top:6px;border:2px dashed var(--tq-line);border-radius:20px;padding:22px 24px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;background:var(--tq-surf)}
+.tqhome-ic{width:70px;height:70px;border-radius:18px;background:var(--tq-btn);display:grid;place-items:center;font-size:36px}.tqhome h2{margin:2px 0 6px;font-size:24px}.tqhome p{margin:0;color:var(--tq-mut);line-height:1.45}.tqhome-b{display:grid;gap:8px}
+@media (max-width:760px){.tq-hero,.tq-two,.tq-two.w,.tq-two.w2,.tq-faq,.tq-stats{grid-template-columns:1fr}.tq-steps{grid-template-columns:1fr 1fr}.tq-arr{display:none}.tqhome{grid-template-columns:1fr;text-align:left}.tqhome-ic{display:none}.tq-h{font-size:24px}}
+@media (max-width:420px){.tq-steps{grid-template-columns:1fr}}
+.tq-pg,.tqhome,.tq-ban{--tq-surf:#ffffff;--tq-fg:#1d0b3d;--tq-mut:#5b4a7d;--tq-line:#d6cbef;--tq-acc:#6d3fd1;--tq-btn:#ffd166;--tq-btnfg:#1d0b3d;--tq-good:#127a3e;--tq-goodbg:#e3f6ea;--tq-bad:#b3261e;--tq-inbg:#f7f4ff;--tq-sel:rgba(109,63,209,.08)}
+.tqhome{margin-top:6px;border:2px dashed var(--tq-line);border-radius:20px;padding:22px 24px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;background:var(--tq-surf);color:var(--tq-fg)}.tqhome .tqhome-ic{background:var(--tq-acc)}.tqhome .kk2{font:700 12px var(--mono);letter-spacing:.14em;color:var(--tq-acc);text-transform:uppercase}
+@media (max-width:760px){.tqhome{grid-template-columns:1fr;padding:18px}.tqhome .tqhome-ic{display:none}.tqhome .tq-btn{white-space:normal}}</style>
 
 <div class="wrap">
   <section id="hub">
@@ -256,6 +295,12 @@ details.exm[open] summary{margin-bottom:10px}
           <a class="go" href="#research-frontier">Enter Unit 2 →</a>
         </article>
       </div>
+      <section class="tqhome" aria-labelledby="tqhome-h">
+        <div class="tqhome-ic" aria-hidden="true">🍎</div>
+        <div><div class="kk2">For teachers</div><h2 id="tqhome-h">Set Psycheverse work through Google Classroom</h2><p>Pick quizzes, case files and answer builders, share one link with your class, then see everyone’s results in one grid. No accounts, and no student data leaves your school’s systems.</p></div>
+        <div class="tqhome-b"><a class="tq-btn" href="#teachers" style="justify-content:center">Open teacher tools →</a><a class="tq-btn g sm" href="#students" style="justify-content:center">🎓 For students</a></div>
+      </section>
+
       <section class="about" aria-labelledby="about-h"><h2 id="about-h">About The Science Realms</h2>
 <p><b>The Psycheverse</b> is part of <b>The Science Realms</b>, an interactive revision platform I created and developed during my 2026–2027 gap year. It covers CCEA AS Biology, CCEA AS Chemistry and WJEC AS Psychology. This site is the WJEC AS Psychology realm.</p>
 <p><a href="/" style="font-weight:700">Read about the project and visit all three realms ↗</a></p>
@@ -971,9 +1016,10 @@ function frame(kicker,title,back,backLabel,body){
   view.innerHTML=`<div style="display:grid;gap:18px">${MINI}<div class="bar"><div><div class="kk">${esc(kicker)}</div><h2 class="gt">${esc(title)}</h2></div><a class="back" href="#${back}">← ${esc(backLabel)}</a></div>${body}</div>`;
 }
 function results(key,got,max,extra=""){
+  const tban=typeof Teach!=="undefined"?Teach.record(location.hash.slice(1),Math.round(max?got/max*100:0)):"";
   const pct=max?Math.round(got/max*100):0,prev=store.get(key),best=pct>prev;if(best)store.set(key,pct);
   return `<div class="pop" style="display:grid;gap:14px"><div class="row" style="gap:28px;align-items:flex-end"><div><div class="big">${got}/${max}</div><div class="muted">${pct}% ${best?"· new best":"· best "+Math.max(prev,pct)+"%"}</div></div><div class="stars" style="font-size:30px">${starsOf(max?got/max:0)}</div></div>${extra}
-  <div class="row"><button class="primary" data-act="again">Play again</button><a class="ghost" href="#${G.back}">Back to topics</a></div></div>`;
+  <div class="row"><button class="primary" data-act="again">Play again</button><a class="ghost" href="#${G.back}">Back to topics</a></div></div>${tban}`;
 }
 const act=(href,name,sub,key,cls="")=>`<a class="act ${cls}" href="#${href}"><span>${name}<small>${sub}</small></span><span class="sc">${key===null?"Read":bestTxt(key)||"Play"}</span></a>`;
 
@@ -1228,6 +1274,140 @@ document.addEventListener("keydown",e=>{
 });
 
 /* ============ ROUTER ============ */
+const TQ_CFG={"tag": "P", "name": "Psycheverse", "board": "WJEC", "thing": "quizzes, case files and answer builders", "egTitle": "e.g. The biological approach", "units": [["u1", "Unit 1"], ["u2", "Unit 2"]], "cat": [["quiz-u1", "Unit 1 Bank", "u1", "Mixed", "Mixed practice", 6], ["sort-arena", "Approach Arena", "u1", "Mixed", "Mixed practice", 6], ["sort-cmd", "Command Word Sort", "u1", "Exam skills", "Exam technique", 6], ["cmdq", "Describe vs Evaluate", "u1", "Exam skills", "Exam technique", 5], ["quiz-bio", "Topic quiz: The biological approach", "u1", "1.1", "The biological approach", 6], ["sort-ther-drug", "Therapy Lab: Drug therapy", "u1", "1.1", "The biological approach", 6], ["sort-ther-surg", "Therapy Lab: Psychosurgery", "u1", "1.1", "The biological approach", 6], ["sort-case-raine", "Case File: Raine et al. (1997)", "u1", "1.1", "The biological approach", 6], ["facts-raine", "Fact Check: Raine et al. (1997)", "u1", "1.1", "The biological approach", 5], ["build-bio-surg", "Answer Builder [8]: Describe the main components of psychosurgery.", "u1", "1.1", "The biological approach", 8], ["quiz-pd", "Topic quiz: The psychodynamic approach", "u1", "1.2", "The psychodynamic approach", 6], ["sort-ther-dream", "Therapy Lab: Dream analysis", "u1", "1.2", "The psychodynamic approach", 6], ["sort-ther-group", "Therapy Lab: Group analysis psychotherapy", "u1", "1.2", "The psychodynamic approach", 6], ["sort-case-bowlby", "Case File: Bowlby (1944)", "u1", "1.2", "The psychodynamic approach", 6], ["facts-bowlby", "Fact Check: Bowlby (1944)", "u1", "1.2", "The psychodynamic approach", 5], ["build-pd-rel", "Answer Builder [5]: Explain how a relationship is formed using the psychody…", "u1", "1.2", "The psychodynamic approach", 8], ["quiz-beh", "Topic quiz: The behaviourist approach", "u1", "1.3", "The behaviourist approach", 6], ["sort-ther-aver", "Therapy Lab: Aversion therapy", "u1", "1.3", "The behaviourist approach", 6], ["sort-ther-sd", "Therapy Lab: Systematic desensitisation", "u1", "1.3", "The behaviourist approach", 6], ["sort-case-albert", "Case File: Watson and Rayner (1920)", "u1", "1.3", "The behaviourist approach", 6], ["facts-albert", "Fact Check: Watson and Rayner (1920)", "u1", "1.3", "The behaviourist approach", 5], ["build-beh-assume", "Answer Builder [4]: Describe one assumption of the behaviourist approach.", "u1", "1.3", "The behaviourist approach", 8], ["quiz-cog", "Topic quiz: The cognitive approach", "u1", "1.4", "The cognitive approach", 6], ["sort-ther-cbt", "Therapy Lab: Cognitive behavioural therapy (CBT)", "u1", "1.4", "The cognitive approach", 6], ["sort-ther-rebt", "Therapy Lab: Rational emotive behaviour therapy (REBT)", "u1", "1.4", "The cognitive approach", 6], ["sort-case-loftus", "Case File: Loftus and Palmer (1974)", "u1", "1.4", "The cognitive approach", 6], ["facts-loftus", "Fact Check: Loftus and Palmer (1974)", "u1", "1.4", "The cognitive approach", 5], ["build-cog-rel", "Answer Builder [5]: Explain how a relationship is formed using the cognitiv…", "u1", "1.4", "The cognitive approach", 8], ["build-cog-eval", "Answer Builder [10]: Evaluate cognitive behavioural therapy (CBT).", "u1", "1.4", "The cognitive approach", 8], ["quiz-pos", "Topic quiz: The positive approach", "u1", "1.5", "The positive approach", 6], ["sort-ther-mind", "Therapy Lab: Mindfulness", "u1", "1.5", "The positive approach", 6], ["sort-ther-qolt", "Therapy Lab: Quality of life therapy", "u1", "1.5", "The positive approach", 6], ["sort-case-myers", "Case File: Myers and Diener (1995)", "u1", "1.5", "The positive approach", 6], ["facts-myers", "Fact Check: Myers and Diener (1995)", "u1", "1.5", "The positive approach", 5], ["build-pos-qolt", "Answer Builder [8]: Describe the main components of quality of life therapy.", "u1", "1.5", "The positive approach", 8], ["quiz-ex1", "Topic quiz: Unit 1 exam skills", "u1", "1.6", "Unit 1 exam skills", 6], ["relate", "Relationship Builder", "u1", "1.6", "Unit 1 exam skills", 5], ["build-bio-weak", "Answer Builder [10]: Compare and contrast the biological and behaviourist ap…", "u1", "1.6", "Unit 1 exam skills", 8], ["quiz-u2", "Unit 2 Bank", "u2", "Mixed", "Mixed practice", 6], ["scen-music", "Scenario Lab", "u2", "Mixed", "Mixed practice", 8], ["sd-a", "Standard Deviation Lab", "u2", "Exam skills", "Exam technique", 10], ["quiz-deb", "Topic quiz: Contemporary debates", "u2", "2.1", "Contemporary debates", 6], ["sort-deb-neuro", "Debate Arena: The ethics of neuroscience", "u2", "", "Contemporary debates", 6], ["sort-deb-mother", "Debate Arena: The mother as primary care-giver of an i", "u2", "", "Contemporary debates", 6], ["sort-deb-condition", "Debate Arena: Using conditioning techniques to control", "u2", "", "Contemporary debates", 6], ["sort-deb-ewt", "Debate Arena: Reliability of eye-witness testimony (in", "u2", "", "Contemporary debates", 6], ["sort-deb-positive", "Debate Arena: Relevance of positive psychology in toda", "u2", "", "Contemporary debates", 6], ["quiz-cls", "Topic quiz: Milgram and Kohlberg", "u2", "2.2", "Milgram and Kohlberg", 6], ["sort-case-milgram", "Case File: Milgram (1963)", "u2", "2.2", "Milgram and Kohlberg", 6], ["facts-milgram", "Fact Check: Milgram (1963)", "u2", "2.2", "Milgram and Kohlberg", 5], ["sort-case-kohlberg", "Case File: Kohlberg (1968)", "u2", "2.2", "Milgram and Kohlberg", 6], ["facts-kohlberg", "Fact Check: Kohlberg (1968)", "u2", "2.2", "Milgram and Kohlberg", 5], ["build-eth-milgram", "Answer Builder [8]: Discuss the ethical issues in Milgram (1963) with refer…", "u2", "2.2", "Milgram and Kohlberg", 8], ["quiz-rq", "Topic quiz: Aims, hypotheses and variables", "u2", "2.3", "Aims, hypotheses and variables", 6], ["sort-trait-vars", "Variable Sort", "u2", "2.3", "Aims, hypotheses and variables", 6], ["build-rq-hyp", "Answer Builder [2]: A researcher tests whether chewing gum improves concent…", "u2", "2.3", "Aims, hypotheses and variables", 8], ["quiz-meth", "Topic quiz: Methodologies and data", "u2", "2.4", "Methodologies and data", 6], ["sort-trait-methods", "Method Match", "u2", "2.4", "Methodologies and data", 6], ["sort-trait-quasi", "Experiment or not?", "u2", "2.4", "Methodologies and data", 6], ["sort-trait-data", "Data Detective", "u2", "2.4", "Methodologies and data", 6], ["quiz-loc", "Topic quiz: Location of research", "u2", "2.5", "Location of research", 6], ["sort-trait-loc", "Location, Location", "u2", "2.5", "Location of research", 6], ["quiz-samp", "Topic quiz: Participants and sampling", "u2", "2.6", "Participants and sampling", 6], ["sort-trait-samp", "Sampling Sort", "u2", "2.6", "Participants and sampling", 6], ["quiz-des", "Topic quiz: Experimental design", "u2", "2.7", "Experimental design", 6], ["sort-trait-design", "Design Desk", "u2", "2.7", "Experimental design", 6], ["quiz-data", "Topic quiz: Levels of measurement, graphs and statistics", "u2", "2.8", "Levels of measurement, graphs and statistics", 6], ["sort-trait-levels", "Level Up", "u2", "2.8", "Levels of measurement, graphs and statistics", 6], ["sort-trait-graphs", "Graph Choice", "u2", "2.8", "Levels of measurement, graphs and statistics", 6], ["sd-b", "Standard Deviation Lab 2", "u2", "2.8", "Levels of measurement, graphs and statistics", 10], ["sd-c", "Standard Deviation Lab 3", "u2", "2.8", "Levels of measurement, graphs and statistics", 10], ["scen-anxiety", "Anxiety scores", "u2", "2.8", "Levels of measurement, graphs and statistics", 8], ["quiz-rv", "Topic quiz: Reliability and validity", "u2", "2.9", "Reliability and validity", 6], ["sort-trait-rel", "Reliability or Validity?", "u2", "2.9", "Reliability and validity", 6], ["quiz-eth", "Topic quiz: Ethics", "u2", "2.10", "Ethics", 6], ["sort-trait-eth", "Ethics Sort", "u2", "2.10", "Ethics", 6], ["scen-ethicsA", "Ethics Committee: the stress study", "u2", "2.10", "Ethics", 8], ["scen-ethicsB", "Ethics Committee: the online gambling survey", "u2", "2.10", "Ethics", 8], ["quiz-ex2", "Topic quiz: Novel scenarios and Section B skills", "u2", "2.11", "Novel scenarios and Section B skills", 6], ["scen-screen", "Screen time and sleep", "u2", "2.11", "Novel scenarios and Section B skills", 8], ["scen-obs", "Playground observation", "u2", "2.11", "Novel scenarios and Section B skills", 8]]};
+/* ================= TEACH: assignments through Google Classroom (no student data leaves the school) ================= */
+const Teach=(()=>{
+const C=TQ_CFG;const CAT={};C.cat.forEach(([h,t,u,code,topic,min])=>{CAT[h]={h,t,u,code,topic,min}});
+const LS={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const b64e=s=>btoa(unescape(encodeURIComponent(s))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+const b64d=s=>{s=s.replace(/-/g,"+").replace(/_/g,"/");while(s.length%4)s+="=";return decodeURIComponent(escape(atob(s)))};
+const fnv=s=>{let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)>>>0}return h};
+const hid=(s,n)=>fnv(s).toString(36).toUpperCase().padStart(7,"0").slice(-n);
+const clip=(s,n)=>String(s==null?"":s).slice(0,n);
+const SALT="tsr-"+C.tag.toLowerCase()+"-2026",PRE="TSR-"+C.tag+"-",KP="tsr"+C.tag.toLowerCase();
+const esc_=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const stars=f=>{const n=f>=1?3:f>=.67?2:f>=.34?1:0;return "★".repeat(n)+"☆".repeat(3-n)};
+function dec(p){try{const o=JSON.parse(b64d(p));if(!o||!Array.isArray(o.s))return null;const set={t:clip(o.t,80)||"Assignment",c:clip(o.c,20),d:clip(o.d,30),s:o.s.filter(h=>CAT[h]).slice(0,12)};return set.s.length?set:null}catch(e){return null}}
+const enc=set=>b64e(JSON.stringify({v:1,t:set.t,c:set.c,d:set.d,s:set.s}));
+const setId=p=>hid(p,4);
+const NAME=n=>String(n||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toUpperCase().replace(/[^A-Z0-9 ]/g," ").trim().replace(/\s+/g,".").slice(0,20)||"STUDENT";
+const nice=N=>N.split(".").map(w=>w.length===1?w+".":w.charAt(0)+w.slice(1).toLowerCase()).join(" ");
+const T=h=>CAT[h]?CAT[h].t:h,M=h=>CAT[h]?CAT[h].min:8;
+function code(p,set,name,sc){const S=setId(p),N=NAME(name),scores=set.s.map(h=>sc[h]==null?"X":Math.round(sc[h])).join(".");return `${PRE}${S}-${N}-${scores}-${hid(S+"|"+N+"|"+scores+"|"+SALT,2)}`}
+const RE=new RegExp(PRE+"([0-9A-Z]{4})-([A-Z0-9.]{1,20})-([0-9X.]+)-([0-9A-Z]{2})","g");
+function parse(text){const out=[];let m;RE.lastIndex=0;while((m=RE.exec(String(text).toUpperCase()))){const [all,S,N,scores,chk]=m;out.push({raw:all,S,N,scores:scores.split(".").map(x=>x==="X"?null:Math.min(100,+x)),ok:hid(S+"|"+N+"|"+scores+"|"+SALT,2)===chk})}
+ const other=String(text).toUpperCase().match(/TSR-[A-Z]-[0-9A-Z]{4}-[A-Z0-9.]{1,20}-[0-9X.]+-[0-9A-Z]{2}/g)||[];other.filter(o=>!o.startsWith(PRE)).forEach(o=>out.push({raw:o,S:"",N:"",scores:[],ok:false,wrongRealm:true}));return out}
+const prog=S=>LS.get(KP+"-set-"+S,{name:"",sc:{}}),saveProg=(S,v)=>LS.set(KP+"-set-"+S,v);
+const active=()=>{const p=LS.get(KP+"-active",null);const set=p&&dec(p);return set?{p,set}:null};
+const link=(kind,p)=>location.origin+location.pathname+"#"+kind+"="+p;
+const copyBtn=(txt,label,cls="tq-btn")=>`<button class="${cls}" data-tq="copy" data-txt="${esc_(txt)}">${label}</button>`;
+const IMG=f=>"img/"+f;
+let B={unit:C.units[0][0],sel:[],t:"",c:"",d:"",out:null},R={text:""},cur="";
+
+function record(h,pct){const a=active();if(!a||!a.set.s.includes(h))return "";const S=setId(a.p),pr=prog(S);const prev=pr.sc[h];pr.sc[h]=prev==null?pct:Math.max(prev,pct);saveProg(S,pr);
+ const done=a.set.s.filter(x=>pr.sc[x]!=null).length,n=a.set.s.length;
+ return `<div class="tq-ban"><span>📌 Saved to your assignment <b>${esc_(a.set.t)}</b>: ${done} of ${n} task${n>1?"s":""} done${prev!=null&&pct<=prev?` (your best, ${prev}%, still counts)`:""}.</span><a class="tq-btn" href="#set=${a.p}">${done===n?"Get my completion code →":"Back to assignment →"}</a></div>`}
+
+const privacy=t=>`<div class="tq-priv"><span class="tq-lock">🔒</span><div>${t}</div></div>`;
+const steps=()=>`<div class="tq-steps">
+ <div class="tq-step"><div class="tq-num">1</div><div class="tq-ic">🧪</div><b>Create an assignment</b><span>Tick the ${C.thing} you want, by ${C.board} spec topic. You get a link and ready-written instructions.</span><i class="tq-arr">➜</i></div>
+ <div class="tq-step"><div class="tq-num">2</div><div class="tq-ic">📌</div><b>Post it in Google Classroom</b><span>Paste the link and instructions into a new assignment, like any other homework.</span><i class="tq-arr">➜</i></div>
+ <div class="tq-step"><div class="tq-num">3</div><div class="tq-ic">🎓</div><b>Students complete it</b><span>At the end each student gets a completion code with their name and scores. They paste it as a private comment and turn in.</span><i class="tq-arr">➜</i></div>
+ <div class="tq-step"><div class="tq-num">4</div><div class="tq-ic">📊</div><b>See the results</b><span>Paste the codes into Class results to get a colour-coded grid of every student and task, plus a CSV for your markbook.</span></div></div>`;
+const faq=items=>`<div class="tq-faq">${items.map(([q,a])=>`<div class="tq-box"><b>${q}</b><span class="tq-mut">${a}</span></div>`).join("")}</div>`;
+function pageTeachers(){const mine=LS.get(KP+"-mysets",[]);
+ return `<div class="tq-hero"><div class="tq-col"><div class="tq-k">For teachers</div><h3 class="tq-h">Set ${C.name} work through your Google Classroom</h3>
+  <p class="tq-lead">Choose ${C.thing} for your class, post one link, and get a results grid when the work is handed in. It works with the Google Classroom you already use. No accounts or sign-ups for you or your students.</p>
+  <div class="tq-row"><a class="tq-btn" href="#teach-new">＋ Create an assignment</a><a class="tq-btn g" href="#results">▤ Class results</a><a class="tq-btn g" href="#students">🎓 For students</a></div></div>
+  ${privacy(`<b>No student data leaves your school.</b><br>Names and scores travel only inside your Google Classroom. The Science Realms never receives or stores them, and results are worked out on your own computer.`)}</div>
+ <div class="tq-k">How it works</div>${steps()}
+ <div class="tq-k">What it looks like</div>
+ <figure class="tq-fig"><img src="${IMG("teach-classroom.jpg")}" alt="Illustration of a Google Classroom assignment containing the ${C.name} link, with a student's completion code pasted as a private comment" loading="lazy"><figcaption><b>Step 2:</b> your assignment in Google Classroom, with the link attached. Students paste their code as a private comment, then click Turn in. <i>(Illustration)</i></figcaption></figure>
+ <div class="tq-two"><figure class="tq-fig"><img src="${IMG("teach-student.jpg")}" alt="Two phone screens: a student opening the assignment and typing their name, then finishing and copying their completion code" loading="lazy"><figcaption><b>Step 3:</b> what students see. They type their name (it stays on their device), do the tasks, then copy their completion code.</figcaption></figure>
+  <figure class="tq-fig"><img src="${IMG("teach-results.jpg")}" alt="The Class results page showing a colour-coded grid of student scores" loading="lazy"><figcaption><b>Step 4:</b> paste the codes into Class results. Each student’s best score on each task appears in one grid.</figcaption></figure></div>
+ ${mine.length?`<div class="tq-k">Your assignments on this computer</div><div class="tq-list">${mine.slice(0,8).map(m=>`<div class="tq-item"><div><b>${esc_(m.t)}</b><span class="tq-mut">${esc_(m.c||"")} ${m.d?"· due "+esc_(m.d):""} · ${m.n} task${m.n>1?"s":""}</span></div><div class="tq-row">${copyBtn(link("set",m.p),"Copy student link","tq-btn g sm")}<a class="tq-btn sm" href="#results=${m.p}">Results</a></div></div>`).join("")}</div>`:""}
+ <div class="tq-k">Questions</div>${faq([["Do students need an account?","No. They open the link and type their name, which stays on their own device and only appears inside their code."],["What if a student replays a task?","Their best score on each task is used. Progress is saved on the device they used."],["Can students fake a code?","Each code has a built-in check, so edited codes are flagged. It’s designed for homework, not formal assessment."],["Does it work with Teams?","Yes. Any platform where students can hand in a line of text works, including Teams and Google Forms."]])}`}
+function pageStudents(){return `<div class="tq-hero"><div class="tq-col"><div class="tq-k">For students</div><h3 class="tq-h">Got an assignment link from your teacher?</h3><p class="tq-lead">Your teacher can set ${C.name} activities as homework through Google Classroom. Here’s exactly what to do.</p></div>
+  ${privacy("<b>Your name stays on your device.</b><br>It’s only used to make your completion code. Nothing is sent to The Science Realms.")}</div>
+ <div class="tq-two"><div class="tq-box tq-howto"><b>How to do an assignment</b><ol><li>Open the link in your Google Classroom assignment.</li><li>Type your name (as your teacher knows you) and press <b>Start</b>.</li><li>Complete each task. Your best score on each one is saved on your device.</li><li>When you’ve finished, press <b>Copy code</b>.</li><li>Go back to the assignment in Google Classroom, paste the code as a <b>private comment</b> and click <b>Turn in</b>.</li></ol></div>
+  <figure class="tq-fig"><img src="${IMG("teach-student.jpg")}" alt="Phone screens showing the assignment start page and the completion code" loading="lazy"><figcaption>Start, then copy your completion code at the end.</figcaption></figure></div>
+ <figure class="tq-fig"><img src="${IMG("teach-classroom.jpg")}" alt="Illustration of where to paste the code as a private comment in Google Classroom" loading="lazy"><figcaption>Paste your code under <b>Private comments</b>, then click <b>Turn in</b>. <i>(Illustration)</i></figcaption></figure>
+ ${faq([["Can I redo a task?","Yes. Play it again from the assignment page and your best score counts."],["I closed the page. Have I lost my progress?","No. Open the same link on the same device and your progress will still be there."],["I used a different device.","Progress is saved per device, so finish on the one you started on, or redo the tasks."],["Is my teacher tracking what I do on the site?","No. Your teacher only sees what is in the code you hand in: your name and your scores."]])}
+ <div class="tq-row"><a class="tq-btn g" href="#teachers">← For teachers</a></div>`}
+function pageBuilder(){const items=C.cat.filter(x=>x[2]===B.unit);const groups=[];for(const it of items){const key=it[3]+" "+it[4];let g=groups.find(g=>g.key===key);if(!g){g={key,code:it[3],topic:it[4],ids:[]};groups.push(g)}g.ids.push(it[0])}
+ const total=B.sel.reduce((a,h)=>a+M(h),0);
+ return `<div class="tq-row sp"><div><div class="tq-k">For teachers</div><h3 class="tq-h sm">Create an assignment</h3></div><a class="tq-btn g" href="#teachers">← Teacher tools</a></div>
+ <div class="tq-two w"><div class="tq-box"><div class="tq-row">${C.units.map(([u,l])=>`<button class="tq-chip ${B.unit===u?"on":""}" data-tq="unit" data-k="${u}">${l}</button>`).join("")}</div>
+   ${groups.map(g=>`<div class="tq-grp">${esc_(g.code)} ${esc_(g.topic)}</div>${g.ids.map(h=>{const on=B.sel.includes(h);return `<button class="tq-task ${on?"on":""}" data-tq="pick" data-k="${h}" aria-pressed="${on}"><span class="tq-cb">${on?"✓":""}</span><span><b>${esc_(T(h))}</b><span class="tq-mut">about ${M(h)} min</span></span></button>`}).join("")}`).join("")}</div>
+  <div class="tq-col"><div class="tq-box"><div class="tq-k">Details</div>
+    <label class="tq-lab">Assignment title<input class="tq-in" id="tq-t" maxlength="80" value="${esc_(B.t)}" placeholder="${esc_(C.egTitle)}"></label>
+    <div class="tq-two"><label class="tq-lab">Class<input class="tq-in" id="tq-c" maxlength="20" value="${esc_(B.c)}" placeholder="e.g. 13B"></label><label class="tq-lab">Due<input class="tq-in" id="tq-d" maxlength="30" value="${esc_(B.d)}" placeholder="e.g. Fri 28 Nov"></label></div>
+    <div class="tq-mut">Selected: <b>${B.sel.length}</b> task${B.sel.length===1?"":"s"}${B.sel.length?` · about ${total} min`:""}${B.sel.length>=12?" (maximum 12)":""}</div>
+    <button class="tq-btn" data-tq="make" ${B.sel.length?"":"disabled"}>Create link →</button></div>
+   ${B.out?outBox(B.out):`<div class="tq-box tq-mut">Tick at least one activity, add a title, then press <b>Create link</b>.</div>`}</div></div>`}
+function instr(set){const n=set.s.map(T),list=n.length>1?n.slice(0,-1).join(", ")+" and "+n[n.length-1]:n[0],m=set.s.reduce((a,h)=>a+M(h),0);
+ return `Complete ${list} (about ${m} min) at the link below. At the end, copy your completion code and paste it as a private comment on this assignment, then click Turn in.`}
+function outBox(p){const set=dec(p);return `<div class="tq-box tq-out"><div class="tq-k">Your link is ready</div><div class="tq-code" id="tq-link">${esc_(link("set",p))}</div><div class="tq-mut">Text to paste into Google Classroom:</div><div class="tq-in tq-ro">${esc_(instr(set))}</div>
+ <div class="tq-row">${copyBtn(link("set",p),"Copy link")}${copyBtn(instr(set),"Copy instructions","tq-btn g")}<a class="tq-btn g" href="#set=${p}">Preview as student</a></div>
+ <div class="tq-mut">Results page for this assignment: <a href="#results=${p}">open Class results</a>. It’s also saved under <b>Your assignments</b> on this computer.</div></div>`}
+function pageSet(p){const set=dec(p);if(!set)return `<div class="tq-box"><b>This assignment link doesn’t work.</b><span class="tq-mut">Check you copied the whole link from Google Classroom, or ask your teacher for it again.</span></div>`;
+ LS.set(KP+"-active",p);const S=setId(p),pr=prog(S),done=set.s.filter(h=>pr.sc[h]!=null).length,n=set.s.length,all=done===n,named=!!pr.name;
+ const tasks=set.s.map((h,i)=>{const sc=pr.sc[h];return `<div class="tq-tk ${sc!=null?"done":""}"><div class="tq-num">${sc!=null?"✓":i+1}</div><b>${esc_(T(h))}</b>${sc!=null?`<span class="tq-sc">${sc}% ${stars(sc/100)}</span>`:`<span class="tq-chip">${M(h)} min</span>`}${named?`<a class="tq-btn sm ${sc!=null?"g":""}" href="#${h}">${sc!=null?"Redo":"Start"}</a>`:""}</div>`}).join("");
+ const nextId=set.s.find(h=>pr.sc[h]==null),c=named&&done?code(p,set,pr.name,pr.sc):"";
+ return `<div class="tq-stu"><div class="tq-k">Assignment from your teacher</div><h3 class="tq-h sm">${esc_(set.t)}</h3><div class="tq-mut">${[set.c,set.d?"due "+set.d:"",`${n} task${n>1?"s":""}`].filter(Boolean).map(esc_).join(" · ")}</div>
+ ${all&&named?`<div class="tq-done"><div class="tq-party">🎉</div><b>All done, ${esc_(pr.name.split(" ")[0])}!</b></div>`:""}
+ <div class="tq-col">${tasks}</div>
+ ${named?(done?`<div class="tq-k">Your completion code</div><div class="tq-code big" id="tq-code">${c}</div>${copyBtn(c,"📋 Copy code","tq-btn big")}
+   ${all?"":`<div class="tq-mut">You can hand this in now, but tasks you haven’t done will show as not started. ${nextId?`<a href="#${nextId}">Do the next task</a>.`:""}</div>`}
+   <div class="tq-box"><b>How to hand it in</b><span>1. Go back to the assignment in Google Classroom.<br>2. Paste the code as a <b>private comment</b>.<br>3. Click <b>Turn in</b>.</span></div><div class="tq-mut">Not ${esc_(pr.name)}? <button class="tq-link" data-tq="rename">Change name</button></div>`
+  :`<a class="tq-btn big" href="#${nextId}">Start the first task →</a><div class="tq-mut">Working as <b>${esc_(pr.name)}</b> · <button class="tq-link" data-tq="rename">Change name</button></div>`)
+ :`<label class="tq-lab">Your name (so your teacher knows it’s you)<input class="tq-in" id="tq-name" maxlength="30" placeholder="e.g. Niamh O." autocomplete="off"></label>${privacy("Your name stays on this device. It only goes into the code you hand in.")}<button class="tq-btn big" data-tq="name" data-k="${p}">Start →</button>`}
+ <div class="tq-mut"><a href="#students">How do assignments work?</a></div></div>`}
+function pageResults(p){const mine=LS.get(KP+"-mysets",[]);let set=p?dec(p):null;const codes=parse(R.text);
+ if(!set&&codes.length){const m=mine.find(m=>codes.some(c=>c.S===setId(m.p)));if(m){p=m.p;set=dec(p)}}
+ const S=set?setId(p):null;let rows=[],flag=[];
+ if(set){const by={},sum=a=>a.reduce((x,y)=>x+(y||0),0);for(const c of codes){if(c.S!==S||!c.ok||c.scores.length!==set.s.length){flag.push(c);continue}const prev=by[c.N];if(!prev||sum(c.scores)>=sum(prev.scores))by[c.N]=c}rows=Object.values(by).sort((a,b)=>a.N.localeCompare(b.N))}
+ const pc=v=>v==null?"tq-h0":v>=85?"tq-h9":v>=70?"tq-h7":v>=55?"tq-h5":"tq-h3",avg=a=>{const b=a.filter(x=>x!=null);return b.length?Math.round(b.reduce((x,y)=>x+y,0)/b.length):null};
+ const taskAvg=set?set.s.map((_,i)=>avg(rows.map(r=>r.scores[i]))):[],overall=avg(rows.map(r=>avg(r.scores)));
+ const low=set&&rows.length?set.s.map((h,i)=>[h,taskAvg[i]]).filter(x=>x[1]!=null).sort((a,b)=>a[1]-b[1])[0]:null;
+ return `<div class="tq-row sp"><div><div class="tq-k">Class results</div><h3 class="tq-h sm">${set?esc_([set.c,set.t].filter(Boolean).join(" · ")):"Paste your students’ codes"}</h3></div>${privacy("<b>Worked out on this computer. Nothing is uploaded.</b>")}</div>
+ <div class="tq-two w2"><div class="tq-box"><div class="tq-k">Paste completion codes</div><textarea class="tq-in tq-ta" id="tq-codes" spellcheck="false" wrap="off" placeholder="Paste the codes here, one per line, or the whole column from a Google Form export">${esc_(R.text)}</textarea>
+   <span class="tq-mut">Copy the private comments from Google Classroom, or paste a whole column. Anything that isn’t a code is ignored.</span><button class="tq-btn" data-tq="show" data-k="${p||""}">Show results</button>
+   ${codes.length&&set?`<span class="tq-ok">✓ ${rows.length} student${rows.length===1?"":"s"} read${flag.length?` · <span class="tq-bad">${flag.length} flagged</span>`:""}</span>`:""}
+   ${!set&&codes.length?`<span class="tq-bad">These codes are for an assignment that wasn’t created on this computer. Open the results link you got when you created it.</span>`:""}</div>
+  <div class="tq-col">${set&&rows.length?`<div class="tq-stats">${[["Codes read",rows.length],["Class average",overall==null?"–":overall+"%"],["Lowest task",low?T(low[0])+" ("+low[1]+"%)":"–"]].map(([l,v])=>`<div class="tq-box"><div class="tq-k">${l}</div><b class="tq-big ${String(v).length>8?"sm":""}">${esc_(String(v))}</b></div>`).join("")}</div>
+   <div class="tq-box tq-scroll"><table class="tq-tab"><tr><th>Student</th>${set.s.map(h=>`<th>${esc_(T(h))}</th>`).join("")}<th>Overall</th></tr>
+   ${rows.map(r=>{const o=avg(r.scores);return `<tr><td class="n">${esc_(nice(r.N))}</td>${r.scores.map(x=>`<td class="${pc(x)}">${x==null?"not started":x+"%"}</td>`).join("")}<td class="${pc(o)}">${o==null?"–":o+"%"}</td></tr>`}).join("")}
+   <tr><td class="n tq-gold">Class average</td>${taskAvg.map(a=>`<td class="${pc(a)} tq-avg">${a==null?"–":a+"%"}</td>`).join("")}<td class="${pc(overall)} tq-avg">${overall==null?"–":overall+"%"}</td></tr></table></div>
+   ${flag.length?`<div class="tq-box"><b class="tq-bad">Flagged codes</b><span class="tq-mut">These were edited, damaged, from a different assignment, or from another Science Realms site:</span>${flag.map(f=>`<code class="tq-flag">${esc_(f.raw)}</code>`).join("")}</div>`:""}
+   <div class="tq-row"><button class="tq-btn g" data-tq="csv" data-k="${p}">⤓ Download CSV for your markbook</button></div>`
+  :`<div class="tq-box tq-mut">${set?`Assignment: <b>${esc_(set.t)}</b> · ${set.s.length} task${set.s.length>1?"s":""}. Paste codes and press <b>Show results</b>.`:mine.length?`Paste codes, or pick an assignment:<div class="tq-list">${mine.slice(0,8).map(m=>`<a class="tq-item" href="#results=${m.p}"><b>${esc_(m.t)}</b><span class="tq-mut">${esc_(m.c||"")}</span></a>`).join("")}</div>`:"Paste codes from an assignment you created on this computer, or open the results link you got when you created it."}</div>`}</div></div>`}
+function csv(p){const set=dec(p);if(!set)return;const S=setId(p),by={};for(const c of parse(R.text))if(c.S===S&&c.ok&&c.scores.length===set.s.length)by[c.N]=c;
+ const q=s=>`"${String(s).replace(/"/g,'""')}"`,lines=[["Student",...set.s.map(T),"Overall"].map(q).join(",")];
+ for(const r of Object.values(by).sort((a,b)=>a.N.localeCompare(b.N))){const b=r.scores.filter(x=>x!=null);lines.push([nice(r.N),...r.scores.map(x=>x==null?"":x),b.length?Math.round(b.reduce((x,y)=>x+y,0)/b.length):""].map(q).join(","))}
+ const blob=new Blob([lines.join("\r\n")],{type:"text/csv"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=(set.c?set.c+" ":"")+set.t.replace(/[^\w ]+/g,"").slice(0,40)+" results.csv";document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)}
+
+const handles=h=>["teachers","students","teach-new","results"].includes(h)||/^(results|set)=/.test(h);
+function render(){const h=cur,isSet=h.startsWith("set="),isRes=h.startsWith("results");
+ const body=h==="teachers"?pageTeachers():h==="students"?pageStudents():h==="teach-new"?pageBuilder():isSet?pageSet(h.slice(4)):h==="results"?pageResults(null):isRes?pageResults(h.slice(8)):pageTeachers();
+ const title=isSet?"Assignment":isRes?"Class results":h==="students"?"For students":"For teachers";
+ const [back,bl]=isSet?["students","Help"]:h==="teachers"?["","Home"]:["teachers","Teachers"];
+ frame(C.name,title,back,bl,`<section class="panel tq-pg" id="tq-root">${body}</section>`)}
+function route(h){if(h!==cur&&h.startsWith("results"))R.text="";cur=h;render()}
+function sync(){const g=id=>{const e=document.querySelector(id);return e?e.value:null};const t=g("#tq-t"),c=g("#tq-c"),d=g("#tq-d"),x=g("#tq-codes");if(t!=null)B.t=t;if(c!=null)B.c=c;if(d!=null)B.d=d;if(x!=null)R.text=x}
+document.addEventListener("click",e=>{const b=e.target.closest("#tq-root [data-tq]");if(!b||b.disabled)return;const a=b.dataset.tq,k=b.dataset.k;sync();
+ if(a==="copy"){const txt=b.dataset.txt,done=()=>{const o=b.textContent;b.textContent="✓ Copied";setTimeout(()=>{b.textContent=o},1400)};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(done,()=>prompt("Copy this:",txt));else prompt("Copy this:",txt);return}
+ if(a==="unit")B.unit=k;
+ if(a==="pick"){B.sel=B.sel.includes(k)?B.sel.filter(x=>x!==k):B.sel.length<12?[...B.sel,k]:B.sel;B.out=null}
+ if(a==="make"&&B.sel.length){const set={t:B.t.trim()||C.name+" assignment",c:B.c.trim(),d:B.d.trim(),s:B.sel.slice()},p=enc(set);B.out=p;const mine=LS.get(KP+"-mysets",[]).filter(m=>m.p!==p);mine.unshift({p,t:set.t,c:set.c,d:set.d,n:set.s.length,at:Date.now()});LS.set(KP+"-mysets",mine.slice(0,30))}
+ if(a==="name"){const i=document.querySelector("#tq-name"),v=i?i.value:"";if(!v.trim()){if(i){i.focus();i.classList.add("tq-err")}return}const S=setId(k),pr=prog(S);pr.name=v.trim().slice(0,30);saveProg(S,pr)}
+ if(a==="rename"){const S=setId(cur.slice(4)),pr=prog(S);pr.name="";saveProg(S,pr)}
+ if(a==="csv"){csv(k);return}
+ render()});
+document.addEventListener("input",e=>{if(e.target.id==="tq-name")e.target.classList.remove("tq-err")});
+return {handles,route,record,_code:code,_enc:enc,_dec:dec,_setId:setId};
+})();
+
 function route(){
   G=null;const h=location.hash.slice(1);let m,ok=true;
   const show=hub=>{$("#hub").hidden=!hub;view.hidden=hub};
@@ -1246,6 +1426,7 @@ function route(){
     const others=SCEN.filter(x=>x.id!==s.id);$("#g").insertAdjacentHTML("afterend",`<div class="row small">More scenarios: ${others.map(x=>`<a class="mbtn" href="#scen-${x.id}">${esc(x.title)}</a>`).join("")}</div>`)}
   else if((m=h.match(/^sd-(\w+)$/))&&SDSETS.some(s=>s.id===m[1])){show(false);startSD(m[1])}
   else if((m=h.match(/^essay-(\w+)$/))&&DEBATES.some(d=>d.id===m[1])){show(false);renderEssay(m[1])}
+  else if(Teach.handles(h)){show(false);Teach.route(h)}
   else ok=false;
   if(!ok){show(true);renderHub()}
   window.scrollTo({top:0});

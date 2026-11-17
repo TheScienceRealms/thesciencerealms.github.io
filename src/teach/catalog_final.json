@@ -1,0 +1,1510 @@
+{
+"chemquest": [
+[
+"quiz-as1",
+"Section A Bank",
+"as1",
+"Mixed",
+"Mixed practice",
+6
+],
+[
+"dash-as1-all",
+"Definition Dash: all AS1 terms",
+"as1",
+"Mixed",
+"Mixed practice",
+5
+],
+[
+"fill-as1-all",
+"Definition Builder: all AS1 terms",
+"as1",
+"Mixed",
+"Mixed practice",
+6
+],
+[
+"colour-as1",
+"Colour Lab: mixed",
+"as1",
+"Practicals",
+"Practicals",
+8
+],
+[
+"flame",
+"Flame Test Lab",
+"as1",
+"Practicals",
+"Practicals",
+8
+],
+[
+"quiz-1-1",
+"Topic quiz: Formulae, equations and amounts of substance",
+"as1",
+"1.1",
+"Formulae, equations and amounts of substance",
+6
+],
+[
+"dash-1-1-all",
+"Definition Dash: Formulae, equations and amounts of substance",
+"as1",
+"1.1",
+"Formulae, equations and amounts of substance",
+5
+],
+[
+"fill-1-1-all",
+"Definition Builder: Formulae, equations and amounts of substance",
+"as1",
+"1.1",
+"Formulae, equations and amounts of substance",
+6
+],
+[
+"ionic",
+"Ionic Equation Builder",
+"as1",
+"1.1",
+"Formulae, equations and amounts of substance",
+10
+],
+[
+"prac-cryst",
+"Finding water of crystallisation",
+"as1",
+"1.1",
+"Formulae, equations and amounts of substance",
+10
+],
+[
+"quiz-1-2",
+"Topic quiz: Atomic structure",
+"as1",
+"1.2",
+"Atomic structure",
+6
+],
+[
+"dash-1-2-all",
+"Definition Dash: Atomic structure",
+"as1",
+"1.2",
+"Atomic structure",
+5
+],
+[
+"fill-1-2-all",
+"Definition Builder: Atomic structure",
+"as1",
+"1.2",
+"Atomic structure",
+6
+],
+[
+"atom",
+"Inside the Atom",
+"as1",
+"1.2",
+"Atomic structure",
+10
+],
+[
+"isotope",
+"Isotope Investigator",
+"as1",
+"1.2",
+"Atomic structure",
+10
+],
+[
+"quiz-1-3",
+"Topic quiz: Bonding",
+"as1",
+"1.3",
+"Bonding",
+6
+],
+[
+"dash-1-3-all",
+"Definition Dash: Bonding",
+"as1",
+"1.3",
+"Bonding",
+5
+],
+[
+"fill-1-3-all",
+"Definition Builder: Bonding",
+"as1",
+"1.3",
+"Bonding",
+6
+],
+[
+"bondbuilder",
+"The Bonding Workshop",
+"as1",
+"1.3",
+"Bonding",
+10
+],
+[
+"quiz-1-4",
+"Topic quiz: Intermolecular forces",
+"as1",
+"1.4",
+"Intermolecular forces",
+6
+],
+[
+"dash-1-4-all",
+"Definition Dash: Intermolecular forces",
+"as1",
+"1.4",
+"Intermolecular forces",
+5
+],
+[
+"fill-1-4-all",
+"Definition Builder: Intermolecular forces",
+"as1",
+"1.4",
+"Intermolecular forces",
+6
+],
+[
+"forcefield",
+"The Force Field",
+"as1",
+"1.4",
+"Intermolecular forces",
+10
+],
+[
+"quiz-1-5",
+"Topic quiz: Structure",
+"as1",
+"1.5",
+"Structure",
+6
+],
+[
+"lattice",
+"Lattice Builder",
+"as1",
+"1.5",
+"Structure",
+10
+],
+[
+"quiz-1-6",
+"Topic quiz: Shapes of molecules",
+"as1",
+"1.6",
+"Shapes of molecules",
+6
+],
+[
+"shifter",
+"Shape Shifter",
+"as1",
+"1.6",
+"Shapes of molecules",
+10
+],
+[
+"escape",
+"Electron Pair Escape",
+"as1",
+"1.6",
+"Shapes of molecules",
+10
+],
+[
+"blitz",
+"Bond Angle Blitz",
+"as1",
+"1.6",
+"Shapes of molecules",
+10
+],
+[
+"dipole",
+"Dipole Detective",
+"as1",
+"1.6",
+"Shapes of molecules",
+10
+],
+[
+"prac-msm-ch4",
+"Methane vs water",
+"as1",
+"1.6",
+"Shapes of molecules",
+10
+],
+[
+"prac-msm-nh3",
+"Ammonia vs boron trifluoride",
+"as1",
+"1.6",
+"Shapes of molecules",
+10
+],
+[
+"prac-msm-pol",
+"Polar or non-polar?",
+"as1",
+"1.6",
+"Shapes of molecules",
+10
+],
+[
+"quiz-1-7",
+"Topic quiz: Redox",
+"as1",
+"1.7",
+"Redox",
+6
+],
+[
+"dash-1-7-all",
+"Definition Dash: Redox",
+"as1",
+"1.7",
+"Redox",
+5
+],
+[
+"fill-1-7-all",
+"Definition Builder: Redox",
+"as1",
+"1.7",
+"Redox",
+6
+],
+[
+"heist",
+"Electron Heist",
+"as1",
+"1.7",
+"Redox",
+10
+],
+[
+"quiz-1-8",
+"Topic quiz: The halogens",
+"as1",
+"1.8",
+"The halogens",
+6
+],
+[
+"colour-1-8",
+"Colour Lab: The halogens",
+"as1",
+"1.8",
+"The halogens",
+8
+],
+[
+"halolab",
+"Halogen Lab",
+"as1",
+"1.8",
+"The halogens",
+10
+],
+[
+"quiz-1-9",
+"Topic quiz: Acid–base titrations",
+"as1",
+"1.9",
+"Acid–base titrations",
+6
+],
+[
+"dash-1-9-all",
+"Definition Dash: Acid–base titrations",
+"as1",
+"1.9",
+"Acid–base titrations",
+5
+],
+[
+"fill-1-9-all",
+"Definition Builder: Acid–base titrations",
+"as1",
+"1.9",
+"Acid–base titrations",
+6
+],
+[
+"colour-1-9",
+"Colour Lab: Acid–base titrations",
+"as1",
+"1.9",
+"Acid–base titrations",
+8
+],
+[
+"titration",
+"Titration Lab",
+"as1",
+"1.9",
+"Acid–base titrations",
+10
+],
+[
+"prac-std",
+"Preparing a standard solution",
+"as1",
+"1.9",
+"Acid–base titrations",
+10
+],
+[
+"prac-titr",
+"Carrying out a titration",
+"as1",
+"1.9",
+"Acid–base titrations",
+10
+],
+[
+"quiz-1-10",
+"Topic quiz: Qualitative tests",
+"as1",
+"1.10",
+"Qualitative tests",
+6
+],
+[
+"colour-1-10",
+"Colour Lab: Qualitative tests",
+"as1",
+"1.10",
+"Qualitative tests",
+8
+],
+[
+"quiz-as2",
+"Section A Bank",
+"as2",
+"Mixed",
+"Mixed practice",
+6
+],
+[
+"dash-as2-all",
+"Definition Dash: all AS2 terms",
+"as2",
+"Mixed",
+"Mixed practice",
+5
+],
+[
+"fill-as2-all",
+"Definition Builder: all AS2 terms",
+"as2",
+"Mixed",
+"Mixed practice",
+6
+],
+[
+"colour-as2",
+"Colour Lab: mixed",
+"as2",
+"Practicals",
+"Practicals",
+8
+],
+[
+"quiz-2-1",
+"Topic quiz: Formulae, percentage yield and atom economy",
+"as2",
+"2.1",
+"Formulae, percentage yield and atom economy",
+6
+],
+[
+"dash-2-1-all",
+"Definition Dash: Formulae, percentage yield and atom economy",
+"as2",
+"2.1",
+"Formulae, percentage yield and atom economy",
+5
+],
+[
+"fill-2-1-all",
+"Definition Builder: Formulae, percentage yield and atom economy",
+"as2",
+"2.1",
+"Formulae, percentage yield and atom economy",
+6
+],
+[
+"quiz-2-2",
+"Topic quiz: Nomenclature and isomerism",
+"as2",
+"2.2",
+"Nomenclature and isomerism",
+6
+],
+[
+"dash-2-2-all",
+"Definition Dash: Nomenclature and isomerism",
+"as2",
+"2.2",
+"Nomenclature and isomerism",
+5
+],
+[
+"fill-2-2-all",
+"Definition Builder: Nomenclature and isomerism",
+"as2",
+"2.2",
+"Nomenclature and isomerism",
+6
+],
+[
+"quiz-2-3",
+"Topic quiz: Alkanes",
+"as2",
+"2.3",
+"Alkanes",
+6
+],
+[
+"dash-2-3-all",
+"Definition Dash: Alkanes",
+"as2",
+"2.3",
+"Alkanes",
+5
+],
+[
+"fill-2-3-all",
+"Definition Builder: Alkanes",
+"as2",
+"2.3",
+"Alkanes",
+6
+],
+[
+"colour-2-3",
+"Colour Lab: Alkanes",
+"as2",
+"2.3",
+"Alkanes",
+8
+],
+[
+"quiz-2-4",
+"Topic quiz: Alkenes",
+"as2",
+"2.4",
+"Alkenes",
+6
+],
+[
+"dash-2-4-all",
+"Definition Dash: Alkenes",
+"as2",
+"2.4",
+"Alkenes",
+5
+],
+[
+"fill-2-4-all",
+"Definition Builder: Alkenes",
+"as2",
+"2.4",
+"Alkenes",
+6
+],
+[
+"colour-2-4",
+"Colour Lab: Alkenes",
+"as2",
+"2.4",
+"Alkenes",
+8
+],
+[
+"mech-ethene-hbr",
+"Mechanism Mission: Ethene + hydrogen bromide",
+"as2",
+"2.4",
+"Alkenes",
+8
+],
+[
+"mech-ethene-br2",
+"Mechanism Mission: Ethene + bromine",
+"as2",
+"2.4",
+"Alkenes",
+8
+],
+[
+"mech-propene-hbr",
+"Mechanism Mission: Propene + hydrogen bromide",
+"as2",
+"2.4",
+"Alkenes",
+8
+],
+[
+"quiz-2-5",
+"Topic quiz: Halogenoalkanes",
+"as2",
+"2.5",
+"Halogenoalkanes",
+6
+],
+[
+"dash-2-5-all",
+"Definition Dash: Halogenoalkanes",
+"as2",
+"2.5",
+"Halogenoalkanes",
+5
+],
+[
+"fill-2-5-all",
+"Definition Builder: Halogenoalkanes",
+"as2",
+"2.5",
+"Halogenoalkanes",
+6
+],
+[
+"mech-bromoethane-oh",
+"Mechanism Mission: Bromoethane + aqueous alkali",
+"as2",
+"2.5",
+"Halogenoalkanes",
+8
+],
+[
+"mech-tert-oh",
+"Mechanism Mission: 2-bromo-2-methylpropane + aqueous alkali",
+"as2",
+"2.5",
+"Halogenoalkanes",
+8
+],
+[
+"mechmatch",
+"Mechanism Match-Up",
+"as2",
+"2.5",
+"Halogenoalkanes",
+10
+],
+[
+"prac-halo",
+"Preparing 1-bromobutane",
+"as2",
+"2.5",
+"Halogenoalkanes",
+10
+],
+[
+"prac-hydro",
+"Comparing rates of hydrolysis",
+"as2",
+"2.5",
+"Halogenoalkanes",
+10
+],
+[
+"quiz-2-6",
+"Topic quiz: Alcohols",
+"as2",
+"2.6",
+"Alcohols",
+6
+],
+[
+"dash-2-6-all",
+"Definition Dash: Alcohols",
+"as2",
+"2.6",
+"Alcohols",
+5
+],
+[
+"fill-2-6-all",
+"Definition Builder: Alcohols",
+"as2",
+"2.6",
+"Alcohols",
+6
+],
+[
+"colour-2-6",
+"Colour Lab: Alcohols",
+"as2",
+"2.6",
+"Alcohols",
+8
+],
+[
+"roadmap",
+"Organic Reaction Roadmap",
+"as2",
+"2.6",
+"Alcohols",
+10
+],
+[
+"prac-oxid",
+"Oxidising ethanol",
+"as2",
+"2.6",
+"Alcohols",
+10
+],
+[
+"quiz-2-7",
+"Topic quiz: Infrared spectroscopy",
+"as2",
+"2.7",
+"Infrared spectroscopy",
+6
+],
+[
+"dash-2-7-all",
+"Definition Dash: Infrared spectroscopy",
+"as2",
+"2.7",
+"Infrared spectroscopy",
+5
+],
+[
+"fill-2-7-all",
+"Definition Builder: Infrared spectroscopy",
+"as2",
+"2.7",
+"Infrared spectroscopy",
+6
+],
+[
+"quiz-2-8",
+"Topic quiz: Energetics",
+"as2",
+"2.8",
+"Energetics",
+6
+],
+[
+"dash-2-8-all",
+"Definition Dash: Energetics",
+"as2",
+"2.8",
+"Energetics",
+5
+],
+[
+"fill-2-8-all",
+"Definition Builder: Energetics",
+"as2",
+"2.8",
+"Energetics",
+6
+],
+[
+"hess",
+"Hess’s Law Escape Room",
+"as2",
+"2.8",
+"Energetics",
+10
+],
+[
+"hessarch",
+"Hess’s Law Architect",
+"as2",
+"2.8",
+"Energetics",
+10
+],
+[
+"prac-neut",
+"Enthalpy of neutralisation",
+"as2",
+"2.8",
+"Energetics",
+10
+],
+[
+"prac-comb",
+"Enthalpy of combustion",
+"as2",
+"2.8",
+"Energetics",
+10
+],
+[
+"quiz-2-9",
+"Topic quiz: Kinetics",
+"as2",
+"2.9",
+"Kinetics",
+6
+],
+[
+"dash-2-9-all",
+"Definition Dash: Kinetics",
+"as2",
+"2.9",
+"Kinetics",
+5
+],
+[
+"fill-2-9-all",
+"Definition Builder: Kinetics",
+"as2",
+"2.9",
+"Kinetics",
+6
+],
+[
+"collision",
+"Collision Course",
+"as2",
+"2.9",
+"Kinetics",
+10
+],
+[
+"quiz-2-10",
+"Topic quiz: Equilibrium",
+"as2",
+"2.10",
+"Equilibrium",
+6
+],
+[
+"dash-2-10-all",
+"Definition Dash: Equilibrium",
+"as2",
+"2.10",
+"Equilibrium",
+5
+],
+[
+"fill-2-10-all",
+"Definition Builder: Equilibrium",
+"as2",
+"2.10",
+"Equilibrium",
+6
+],
+[
+"equilibrium",
+"Equilibrium Engine",
+"as2",
+"2.10",
+"Equilibrium",
+10
+],
+[
+"quiz-2-11",
+"Topic quiz: Group II elements and compounds",
+"as2",
+"2.11",
+"Group II elements and compounds",
+6
+],
+[
+"dash-2-11-all",
+"Definition Dash: Group II elements and compounds",
+"as2",
+"2.11",
+"Group II elements and compounds",
+5
+],
+[
+"fill-2-11-all",
+"Definition Builder: Group II elements and compounds",
+"as2",
+"2.11",
+"Group II elements and compounds",
+6
+],
+[
+"colour-2-11",
+"Colour Lab: Group II elements and compounds",
+"as2",
+"2.11",
+"Group II elements and compounds",
+8
+],
+[
+"group2",
+"Group II Expedition",
+"as2",
+"2.11",
+"Group II elements and compounds",
+10
+]
+],
+"psycheverse": [
+[
+"quiz-u1",
+"Unit 1 Bank",
+"u1",
+"Mixed",
+"Mixed practice",
+6
+],
+[
+"sort-arena",
+"Approach Arena",
+"u1",
+"Mixed",
+"Mixed practice",
+6
+],
+[
+"sort-cmd",
+"Command Word Sort",
+"u1",
+"Exam skills",
+"Exam technique",
+6
+],
+[
+"cmdq",
+"Describe vs Evaluate",
+"u1",
+"Exam skills",
+"Exam technique",
+5
+],
+[
+"quiz-bio",
+"Topic quiz: The biological approach",
+"u1",
+"1.1",
+"The biological approach",
+6
+],
+[
+"sort-ther-drug",
+"Therapy Lab: Drug therapy",
+"u1",
+"1.1",
+"The biological approach",
+6
+],
+[
+"sort-ther-surg",
+"Therapy Lab: Psychosurgery",
+"u1",
+"1.1",
+"The biological approach",
+6
+],
+[
+"sort-case-raine",
+"Case File: Raine et al. (1997)",
+"u1",
+"1.1",
+"The biological approach",
+6
+],
+[
+"facts-raine",
+"Fact Check: Raine et al. (1997)",
+"u1",
+"1.1",
+"The biological approach",
+5
+],
+[
+"build-bio-surg",
+"Answer Builder [8]: Describe the main components of psychosurgery.",
+"u1",
+"1.1",
+"The biological approach",
+8
+],
+[
+"quiz-pd",
+"Topic quiz: The psychodynamic approach",
+"u1",
+"1.2",
+"The psychodynamic approach",
+6
+],
+[
+"sort-ther-dream",
+"Therapy Lab: Dream analysis",
+"u1",
+"1.2",
+"The psychodynamic approach",
+6
+],
+[
+"sort-ther-group",
+"Therapy Lab: Group analysis psychotherapy",
+"u1",
+"1.2",
+"The psychodynamic approach",
+6
+],
+[
+"sort-case-bowlby",
+"Case File: Bowlby (1944)",
+"u1",
+"1.2",
+"The psychodynamic approach",
+6
+],
+[
+"facts-bowlby",
+"Fact Check: Bowlby (1944)",
+"u1",
+"1.2",
+"The psychodynamic approach",
+5
+],
+[
+"build-pd-rel",
+"Answer Builder [5]: Explain how a relationship is formed using the psychody…",
+"u1",
+"1.2",
+"The psychodynamic approach",
+8
+],
+[
+"quiz-beh",
+"Topic quiz: The behaviourist approach",
+"u1",
+"1.3",
+"The behaviourist approach",
+6
+],
+[
+"sort-ther-aver",
+"Therapy Lab: Aversion therapy",
+"u1",
+"1.3",
+"The behaviourist approach",
+6
+],
+[
+"sort-ther-sd",
+"Therapy Lab: Systematic desensitisation",
+"u1",
+"1.3",
+"The behaviourist approach",
+6
+],
+[
+"sort-case-albert",
+"Case File: Watson and Rayner (1920)",
+"u1",
+"1.3",
+"The behaviourist approach",
+6
+],
+[
+"facts-albert",
+"Fact Check: Watson and Rayner (1920)",
+"u1",
+"1.3",
+"The behaviourist approach",
+5
+],
+[
+"build-beh-assume",
+"Answer Builder [4]: Describe one assumption of the behaviourist approach.",
+"u1",
+"1.3",
+"The behaviourist approach",
+8
+],
+[
+"quiz-cog",
+"Topic quiz: The cognitive approach",
+"u1",
+"1.4",
+"The cognitive approach",
+6
+],
+[
+"sort-ther-cbt",
+"Therapy Lab: Cognitive behavioural therapy (CBT)",
+"u1",
+"1.4",
+"The cognitive approach",
+6
+],
+[
+"sort-ther-rebt",
+"Therapy Lab: Rational emotive behaviour therapy (REBT)",
+"u1",
+"1.4",
+"The cognitive approach",
+6
+],
+[
+"sort-case-loftus",
+"Case File: Loftus and Palmer (1974)",
+"u1",
+"1.4",
+"The cognitive approach",
+6
+],
+[
+"facts-loftus",
+"Fact Check: Loftus and Palmer (1974)",
+"u1",
+"1.4",
+"The cognitive approach",
+5
+],
+[
+"build-cog-rel",
+"Answer Builder [5]: Explain how a relationship is formed using the cognitiv…",
+"u1",
+"1.4",
+"The cognitive approach",
+8
+],
+[
+"build-cog-eval",
+"Answer Builder [10]: Evaluate cognitive behavioural therapy (CBT).",
+"u1",
+"1.4",
+"The cognitive approach",
+8
+],
+[
+"quiz-pos",
+"Topic quiz: The positive approach",
+"u1",
+"1.5",
+"The positive approach",
+6
+],
+[
+"sort-ther-mind",
+"Therapy Lab: Mindfulness",
+"u1",
+"1.5",
+"The positive approach",
+6
+],
+[
+"sort-ther-qolt",
+"Therapy Lab: Quality of life therapy",
+"u1",
+"1.5",
+"The positive approach",
+6
+],
+[
+"sort-case-myers",
+"Case File: Myers and Diener (1995)",
+"u1",
+"1.5",
+"The positive approach",
+6
+],
+[
+"facts-myers",
+"Fact Check: Myers and Diener (1995)",
+"u1",
+"1.5",
+"The positive approach",
+5
+],
+[
+"build-pos-qolt",
+"Answer Builder [8]: Describe the main components of quality of life therapy.",
+"u1",
+"1.5",
+"The positive approach",
+8
+],
+[
+"quiz-ex1",
+"Topic quiz: Unit 1 exam skills",
+"u1",
+"1.6",
+"Unit 1 exam skills",
+6
+],
+[
+"relate",
+"Relationship Builder",
+"u1",
+"1.6",
+"Unit 1 exam skills",
+5
+],
+[
+"build-bio-weak",
+"Answer Builder [10]: Compare and contrast the biological and behaviourist ap…",
+"u1",
+"1.6",
+"Unit 1 exam skills",
+8
+],
+[
+"quiz-u2",
+"Unit 2 Bank",
+"u2",
+"Mixed",
+"Mixed practice",
+6
+],
+[
+"scen-music",
+"Scenario Lab",
+"u2",
+"Mixed",
+"Mixed practice",
+8
+],
+[
+"sd-a",
+"Standard Deviation Lab",
+"u2",
+"Exam skills",
+"Exam technique",
+10
+],
+[
+"quiz-deb",
+"Topic quiz: Contemporary debates",
+"u2",
+"2.1",
+"Contemporary debates",
+6
+],
+[
+"sort-deb-neuro",
+"Debate Arena: The ethics of neuroscience",
+"u2",
+"",
+"Contemporary debates",
+6
+],
+[
+"sort-deb-mother",
+"Debate Arena: The mother as primary care-giver of an i",
+"u2",
+"",
+"Contemporary debates",
+6
+],
+[
+"sort-deb-condition",
+"Debate Arena: Using conditioning techniques to control",
+"u2",
+"",
+"Contemporary debates",
+6
+],
+[
+"sort-deb-ewt",
+"Debate Arena: Reliability of eye-witness testimony (in",
+"u2",
+"",
+"Contemporary debates",
+6
+],
+[
+"sort-deb-positive",
+"Debate Arena: Relevance of positive psychology in toda",
+"u2",
+"",
+"Contemporary debates",
+6
+],
+[
+"quiz-cls",
+"Topic quiz: Milgram and Kohlberg",
+"u2",
+"2.2",
+"Milgram and Kohlberg",
+6
+],
+[
+"sort-case-milgram",
+"Case File: Milgram (1963)",
+"u2",
+"2.2",
+"Milgram and Kohlberg",
+6
+],
+[
+"facts-milgram",
+"Fact Check: Milgram (1963)",
+"u2",
+"2.2",
+"Milgram and Kohlberg",
+5
+],
+[
+"sort-case-kohlberg",
+"Case File: Kohlberg (1968)",
+"u2",
+"2.2",
+"Milgram and Kohlberg",
+6
+],
+[
+"facts-kohlberg",
+"Fact Check: Kohlberg (1968)",
+"u2",
+"2.2",
+"Milgram and Kohlberg",
+5
+],
+[
+"build-eth-milgram",
+"Answer Builder [8]: Discuss the ethical issues in Milgram (1963) with refer…",
+"u2",
+"2.2",
+"Milgram and Kohlberg",
+8
+],
+[
+"quiz-rq",
+"Topic quiz: Aims, hypotheses and variables",
+"u2",
+"2.3",
+"Aims, hypotheses and variables",
+6
+],
+[
+"sort-trait-vars",
+"Variable Sort",
+"u2",
+"2.3",
+"Aims, hypotheses and variables",
+6
+],
+[
+"build-rq-hyp",
+"Answer Builder [2]: A researcher tests whether chewing gum improves concent…",
+"u2",
+"2.3",
+"Aims, hypotheses and variables",
+8
+],
+[
+"quiz-meth",
+"Topic quiz: Methodologies and data",
+"u2",
+"2.4",
+"Methodologies and data",
+6
+],
+[
+"sort-trait-methods",
+"Method Match",
+"u2",
+"2.4",
+"Methodologies and data",
+6
+],
+[
+"sort-trait-quasi",
+"Experiment or not?",
+"u2",
+"2.4",
+"Methodologies and data",
+6
+],
+[
+"sort-trait-data",
+"Data Detective",
+"u2",
+"2.4",
+"Methodologies and data",
+6
+],
+[
+"quiz-loc",
+"Topic quiz: Location of research",
+"u2",
+"2.5",
+"Location of research",
+6
+],
+[
+"sort-trait-loc",
+"Location, Location",
+"u2",
+"2.5",
+"Location of research",
+6
+],
+[
+"quiz-samp",
+"Topic quiz: Participants and sampling",
+"u2",
+"2.6",
+"Participants and sampling",
+6
+],
+[
+"sort-trait-samp",
+"Sampling Sort",
+"u2",
+"2.6",
+"Participants and sampling",
+6
+],
+[
+"quiz-des",
+"Topic quiz: Experimental design",
+"u2",
+"2.7",
+"Experimental design",
+6
+],
+[
+"sort-trait-design",
+"Design Desk",
+"u2",
+"2.7",
+"Experimental design",
+6
+],
+[
+"quiz-data",
+"Topic quiz: Levels of measurement, graphs and statistics",
+"u2",
+"2.8",
+"Levels of measurement, graphs and statistics",
+6
+],
+[
+"sort-trait-levels",
+"Level Up",
+"u2",
+"2.8",
+"Levels of measurement, graphs and statistics",
+6
+],
+[
+"sort-trait-graphs",
+"Graph Choice",
+"u2",
+"2.8",
+"Levels of measurement, graphs and statistics",
+6
+],
+[
+"sd-b",
+"Standard Deviation Lab 2",
+"u2",
+"2.8",
+"Levels of measurement, graphs and statistics",
+10
+],
+[
+"sd-c",
+"Standard Deviation Lab 3",
+"u2",
+"2.8",
+"Levels of measurement, graphs and statistics",
+10
+],
+[
+"scen-anxiety",
+"Anxiety scores",
+"u2",
+"2.8",
+"Levels of measurement, graphs and statistics",
+8
+],
+[
+"quiz-rv",
+"Topic quiz: Reliability and validity",
+"u2",
+"2.9",
+"Reliability and validity",
+6
+],
+[
+"sort-trait-rel",
+"Reliability or Validity?",
+"u2",
+"2.9",
+"Reliability and validity",
+6
+],
+[
+"quiz-eth",
+"Topic quiz: Ethics",
+"u2",
+"2.10",
+"Ethics",
+6
+],
+[
+"sort-trait-eth",
+"Ethics Sort",
+"u2",
+"2.10",
+"Ethics",
+6
+],
+[
+"scen-ethicsA",
+"Ethics Committee: the stress study",
+"u2",
+"2.10",
+"Ethics",
+8
+],
+[
+"scen-ethicsB",
+"Ethics Committee: the online gambling survey",
+"u2",
+"2.10",
+"Ethics",
+8
+],
+[
+"quiz-ex2",
+"Topic quiz: Novel scenarios and Section B skills",
+"u2",
+"2.11",
+"Novel scenarios and Section B skills",
+6
+],
+[
+"scen-screen",
+"Screen time and sleep",
+"u2",
+"2.11",
+"Novel scenarios and Section B skills",
+8
+],
+[
+"scen-obs",
+"Playground observation",
+"u2",
+"2.11",
+"Novel scenarios and Section B skills",
+8
+]
+]
+}
