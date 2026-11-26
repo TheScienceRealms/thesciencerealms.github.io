@@ -1,0 +1,21 @@
+
+/* teacher guide */
+#tg{position:fixed;right:10px;bottom:0;z-index:70;display:flex;align-items:flex-end;gap:6px;font-family:var(--body);pointer-events:none}
+#tg>*{pointer-events:auto}
+html.tg-pad body{padding-bottom:170px}
+.tg-who{width:122px;height:263px;padding:0;border:0;background:none;cursor:pointer;filter:drop-shadow(0 6px 10px rgba(0,0,0,.28))}
+.tg-who svg{width:122px;height:263px;display:block}
+.tg-who:focus-visible,.tg-b:focus-visible,.tg-x:focus-visible,.tg-min:focus-visible,.tg-show:focus-visible{outline:3px solid #ffd166;outline-offset:2px}
+.tg-bub{position:relative;max-width:300px;margin-bottom:120px;background:#fff;color:#1d0b3d;border-radius:18px;padding:12px 32px 12px 15px;font-size:15px;line-height:1.4;box-shadow:0 10px 28px -8px rgba(29,11,61,.5);border:2px solid #6d3fd1;animation:tgPop .18s ease-out}
+.tg-bub:after{content:"";position:absolute;right:-12px;bottom:24px;border:10px solid transparent;border-left-color:#6d3fd1;border-right:0}
+.tg-nm{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#6d3fd1;margin-bottom:3px}
+.tg-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.tg-b{border:0;background:#6d3fd1;color:#fff;border-radius:999px;padding:7px 13px;font:700 13px var(--body);cursor:pointer}.tg-b.g{background:#fff;color:#6d3fd1;border:1.5px solid #6d3fd1}
+.tg-x{position:absolute;top:4px;right:6px;border:0;background:none;font-size:20px;line-height:1;color:#5b4a7d;cursor:pointer;padding:4px}
+.tg-min{position:absolute;right:2px;bottom:232px;width:26px;height:26px;border-radius:50%;border:1.5px solid #d6cbef;background:#fff;color:#5b4a7d;font:700 16px/1 var(--body);cursor:pointer;opacity:.8}
+.tg-show{margin:0 4px 10px 0;border:0;background:#6d3fd1;color:#fff;border-radius:999px;padding:9px 14px;font:700 14px var(--body);box-shadow:0 6px 16px -6px rgba(0,0,0,.4);cursor:pointer}
+.opt.tg-out{opacity:.4;text-decoration:line-through}
+@keyframes tgPop{from{transform:scale(.9);opacity:0}to{transform:none;opacity:1}}
+@media (max-width:640px){html.tg-pad body{padding-bottom:130px}.tg-who,.tg-who svg{width:70px;height:151px}.tg-bub{max-width:min(250px,calc(100vw - 100px));margin-bottom:70px;font-size:14px}.tg-min{bottom:126px}}
+@media (prefers-reduced-motion:reduce){.tg-bub{animation:none}}
+@media print{#tg{display:none}}
