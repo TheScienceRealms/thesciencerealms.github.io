@@ -283,6 +283,13 @@ html.tg-pad body{padding-bottom:170px}
 @media (max-width:640px){html.tg-pad body{padding-bottom:130px}.tg-who,.tg-who svg{width:70px;height:151px}.tg-bub{max-width:min(250px,calc(100vw - 100px));margin-bottom:70px;font-size:14px}.tg-min{bottom:126px}}
 @media (prefers-reduced-motion:reduce){.tg-bub{animation:none}}
 @media print{#tg{display:none}}
+
+.tg-tips{display:grid;grid-template-columns:118px minmax(0,1fr);gap:18px;align-items:start}
+.tg-av{width:118px;height:254px;align-self:end}.tg-av svg{width:118px;height:254px;display:block;filter:drop-shadow(0 6px 10px rgba(29,11,61,.22))}
+.tg-tips h3{margin-top:0}
+.tg-quote{margin-top:10px;padding:12px 14px;border-left:4px solid #ff7ac6;background:rgba(255,122,198,.08);border-radius:10px;line-height:1.5}
+.tg-sig{display:block;margin-top:6px;font-weight:700;color:#c2307f}
+@media (max-width:640px){.tg-tips{grid-template-columns:72px minmax(0,1fr);gap:12px}.tg-av,.tg-av svg{width:72px;height:155px}}
 </style>
 
 <div class="wrap">
@@ -1266,14 +1273,25 @@ function tipsHTML(){
   <div class="panel"><h3>To hit the top band, always</h3><ul class="kp">${T.always.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><p class="small"><b>Terms to drop in:</b> ${T.terms.join(", ")}</p></div>
   <div class="panel"><h3>Phrases examiners love</h3><ul class="kp">${T.phrases.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></div>`;
 }
+const TGN={quigley:"Mr Quigley",byrne:"Mrs Byrne"};
+const tgWho=(k,flip)=>{let h=0;for(const c of String(k))h=(h*31+c.charCodeAt(0))>>>0;return ["quigley","byrne"][(h+(flip?1:0))%2]};
+const tgArt=(w,p)=>{try{return Guide.art(w,p)}catch(e){return ""}};
+function noteTips(tid,tips){const w=tgWho(tid),a=tgArt(w,"explain");
+  return `<div class="panel tipbox tg-tips">${a?`<div class="tg-av" aria-hidden="true">${a}</div>`:""}<div><h3>${a?TGN[w]+"’s exam tips":"Exam tips"}</h3><ul class="kp">${tips.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></div>`}
+function debTips(){const w=tgWho("deb",true),a=tgArt(w,"excited");
+  return `<div class="panel tipbox tg-tips">${a?`<div class="tg-av" aria-hidden="true">${a}</div>`:""}<div><h3>${a?TGN[w]+" says: tips for the 20-marker":"Tips for the 20-marker"}</h3><ul class="kp">
+  <li><b>Running out of time? Add a counter-argument.</b> If you’re stuck for time, a quick counter-argument is one of the best ways to secure extra marks. WJEC love counter-arguments: they show you can evaluate (AO3), not just describe.</li>
+  ${(NOTES.deb.tips||[]).map(x=>`<li>${esc(x)}</li>`).join("")}
+  <li><b>Learn a model debate, then make it fit the question.</b> You can learn any of the model essays, as long as on exam day you find a way to relate every point to the exact question asked, and keep the debate accurate and balanced.</li></ul>
+  <div class="tg-quote"><b>How I did it:</b> I learned the positive approach model essay from these Mind Notes and, on the day, wrote it almost word for word for <i>the relevance of positive psychology in today’s society</i>. To make it fit, I linked it to today: Gen Z’s self-care culture (matcha and Pilates), workplaces allowing annual leave and maternity leave, and companies offering gym memberships for wellbeing. It worked because every example was relevant and debated accurately. <span class="tg-sig">Adrianna, 20/20 on this question</span></div></div></div>`}
 function renderNotes(tid){
   const t=topicById(tid),N=NOTES[tid],u=unitById(t.u);
   let extra="";
   if(tid==="deb"){
-    extra=`<h3 class="sech">Exam technique for the 20-mark essay</h3>${tipsHTML()}<h3 class="sech">20/20 plans for every debate</h3>${DEBATES.map(d=>`<details class="exm"><summary><span>${esc(d.title)}</span><b>20/20 plan</b></summary>${planHTML(d.id)}<div class="row" style="margin-top:10px"><a class="mbtn" href="#essay-${d.id}">Read the full model essay</a><a class="mbtn" href="#sort-deb-${d.id}">Debate Arena</a></div></details>`).join("")}<h3 class="sech">Exemplar answers</h3>${EXEMPLARS.map(exemplarHTML).join("")}`;
+    extra=`<h3 class="sech">Exam technique for the 20-mark essay</h3>${debTips()}${tipsHTML()}<h3 class="sech">20/20 plans for every debate</h3>${DEBATES.map(d=>`<details class="exm"><summary><span>${esc(d.title)}</span><b>20/20 plan</b></summary>${planHTML(d.id)}<div class="row" style="margin-top:10px"><a class="mbtn" href="#essay-${d.id}">Read the full model essay</a><a class="mbtn" href="#sort-deb-${d.id}">Debate Arena</a></div></details>`).join("")}<h3 class="sech">Exemplar answers</h3>${EXEMPLARS.map(exemplarHTML).join("")}`;
   }
   frame(u.kick+" · Mind Notes",t.name,u.hash,"Unit "+u.id.slice(1),`<div class="panel notelead"><p>${esc(N.lead)}</p></div><div class="ffgrid">${N.cards.map(([h,bs])=>`<div class="panel"><h3>${esc(h)}</h3><ul class="kp">${bs.map(b=>`<li>${b}</li>`).join("")}</ul></div>`).join("")}</div>
-  ${N.tips?`<div class="panel tipbox"><h3>Exam tips</h3><ul class="kp">${N.tips.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}${extra}
+  ${N.tips&&tid!=="deb"?noteTips(tid,N.tips):""}${extra}
   <div class="row"><a class="primary" href="#quiz-${tid}" style="text-decoration:none">Test yourself: Topic Quiz →</a></div>`);
 }
 function renderEssay(id){
@@ -1521,8 +1539,9 @@ el.addEventListener("click",e=>{const b=e.target.closest("[data-tg]");if(!b)retu
  if(a==="hide"){st.hidden=true;LS.set("tg-hidden",true);return render()}
  if(a==="show"){st.hidden=false;LS.set("tg-hidden",false);return standMsg()}});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&st.on&&st.open){st.open=false;render()}});
+if(/^notes-/.test(location.hash.slice(1)))setTimeout(route,0);
 setTimeout(sync,0);
-return {sync,_st:()=>st};
+return {sync,art:(w,p)=>ART[w]&&ART[w][p]||"",_st:()=>st};
 })();
 
 </script>
