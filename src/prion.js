@@ -1,0 +1,38 @@
+
+/* ---------- PRION FILES: notes, flashcards, quiz (CCEA 1.1.5) ---------- */
+const PR_NOTES=[["What is a prion?","A prion is a protein found in the nervous system of mammals. It contains no DNA or RNA, so it is not a virus or a cell."],
+ ["Normal vs disease-causing form","Both forms have the same primary structure (amino acid sequence). The disease-causing form has a change in its <b>secondary structure</b>: it is rich in <b>β-pleated sheets</b>, while the normal form has more α-helices."],
+ ["How it spreads in the brain","The abnormal prion causes normal prions to refold into the abnormal form. They clump together and damage brain tissue, leaving it spongy. Prion diseases are <b>neurodegenerative disorders</b>."],
+ ["How infection happens","Infection can occur through <b>eating prion-rich food</b>, e.g. nervous tissue from an infected animal."],
+ ["Examples","<b>Scrapie</b> (sheep) and <b>BSE</b>, Bovine Spongiform Encephalopathy (cattle), in animals. <b>CJD</b>, Creutzfeldt–Jakob Disease, in humans."],
+ ["Exam tip","If asked how the disease-causing form differs, say: <b>a change in secondary structure, giving more β-pleated sheets</b>. Don’t say it has a different amino acid sequence."]];
+const PR_CARDS=[["What type of molecule is a prion?","A protein"],["Does a prion contain DNA or RNA?","No. It is just protein."],["Where are prions normally found?","In the nervous system of mammals"],["How does the disease-causing prion differ from the normal form?","A change in secondary structure, giving a form rich in β-pleated sheets"],["Is the amino acid sequence of the abnormal prion different?","No. The primary structure is the same; only the folding differs."],["What does an abnormal prion do to normal prions?","It causes them to refold into the abnormal, disease-causing form"],["What type of disorder is a prion disease?","A neurodegenerative disorder"],["How can prion infection occur?","By eating prion-rich food, e.g. infected nervous tissue"],["Name the prion disease of sheep","Scrapie"],["What does BSE stand for, and which animal does it affect?","Bovine Spongiform Encephalopathy, in cattle"],["Name a human prion disease","CJD: Creutzfeldt–Jakob Disease"],["Why is ‘spongiform’ used to describe these diseases?","The brain tissue is damaged and becomes spongy (full of holes)"]];
+const PR_Q=[["How does the disease-causing form of a prion differ from the normal form?","A change in secondary structure, giving more β-pleated sheets",["A different sequence of amino acids","It contains RNA","It has no tertiary structure"],"Same primary structure, but the secondary structure changes to a form rich in β-pleated sheets."],
+ ["Which statement about prions is correct?","They are proteins that contain no nucleic acid",["They are viruses with a protein coat","They are bacteria found in the brain","They contain DNA that codes for disease"],"Prions are proteins only, with no DNA or RNA."],
+ ["How can a person become infected with a prion disease?","By eating prion-rich food",["By breathing in prions from the air","Through insect bites","By touching an infected person"],"The CCEA spec names eating prion-rich food as a route of infection."],
+ ["Which disease is caused by prions in humans?","Creutzfeldt–Jakob Disease (CJD)",["Scrapie","Bovine Spongiform Encephalopathy (BSE)","HIV"],"CJD is human; scrapie affects sheep and BSE affects cattle."],
+ ["Prion diseases are best described as…","Neurodegenerative disorders",["Bacterial infections","Disorders of the circulatory system","Genetic disorders of the lungs"],"They progressively damage the nervous system."],
+ ["Why do abnormal prions spread through the brain?","They cause normal prions to refold into the abnormal form",["They replicate their DNA","They divide by mitosis","They are carried by red blood cells"],"Each abnormal prion converts more normal prions, so the damage builds up."]];
+function prStart(){S={phase:"notes",ci:0,flip:false,known:0,learn:[],deck:shuffle(PR_CARDS.map((c,i)=>i)),q:0,st:{},got:0,max:0,qs:shuffle(PR_Q)};prRender()}
+function prRender(){
+ if(S.phase==="notes"){root.innerHTML=hudx("Prion Files · notes")+pbox("CCEA 1.1.5 Proteins","Prions are disease-causing proteins. Read the notes, then test yourself with flashcards and a quick quiz.")+
+  `<div class="pr-grid">${PR_NOTES.map(([h,t],i)=>`<div class="pr-note ${i===5?"tip":""}"><b>${h}</b><span>${t}</span></div>`).join("")}</div>
+  <div class="pr-fold" aria-hidden="true"><svg viewBox="0 0 460 120"><text x="60" y="18" class="pr-lab" text-anchor="middle">Normal prion</text><g fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round"><path d="M20 70 q10 -24 20 0 t20 0 t20 0 t20 0"/></g><text x="60" y="110" class="pr-sm" text-anchor="middle">more α-helices</text>
+  <path d="M150 70 h50" stroke="#94a3b8" stroke-width="3" marker-end="url(#pra)"/><defs><marker id="pra" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#94a3b8"/></marker></defs><text x="175" y="58" class="pr-sm" text-anchor="middle">refolds</text>
+  <text x="330" y="18" class="pr-lab" text-anchor="middle">Disease-causing prion</text><g fill="none" stroke="#dc2626" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M250 50 l20 20 l20 -20 l20 20 l20 -20 l20 20 l20 -20 l20 20"/><path d="M250 80 l20 20 l20 -20 l20 20 l20 -20 l20 20 l20 -20 l20 20"/></g><text x="330" y="118" class="pr-sm" text-anchor="middle">rich in β-pleated sheets</text></svg></div>`+nextRow("next","Start flashcards →");return}
+ if(S.phase==="cards"){const n=S.deck.length;if(S.ci>=n){root.innerHTML=hudx("Prion Files · flashcards")+pbox("Flashcards done!",`You knew <b>${S.known}</b> of ${PR_CARDS.length} first time.${S.learn.length?` ${S.learn.length} card${S.learn.length>1?"s":""} to keep practising.`:" Great memory!"}`)+
+   `<div class="row">${S.learn.length?`<button class="ghost" data-act="relearn">Practise the ${S.learn.length} again</button>`:""}<button class="primary" data-act="toquiz">Take the quiz →</button></div>`;return}
+  const [f,b]=PR_CARDS[S.deck[S.ci]];
+  root.innerHTML=hudx(`Prion Files · card ${S.ci+1}/${n}`)+`<div class="pr-prog"><i style="width:${S.ci/n*100}%"></i></div>
+  <button class="pr-card ${S.flip?"flip":""}" data-act="flip" aria-label="Flashcard. ${S.flip?"Answer: "+b:"Question: "+f+". Tap to reveal the answer."}"><span class="pr-in"><span class="pr-face pr-front"><small>Question</small>${esc(f)}<em>Tap to flip</em></span><span class="pr-face pr-back"><small>Answer</small>${esc(b)}</span></span></button>
+  ${S.flip?`<div class="row pr-rate"><button class="ghost" data-act="learn">Still learning</button><button class="primary" data-act="knew">I knew it ✓</button></div>`:`<p class="small" style="text-align:center">Say the answer in your head, then tap the card.</p>`}`;return}
+ const Q=S.qs[S.q];root.innerHTML=hudx(`Prion Files · quiz`)+(Q?mcq(`Question ${S.q+1}/${S.qs.length}: ${Q[0]}`,[Q[1],...Q[2]],Q[1],Q[3],"prq",S.st)+(S.st.done?nextRow("prn",S.q+1<S.qs.length?"Next":"See results"):""):results(S.got,S.max,`<p class="muted">Remember: same amino acid sequence, but the disease-causing prion has more β-pleated sheets.</p>`))}
+function prAct(a,k){
+ if(a==="next"&&S.phase==="notes")S.phase="cards";
+ if(a==="flip")S.flip=!S.flip;
+ if(a==="knew"||a==="learn"){if(S.firstPass!==false){if(a==="knew")S.known++}if(a==="learn")S.learn.push(S.deck[S.ci]);S.ci++;S.flip=false}
+ if(a==="relearn"){S.deck=S.learn.slice();S.learn=[];S.ci=0;S.flip=false;S.firstPass=false}
+ if(a==="toquiz")S.phase="quiz";
+ if(a==="prq"&&!S.st.done){const Q=S.qs[S.q];S.st.pick=+k;S.st.done=true;S.max++;if(S.st.o[S.st.pick]===Q[1])S.got++}
+ if(a==="prn"){S.q++;S.st={}}
+ prRender()}

@@ -490,6 +490,19 @@ svg.fig{width:100%;height:auto;display:block}
 .es-past{font-style:normal;font:700 11px var(--mono,monospace);white-space:nowrap;background:var(--goodbg);color:var(--good);border-radius:999px;padding:3px 9px}
 .es-pts{margin:10px 0 0;padding-left:24px;display:grid;gap:5px;line-height:1.45}.es-pts li::marker{font-weight:700;color:var(--gold)}
 .es-count{margin:8px 0 0;font-size:13px;color:var(--muted);font-weight:700}
+
+.pr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.pr-note{display:grid;gap:6px;align-content:start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;line-height:1.45}.pr-note b{font-size:16px}.pr-note.tip{border-color:var(--gold);background:rgba(201,150,12,.1)}
+.pr-fold{background:#fff;border-radius:12px;padding:8px}.pr-fold svg{width:100%;height:auto;display:block}.pr-lab{font:700 13px var(--body);fill:#1c291e}.pr-sm{font:600 11px var(--body);fill:#475569}
+.pr-prog{height:8px;border-radius:6px;background:var(--line);overflow:hidden}.pr-prog i{display:block;height:100%;background:var(--gold);transition:width .3s}
+.pr-card{display:block;width:min(560px,100%);height:250px;margin:4px auto 0;padding:0;border:0;background:none;perspective:1000px;cursor:pointer;font:inherit;color:inherit}
+.pr-in{position:relative;display:block;width:100%;height:100%;transition:transform .45s;transform-style:preserve-3d}.pr-card.flip .pr-in{transform:rotateY(180deg)}
+.pr-face{position:absolute;inset:0;display:grid;place-content:center;gap:10px;text-align:center;padding:22px;border-radius:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden;font-size:21px;font-weight:700;line-height:1.35;box-shadow:0 12px 28px -12px rgba(0,0,0,.45)}
+.pr-face small{font:700 12px var(--mono,monospace);letter-spacing:.14em;text-transform:uppercase;opacity:.75}.pr-face em{font-style:normal;font-size:13px;font-weight:600;opacity:.7}
+.pr-front{background:var(--surface);border:2px solid var(--line);color:var(--fg)}.pr-back{background:#1f5420;color:#fff;transform:rotateY(180deg);border:2px solid #2e7d32}
+.pr-rate{justify-content:center}
+.pr-link{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.pr-link p{margin:4px 0 0;color:var(--muted)}.pr-link h3{margin:2px 0 0}
+@media (prefers-reduced-motion:reduce){.pr-in{transition:none}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -2164,6 +2177,7 @@ function render(id){
   $$("#noteswrap").innerHTML=`<div style="display:grid;gap:16px"><div class="gamebar"><div><div class="kicker">${w.num} · Slide Notes</div><h2 style="font-family:var(--body);font-weight:800">${t.code} ${escH(t.name)}</h2></div><a class="home-link" href="#${w.hash}">← <b>${w.num}</b></a></div>
   <section class="panel"><div class="ff"><div class="figbox">${FIG[id]?FIG[id]():""}</div><div><h3>Key points</h3><ul class="kp">${n.pts.map(p=>`<li>${escH(p)}</li>`).join("")}</ul></div></div></section>
   <div class="ffgrid"><section class="panel tipbox"><h3>Exam tips</h3><ul class="kp">${n.tips.map(p=>`<li>${escH(p)}</li>`).join("")}</ul></section><section class="panel warnbox"><h3>The examiner says no to…</h3><ul class="kp">${n.warn.map(p=>`<li>${escH(p)}</li>`).join("")}</ul></section></div>
+  ${id==="m"?`<section class="panel pr-link"><div><div class="kicker">Also in 1.1.5 Proteins</div><h3>Prions</h3><p>Disease-causing proteins with a change in secondary structure, rich in β-pleated sheets. Linked to scrapie, BSE and CJD.</p></div><a class="primary" href="#sim-prion" style="text-decoration:none">Open Prion Files: notes, flashcards and quiz →</a></section>`:""}
   ${ESSAYS[id]?essayHTML(id):""}
   <section class="panel"><h3>Practise this topic</h3><div class="row">${links.map(([h,l])=>`<a class="ghost" style="text-decoration:none;color:var(--fg)" href="${h}">${escH(l)}</a>`).join("")}</div></section></div>`;
 }
@@ -2973,9 +2987,49 @@ const CV=mkSim("Conservation Command",()=>{S.cv={crop:"mono",rot:"no",hedge:"rem
     if(a==="cvc"&&!S.ok1){const [b,p]=cvScore(),first=!S.tried;S.tried=true;if(first)S.max++;if(b>=8&&p>=5){if(first)S.got++;S.ok1=true;S.fb={ok:true,t:"Balanced! Hedgerows, field margins, polyculture and biological control give more habitats and food sources, while rotation keeps yields up."}}else S.fb={ok:false,t:b<8?"Biodiversity is too low. Which practices provide habitats and food sources?":"Profit is too low. Some practices cost land or yield."};return true}},
   end:"Biodiversity costs and benefits: be ready to give an advantage AND a disadvantage of each practice."});
 
+
+/* ---------- PRION FILES: notes, flashcards, quiz (CCEA 1.1.5) ---------- */
+const PR_NOTES=[["What is a prion?","A prion is a protein found in the nervous system of mammals. It contains no DNA or RNA, so it is not a virus or a cell."],
+ ["Normal vs disease-causing form","Both forms have the same primary structure (amino acid sequence). The disease-causing form has a change in its <b>secondary structure</b>: it is rich in <b>β-pleated sheets</b>, while the normal form has more α-helices."],
+ ["How it spreads in the brain","The abnormal prion causes normal prions to refold into the abnormal form. They clump together and damage brain tissue, leaving it spongy. Prion diseases are <b>neurodegenerative disorders</b>."],
+ ["How infection happens","Infection can occur through <b>eating prion-rich food</b>, e.g. nervous tissue from an infected animal."],
+ ["Examples","<b>Scrapie</b> (sheep) and <b>BSE</b>, Bovine Spongiform Encephalopathy (cattle), in animals. <b>CJD</b>, Creutzfeldt–Jakob Disease, in humans."],
+ ["Exam tip","If asked how the disease-causing form differs, say: <b>a change in secondary structure, giving more β-pleated sheets</b>. Don’t say it has a different amino acid sequence."]];
+const PR_CARDS=[["What type of molecule is a prion?","A protein"],["Does a prion contain DNA or RNA?","No. It is just protein."],["Where are prions normally found?","In the nervous system of mammals"],["How does the disease-causing prion differ from the normal form?","A change in secondary structure, giving a form rich in β-pleated sheets"],["Is the amino acid sequence of the abnormal prion different?","No. The primary structure is the same; only the folding differs."],["What does an abnormal prion do to normal prions?","It causes them to refold into the abnormal, disease-causing form"],["What type of disorder is a prion disease?","A neurodegenerative disorder"],["How can prion infection occur?","By eating prion-rich food, e.g. infected nervous tissue"],["Name the prion disease of sheep","Scrapie"],["What does BSE stand for, and which animal does it affect?","Bovine Spongiform Encephalopathy, in cattle"],["Name a human prion disease","CJD: Creutzfeldt–Jakob Disease"],["Why is ‘spongiform’ used to describe these diseases?","The brain tissue is damaged and becomes spongy (full of holes)"]];
+const PR_Q=[["How does the disease-causing form of a prion differ from the normal form?","A change in secondary structure, giving more β-pleated sheets",["A different sequence of amino acids","It contains RNA","It has no tertiary structure"],"Same primary structure, but the secondary structure changes to a form rich in β-pleated sheets."],
+ ["Which statement about prions is correct?","They are proteins that contain no nucleic acid",["They are viruses with a protein coat","They are bacteria found in the brain","They contain DNA that codes for disease"],"Prions are proteins only, with no DNA or RNA."],
+ ["How can a person become infected with a prion disease?","By eating prion-rich food",["By breathing in prions from the air","Through insect bites","By touching an infected person"],"The CCEA spec names eating prion-rich food as a route of infection."],
+ ["Which disease is caused by prions in humans?","Creutzfeldt–Jakob Disease (CJD)",["Scrapie","Bovine Spongiform Encephalopathy (BSE)","HIV"],"CJD is human; scrapie affects sheep and BSE affects cattle."],
+ ["Prion diseases are best described as…","Neurodegenerative disorders",["Bacterial infections","Disorders of the circulatory system","Genetic disorders of the lungs"],"They progressively damage the nervous system."],
+ ["Why do abnormal prions spread through the brain?","They cause normal prions to refold into the abnormal form",["They replicate their DNA","They divide by mitosis","They are carried by red blood cells"],"Each abnormal prion converts more normal prions, so the damage builds up."]];
+function prStart(){S={phase:"notes",ci:0,flip:false,known:0,learn:[],deck:shuffle(PR_CARDS.map((c,i)=>i)),q:0,st:{},got:0,max:0,qs:shuffle(PR_Q)};prRender()}
+function prRender(){
+ if(S.phase==="notes"){root.innerHTML=hudx("Prion Files · notes")+pbox("CCEA 1.1.5 Proteins","Prions are disease-causing proteins. Read the notes, then test yourself with flashcards and a quick quiz.")+
+  `<div class="pr-grid">${PR_NOTES.map(([h,t],i)=>`<div class="pr-note ${i===5?"tip":""}"><b>${h}</b><span>${t}</span></div>`).join("")}</div>
+  <div class="pr-fold" aria-hidden="true"><svg viewBox="0 0 460 120"><text x="60" y="18" class="pr-lab" text-anchor="middle">Normal prion</text><g fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round"><path d="M20 70 q10 -24 20 0 t20 0 t20 0 t20 0"/></g><text x="60" y="110" class="pr-sm" text-anchor="middle">more α-helices</text>
+  <path d="M150 70 h50" stroke="#94a3b8" stroke-width="3" marker-end="url(#pra)"/><defs><marker id="pra" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#94a3b8"/></marker></defs><text x="175" y="58" class="pr-sm" text-anchor="middle">refolds</text>
+  <text x="330" y="18" class="pr-lab" text-anchor="middle">Disease-causing prion</text><g fill="none" stroke="#dc2626" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M250 50 l20 20 l20 -20 l20 20 l20 -20 l20 20 l20 -20 l20 20"/><path d="M250 80 l20 20 l20 -20 l20 20 l20 -20 l20 20 l20 -20 l20 20"/></g><text x="330" y="118" class="pr-sm" text-anchor="middle">rich in β-pleated sheets</text></svg></div>`+nextRow("next","Start flashcards →");return}
+ if(S.phase==="cards"){const n=S.deck.length;if(S.ci>=n){root.innerHTML=hudx("Prion Files · flashcards")+pbox("Flashcards done!",`You knew <b>${S.known}</b> of ${PR_CARDS.length} first time.${S.learn.length?` ${S.learn.length} card${S.learn.length>1?"s":""} to keep practising.`:" Great memory!"}`)+
+   `<div class="row">${S.learn.length?`<button class="ghost" data-act="relearn">Practise the ${S.learn.length} again</button>`:""}<button class="primary" data-act="toquiz">Take the quiz →</button></div>`;return}
+  const [f,b]=PR_CARDS[S.deck[S.ci]];
+  root.innerHTML=hudx(`Prion Files · card ${S.ci+1}/${n}`)+`<div class="pr-prog"><i style="width:${S.ci/n*100}%"></i></div>
+  <button class="pr-card ${S.flip?"flip":""}" data-act="flip" aria-label="Flashcard. ${S.flip?"Answer: "+b:"Question: "+f+". Tap to reveal the answer."}"><span class="pr-in"><span class="pr-face pr-front"><small>Question</small>${esc(f)}<em>Tap to flip</em></span><span class="pr-face pr-back"><small>Answer</small>${esc(b)}</span></span></button>
+  ${S.flip?`<div class="row pr-rate"><button class="ghost" data-act="learn">Still learning</button><button class="primary" data-act="knew">I knew it ✓</button></div>`:`<p class="small" style="text-align:center">Say the answer in your head, then tap the card.</p>`}`;return}
+ const Q=S.qs[S.q];root.innerHTML=hudx(`Prion Files · quiz`)+(Q?mcq(`Question ${S.q+1}/${S.qs.length}: ${Q[0]}`,[Q[1],...Q[2]],Q[1],Q[3],"prq",S.st)+(S.st.done?nextRow("prn",S.q+1<S.qs.length?"Next":"See results"):""):results(S.got,S.max,`<p class="muted">Remember: same amino acid sequence, but the disease-causing prion has more β-pleated sheets.</p>`))}
+function prAct(a,k){
+ if(a==="next"&&S.phase==="notes")S.phase="cards";
+ if(a==="flip")S.flip=!S.flip;
+ if(a==="knew"||a==="learn"){if(S.firstPass!==false){if(a==="knew")S.known++}if(a==="learn")S.learn.push(S.deck[S.ci]);S.ci++;S.flip=false}
+ if(a==="relearn"){S.deck=S.learn.slice();S.learn=[];S.ci=0;S.flip=false;S.firstPass=false}
+ if(a==="toquiz")S.phase="quiz";
+ if(a==="prq"&&!S.st.done){const Q=S.qs[S.q];S.st.pick=+k;S.st.done=true;S.max++;if(S.st.o[S.st.pick]===Q[1])S.got++}
+ if(a==="prn"){S.q++;S.st={}}
+ prRender()}
+
 const SIMS={food:{title:"Food Test Detective",topic:"m",blurb:"First-person lab: run biochemical tests on unknown samples.",start:ftStart,act:ftAct},chroma:{title:"Chromatography Lab",topic:"m",blurb:"Run a chromatogram of amino acids and calculate Rf values.",start:chStart,act:chAct},
  enzyme:{title:"Enzyme Invasion",topic:"e",blurb:"Change substrate, temperature, pH and inhibitors and watch the rate.",start:enzStart,act:enzAct},fick:{title:"Diffusion Dimension",topic:"x",blurb:"Fick’s law simulator: surface area, gradient and thickness.",start:fickStart,act:fickAct},
  oxygen:{title:"Oxygen Delivery Simulator",topic:"h",blurb:"Dissociation curves, the Bohr effect and myoglobin.",start:oxStart,act:oxAct},
+ prion:{title:"Prion Files",topic:"m",blurb:"Notes, flashcards and a quick quiz on disease-causing prions.",start:prStart,act:prAct},
  molarch:{title:"Molecular Architect",topic:"m",blurb:"Build and break carbohydrates, lipids and proteins.",start:maStart,act:maAct},
  cell3d:{title:"3D Cell Explorer",topic:"c",blurb:"Rotate animal, plant and prokaryotic cells and find the organelles.",start:c3Start,act:c3Act},
  vesicle:{title:"Vesicle Voyage",topic:"c",blurb:"Follow a protein from the nucleus to exocytosis, then phagocytosis.",start:vvStart,act:vvAct},
@@ -3015,7 +3069,7 @@ const enc=set=>b64e(JSON.stringify({v:1,t:set.t,c:set.c,d:set.d,s:set.s}));
 const setId=p=>hid(p,4);
 const NAME=n=>String(n||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toUpperCase().replace(/[^A-Z0-9 ]/g," ").trim().replace(/\s+/g,".").slice(0,20)||"STUDENT";
 const nice=N=>N.split(".").map(w=>w.length===1?w+".":w.charAt(0)+w.slice(1).toLowerCase()).join(" ");
-const minutes={food:10,chroma:10,enzyme:8,fick:6,oxygen:8,molarch:12,cell3d:8,vesicle:8,membrane:12,meiosis:12,cancer:10,leaf:9,resp:9,root:7,transp:10,phloem:8,clot:6,field:10,niche:8,simpson:10,eutro:5,bod:7,consv:7};// rough task lengths (minutes) shown to teachers
+const minutes={prion:8,food:10,chroma:10,enzyme:8,fick:6,oxygen:8,molarch:12,cell3d:8,vesicle:8,membrane:12,meiosis:12,cancer:10,leaf:9,resp:9,root:7,transp:10,phloem:8,clot:6,field:10,niche:8,simpson:10,eutro:5,bod:7,consv:7};// rough task lengths (minutes) shown to teachers
 const taskMin=id=>minutes[id]||10;
 function code(p,set,name,sc){const S=setId(p),N=NAME(name),scores=set.s.map(id=>sc[id]==null?"X":Math.round(sc[id])).join(".");return `TSR-Q-${S}-${N}-${scores}-${hid(S+"|"+N+"|"+scores+"|"+SALT,2)}`}
 const CODE_RE=/TSR-Q-([0-9A-Z]{4})-([A-Z0-9.]{1,20})-([0-9X.]+)-([0-9A-Z]{2})/g;
